@@ -22,11 +22,13 @@ public class NewMainActivity extends AppCompatActivity
 
        preferences =  getSharedPreferences("LoginData",MODE_PRIVATE);
        logId = preferences.getString("LoginId","");
+        new ImportData().execute("Country");
+       //change
         Intent newIntent = new Intent(NewMainActivity.this, NewDashboard.class);
         newIntent.putExtra("key",1);
         startActivity(newIntent);
         finish();
-//        new ImportData().execute("Country");
+        //
     }
 
 

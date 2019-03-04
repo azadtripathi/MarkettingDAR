@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -47,7 +47,7 @@ import java.util.Locale;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class CRMNote extends ActionBarActivity {
+public class CRMNote extends AppCompatActivity {
     EditText editTextNote;
     Button  buttonSave,buttonCancel;
     String Contact_id="",Ref_DocID="",TDocID="";

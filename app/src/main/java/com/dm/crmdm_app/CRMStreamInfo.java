@@ -23,7 +23,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.util.Base64;
 import android.util.Log;
@@ -90,7 +90,7 @@ import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class CRMStreamInfo extends ActionBarActivity implements GoogleApiClient.ConnectionCallbacks,
+public class CRMStreamInfo extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
     public static String DealDocID = "";

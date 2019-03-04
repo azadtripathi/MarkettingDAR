@@ -1,6 +1,6 @@
 package com.dm.crmdm_app;
 
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +19,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class ViewAttachments extends ActionBarActivity {
+public class ViewAttachments extends AppCompatActivity {
 
 
     ListView listView;

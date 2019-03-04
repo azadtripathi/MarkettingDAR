@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -64,7 +64,7 @@ import javax.net.ssl.HttpsURLConnection;
  * Created by dataman on 11/21/2017.
  */
 
-public class CrmPayment extends ActionBarActivity {
+public class CrmPayment extends AppCompatActivity {
     String currentDate;
     ConnectionDetector connectionDetector;
     ArrayAdapter<String> adapter;

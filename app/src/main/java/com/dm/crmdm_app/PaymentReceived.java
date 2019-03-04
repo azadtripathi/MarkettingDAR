@@ -19,7 +19,7 @@ import android.os.Handler;
 import android.provider.MediaStore;
 import android.speech.tts.Voice;
 import android.support.annotation.RequiresApi;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.InputType;
@@ -104,7 +104,7 @@ import okhttp3.Response;
  * Created by dataman on 1/4/2018.
  */
 
-public class PaymentReceived extends ActionBarActivity {
+public class PaymentReceived extends AppCompatActivity {
     String server;
     ProgressDialog progressDialog;
     //Spinner spinnerContary,spinnerState,spinnerCity,spinnerParty;

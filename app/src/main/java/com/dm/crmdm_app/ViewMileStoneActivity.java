@@ -3,7 +3,7 @@ package com.dm.crmdm_app;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,7 +24,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class ViewMileStoneActivity extends ActionBarActivity {
+public class ViewMileStoneActivity extends AppCompatActivity {
 
 
     ListView listView;

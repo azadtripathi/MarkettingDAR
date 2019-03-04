@@ -23,7 +23,7 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.BitmapCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.util.Base64;
 import android.view.MotionEvent;
@@ -78,7 +78,7 @@ import java.util.Date;
 
 import static com.dm.crmdm_app.DemoPreInformation.Utility.MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE;
 
-public class DemoPreInformation extends ActionBarActivity {
+public class DemoPreInformation extends AppCompatActivity {
 	SharedPreferences preferences,preferences2;EditText remarks;
 DemoTransactionController demoTransactionController;
 Spinner classSpinner,segmentSpinner,materialSpinner;

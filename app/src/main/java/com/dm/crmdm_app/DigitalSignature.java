@@ -14,7 +14,7 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
@@ -39,7 +39,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class DigitalSignature extends ActionBarActivity {
+public class DigitalSignature extends AppCompatActivity {
 
     Toolbar toolbar;
     Button btn_get_sign, mClear, mGetSign;

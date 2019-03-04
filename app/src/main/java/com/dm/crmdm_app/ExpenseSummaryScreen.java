@@ -11,7 +11,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
@@ -79,7 +79,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class ExpenseSummaryScreen extends ActionBarActivity implements DataTransferInterface, CustomArrayAdopter.HolderListener, AlertMessage.NoticeDialogListenerWithoutView, CustomArrayAdopter.ExpenseTransferInterface {
+public class ExpenseSummaryScreen extends AppCompatActivity implements DataTransferInterface, CustomArrayAdopter.HolderListener, AlertMessage.NoticeDialogListenerWithoutView, CustomArrayAdopter.ExpenseTransferInterface {
     ListView listView;
     ImageView submit, cancel, clear, goExpGrp;
     AppDataController appDataController1;

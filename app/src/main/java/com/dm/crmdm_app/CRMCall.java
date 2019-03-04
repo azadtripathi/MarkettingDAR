@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -60,7 +60,7 @@ import static android.R.attr.phoneNumber;
 import static android.R.attr.track;
 import static android.R.attr.value;
 
-public class CRMCall extends ActionBarActivity {
+public class CRMCall extends AppCompatActivity {
     Spinner phoneSpinner,resultSpinner;
     EditText editTextdealNote;
     Button  buttonSave,buttonCancel;

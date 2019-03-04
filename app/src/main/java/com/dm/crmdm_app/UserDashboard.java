@@ -5,7 +5,7 @@ import java.util.Calendar;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +19,7 @@ import com.dm.controller.PorderController;
 import com.dm.controller.UserDataController;
 import com.dm.library.IntentSend;
 
-public class UserDashboard extends ActionBarActivity {
+public class UserDashboard extends AppCompatActivity {
 
 
     TextView pQtyLabel,pAmtLabel,sQtyLabel,sAmtLabel,productiveCall,failVisitLabel, totalNewPartyLabel;

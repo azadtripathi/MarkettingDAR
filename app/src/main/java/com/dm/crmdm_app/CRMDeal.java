@@ -20,7 +20,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.InputType;
@@ -79,7 +79,7 @@ import javax.net.ssl.HttpsURLConnection;
 
 import it.sauronsoftware.ftp4j.FTPClient;
 
-public class CRMDeal extends ActionBarActivity {
+public class CRMDeal extends AppCompatActivity {
     boolean monthflag=false;
     boolean isTotalDone = false;
     String currentDate;

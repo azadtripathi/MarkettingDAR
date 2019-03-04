@@ -10,7 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
@@ -62,7 +62,7 @@ import java.util.Map;
 /**
  * Created by Administrator on 6/15/2017.
  */
-public class CRMstream extends ActionBarActivity {
+public class CRMstream extends AppCompatActivity {
     String timestamp = "0";
     SharedPreferences preferences2;
     AppDataController appDataController1;

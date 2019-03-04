@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
@@ -71,7 +71,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class TourPlan extends ActionBarActivity implements DataTransferInterface, CustomTourPlanArrayAdapter.HolderListener, AlertMessage.NoticeDialogListenerWithoutView {
+public class TourPlan extends AppCompatActivity implements DataTransferInterface, CustomTourPlanArrayAdapter.HolderListener, AlertMessage.NoticeDialogListenerWithoutView {
     Spinner smanSpinner;
     ArrayList<String> smanArrayList;
     ArrayList<Sman> smanList;

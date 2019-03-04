@@ -13,7 +13,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
 import android.util.Log;
@@ -70,7 +70,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 
-public class ExpenseAdvanceRequest extends ActionBarActivity implements OnClickListener {
+public class ExpenseAdvanceRequest extends AppCompatActivity implements OnClickListener {
     ConnectionDetector connectionDetector;
     ArrayList<State> stateList;
     EditText fromDate,fromTime,toDate,toTime,earamount,earremark;

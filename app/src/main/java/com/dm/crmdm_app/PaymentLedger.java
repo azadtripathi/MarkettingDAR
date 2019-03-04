@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatEditText;
 import android.support.v7.widget.LinearLayoutManager;
@@ -62,7 +62,7 @@ import java.util.Random;
  * Created by dataman on 1/4/2018.
  */
 
-public class PaymentLedger extends ActionBarActivity {
+public class PaymentLedger extends AppCompatActivity {
     String server;
     ListView listView;
     private List<PaymentLadgerController> paymentLadgerControllers;

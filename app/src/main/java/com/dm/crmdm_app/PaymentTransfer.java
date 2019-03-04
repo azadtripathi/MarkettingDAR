@@ -13,7 +13,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AlertDialog;
 import android.text.Editable;
 import android.text.InputType;
@@ -72,7 +72,7 @@ import javax.net.ssl.HttpsURLConnection;
  * Created by dataman on 1/4/2018.
  */
 
-public class PaymentTransfer extends ActionBarActivity {
+public class PaymentTransfer extends AppCompatActivity {
     String server;
     ProgressDialog progressDialog;
     Spinner spinnerOwner;

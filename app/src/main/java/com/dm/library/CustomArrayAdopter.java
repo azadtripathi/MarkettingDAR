@@ -12,7 +12,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -213,7 +213,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 //				Intent intent=new Intent(context,BeatMasterEntry.class);
 //				intent.putExtras(bundle);
 //				context.startActivity(intent);
-//				((ActionBarActivity)context).finish();
+//				((AppCompatActivity)context).finish();
 //		}
 //		});
 //	}
@@ -250,7 +250,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 				Intent intent=new Intent(context,ExpenseSummaryScreen.class);
 				intent.putExtras(bundle);
 				context.startActivity(intent);
-				((ActionBarActivity)context).finish();
+				((AppCompatActivity)context).finish();
 			}
 		});
 
@@ -266,7 +266,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 				Intent intent=new Intent(context,ExpenseGroupEntry.class);
 				intent.putExtras(bundle);
 				context.startActivity(intent);
-				((ActionBarActivity)context).finish();
+				((AppCompatActivity)context).finish();
 			}
 		});
 	}
@@ -331,7 +331,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 //				editor.putString("PARTY_NAME_SESSION", holder.partyName.getText().toString());
 //				editor.commit();
 //				new IntentSend(context, RetailerDashboard.class).toSendAcivity();
-//				((ActionBarActivity)context).finish();
+//				((AppCompatActivity)context).finish();
 //			}
 //		});
 //
@@ -371,7 +371,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 //				Intent intent=new Intent(context,DailySalesReport.class);
 //				intent.putExtras(bundle);
 //				context.startActivity(intent);
-//				((ActionBarActivity)context).finish();
+//				((AppCompatActivity)context).finish();
 //
 //			}
 //		});
@@ -592,7 +592,7 @@ BitmapFactory.Options options = new BitmapFactory.Options();
 					Intent intent = new Intent(context, DemoPreInformation.class);
 					intent.putExtras(bundle);
 					context.startActivity(intent);
-					((ActionBarActivity)context).finish();
+					((AppCompatActivity)context).finish();
 
 				}
 			});
@@ -644,7 +644,7 @@ BitmapFactory.Options options = new BitmapFactory.Options();
 				Intent intent=new Intent(context,BookOrder.class);
 				intent.putExtras(bundle);
 				context.startActivity(intent);
-				((ActionBarActivity)context).finish();
+				((AppCompatActivity)context).finish();
 				
 				
 			}
@@ -822,7 +822,7 @@ holder.imageView.setOnClickListener(new OnClickListener() {
 					bundle.putBoolean("FROM_DISTRIBUTER_DASHBOARD", true);
 					intent.putExtras(bundle);
 					context.startActivity(intent);
-					((ActionBarActivity)context).finish();
+					((AppCompatActivity)context).finish();
 				}
 			});
 		}
@@ -888,7 +888,7 @@ holder.imageView.setOnClickListener(new OnClickListener() {
 							Intent intent = new Intent(context, PartyCollection.class);
 							intent.putExtras(bundle);
 							context.startActivity(intent);
-							((ActionBarActivity)context).finish();
+							((AppCompatActivity)context).finish();
 				}
 	});
 
@@ -911,7 +911,7 @@ holder.imageView.setOnClickListener(new OnClickListener() {
 							bundle.putBoolean("FROM_DISTRIBUTER_DASHBOARD", true);
 							intent.putExtras(bundle);
 							context.startActivity(intent);
-							((ActionBarActivity)context).finish();
+							((AppCompatActivity)context).finish();
 						}
 					});
 				}
@@ -1069,7 +1069,7 @@ holder.imageView.setOnClickListener(new OnClickListener() {
 					Intent intent = new Intent(context, CompetitorEntry.class);
 					intent.putExtras(bundle);
 					context.startActivity(intent);
-					((ActionBarActivity)context).finish();
+					((AppCompatActivity)context).finish();
 
 				}
 			});
@@ -1268,7 +1268,7 @@ holder.imageView.setOnClickListener(new OnClickListener() {
 					Intent intent = new Intent(context, CompetitorEntry.class);
 					intent.putExtras(bundle);
 					context.startActivity(intent);
-					((ActionBarActivity)context).finish();
+					((AppCompatActivity)context).finish();
 
 				}
 			});

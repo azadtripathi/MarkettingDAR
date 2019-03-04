@@ -15,7 +15,8 @@ import android.os.Environment;
 import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v4.graphics.BitmapCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Base64;
 import android.util.DisplayMetrics;
@@ -82,7 +83,7 @@ import javax.net.ssl.HttpsURLConnection;
 /**
  * Created by Administrator on 6/15/2017.
  */
-public class CrmTask extends ActionBarActivity {
+public class CrmTask extends AppCompatActivity {
     String currentDate;
     ConnectionDetector connectionDetector;
     EditText actionEdittext, dateEdittext, timeEdittext;
@@ -294,8 +295,6 @@ public class CrmTask extends ActionBarActivity {
         } else {
             new Custom_Toast(getApplicationContext(), "No Internet Connection! Try Again.").showCustomAlert();
         }
-
-
     }
 
 

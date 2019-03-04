@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
@@ -45,7 +45,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class TourPlanEntry extends ActionBarActivity implements TourCityDropDownListAdapter.DistributorAccessInterface {
+public class TourPlanEntry extends AppCompatActivity implements TourCityDropDownListAdapter.DistributorAccessInterface {
     AppDataController appDataController1;
     SharedPreferences preferences, cityPreferences, distPreferences, purposePreferences;
     AlertOkDialog dialogWithOutView;

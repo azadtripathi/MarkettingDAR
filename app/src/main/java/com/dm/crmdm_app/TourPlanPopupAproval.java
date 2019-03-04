@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
@@ -45,7 +45,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class TourPlanPopupAproval extends ActionBarActivity implements TourCityDropDownAprovalListAdapter.DistributorAccessInterface {
+public class TourPlanPopupAproval extends AppCompatActivity implements TourCityDropDownAprovalListAdapter.DistributorAccessInterface {
     AppDataController appDataController1;SharedPreferences preferences,cityPreferences,distPreferences,purposePreferences;AlertOkDialog dialogWithOutView;
 Bundle bundle;Intent intent;int tourAndroidCode=0;ConnectionDetector connectionDetector;ProgressDialog progressDialog;
     ArrayList<City> ArraycityList;ArrayList<String> cityList;String server,smid,userId,cId="0",sessionSmid="0",currentDate="",tourDate="",transTourId="0";EditText city,distributor,purpose;

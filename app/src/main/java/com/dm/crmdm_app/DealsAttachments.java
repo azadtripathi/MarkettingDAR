@@ -9,7 +9,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.provider.MediaStore;
 import android.support.annotation.RequiresApi;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -63,7 +63,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 
-public class DealsAttachments extends ActionBarActivity {
+public class DealsAttachments extends AppCompatActivity {
 
     ListView listView;
     String dealId;

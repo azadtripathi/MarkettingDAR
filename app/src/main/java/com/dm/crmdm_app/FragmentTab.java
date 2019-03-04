@@ -25,7 +25,7 @@ public class FragmentTab extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_layout, container, false);
-      //  ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.subtitle);
+      //  ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.subtitle);
         ImageView iv = (ImageView)v.findViewById(R.id.adcocimage);
 
         iv.setOnClickListener(new View.OnClickListener() {

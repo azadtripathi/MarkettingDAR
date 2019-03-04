@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.AdapterView;
@@ -37,7 +37,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class FindAddContact extends ActionBarActivity {
+public class FindAddContact extends AppCompatActivity {
     ListView listview;AlertOkDialog dialogWithOutView;
     ConnectionDetector connectionDetector;boolean isMoreData = false,lodingProgressImage=true,msucssess=true;
     String timestamp="0";ProgressDialog progressDialog;

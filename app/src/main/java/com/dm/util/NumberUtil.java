@@ -227,8 +227,7 @@ public class NumberUtil
      * parseInt("Kona", 27) returns 411787
      * </pre></blockquote>
      *
-     * @param      src   the <code>String</code> containing the integer 
-     * 			representation to be parsed
+     *
      * @param      radix   the radix to be used while parsing <code>s</code>.
      * @return     the integer represented by the string argument in the
      *             specified radix.
@@ -361,7 +360,6 @@ public class NumberUtil
   *
   * Method converting short into byte array.
   *
-  * @param number The int value to be converted.
   *
   */
   public static byte[] shortToByte2(String num)
@@ -386,7 +384,6 @@ public class NumberUtil
   /**
   * Method converting binary String into int.
   *
-  * @param The binary String to be converted.
   *
   */
   public static int BinStringToInt(String binaryString )
@@ -397,7 +394,6 @@ public class NumberUtil
   /**
   * Method converting byte array into int.
   *
-  * @param The byte array to be converted.
   *
   */
   public static int byte4ToInt(byte[] src)
@@ -419,7 +415,6 @@ public class NumberUtil
   /**
     * Method converting byte array into long.
     *
-    * @param The byte array to be converted.
     *
     */
     public static long byte8ToLong(byte[] byte8)
@@ -443,7 +438,6 @@ public class NumberUtil
   *
   * Method converting long into byte array.
   *
-  * @param number The int value to be converted.
   *
   */
   public static byte[] longToByte8(long value)

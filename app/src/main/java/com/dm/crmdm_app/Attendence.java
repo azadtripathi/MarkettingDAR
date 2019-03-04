@@ -17,7 +17,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.support.v4.graphics.BitmapCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateFormat;
 import android.util.Base64;
@@ -60,7 +60,7 @@ import javax.net.ssl.HttpsURLConnection;
  * Created by dataman on 12/11/2017.
  */
 
-public class Attendence extends ActionBarActivity {
+public class Attendence extends AppCompatActivity {
     String latitude="",longitude="";
     String latlngtime;
     ImageView imageCapture;

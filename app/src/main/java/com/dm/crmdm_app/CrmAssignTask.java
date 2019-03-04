@@ -13,7 +13,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.graphics.BitmapCompat;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Base64;
 import android.util.DisplayMetrics;
@@ -77,7 +77,7 @@ import java.util.Locale;
 import javax.net.ssl.HttpsURLConnection;
 
 
-public class CrmAssignTask extends ActionBarActivity {
+public class CrmAssignTask extends AppCompatActivity {
     String currentDate;
     ConnectionDetector connectionDetector;
     EditText actionEdittext, dateEdittext,timeEdittext;

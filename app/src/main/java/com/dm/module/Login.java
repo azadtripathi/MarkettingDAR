@@ -142,6 +142,10 @@ public class Login  extends AppCompatActivity
             }
             System.out.println("Result Mobile:" + result);
             Toast.makeText(Login.this,result,Toast.LENGTH_LONG).show();
+            //change
+            startActivity(new Intent(Login.this, NewMainActivity.class));
+            finish();
+            //
             if (result != null) {
                 try {
 //                    JSONObject jsonObject = new JSONObject(result);

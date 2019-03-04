@@ -301,7 +301,6 @@ public class StringUtil
   /**
   * Method trim space
   *
-  * @param The string to be format.
   *
   */
   public static String trimSpace(String oldString) 
@@ -326,7 +325,6 @@ public class StringUtil
   /**
   * Method convert byte[] to String
   *
-  * @param The string to be format.
   *
   */
   public static String toString(byte[] buffer)
@@ -346,7 +344,6 @@ public class StringUtil
    * {"78901234567890"},
    * }
    *
-   * @param The string to be format.
    *
    */
   public static String[] buffer2Message(String bufferString, int width, int height) 
@@ -407,7 +404,6 @@ public class StringUtil
   /**
   * Method Format string
   *
-  * @param The string to be format.
   *
   */
   public static String[] buffer2Message(String bufferString)
@@ -418,7 +414,6 @@ public class StringUtil
   /**
   * Method fill string
   *
-  * @param The string to be format.
   *
   */
   public static String fillString(String formatString, int length, char fillChar, boolean leftFillFlag)
@@ -459,7 +454,6 @@ public class StringUtil
   /**
   * Method fill string
   *
-  * @param The string to be format.
   *
   */
   public static String fillSpace(String formatString, int length)
@@ -470,7 +464,6 @@ public class StringUtil
   /**
   * Method Format string
   *
-  * @param The string to be format.
   *
   */
   public static String formatLine(String formatString, boolean leftFillFlag)
@@ -483,7 +476,6 @@ public class StringUtil
   /**
   * Method fill space , converted String length to LCD_WIDTH
   *
-  * @param The string to be format.
   *
   */
   public static String fillShowSpace(String formatString)
@@ -512,7 +504,6 @@ public class StringUtil
   /**
   * Method Format string
   *
-  * @param The string to be format.
   *
   */
   public static String fillZero(String formatString, int length)
@@ -613,7 +604,6 @@ public class StringUtil
   /**
   * Method convert byte[] to HexString
   *
-  * @param The string to be format.
   *
   */
   public static String toHexString(byte abyte0[])
@@ -654,8 +644,7 @@ public class StringUtil
  /**
   * Method Check String 
   *
-  * @param The string to be format.
-  * 
+  *
   * @param checkSpaceFlag=false: skip the space.
   *
   */  
@@ -688,7 +677,6 @@ public class StringUtil
   /**
    * Method Check String 
    *
-   * @param The string to be format.
    *
    */  
   public static boolean isHexChar(String hexString) 

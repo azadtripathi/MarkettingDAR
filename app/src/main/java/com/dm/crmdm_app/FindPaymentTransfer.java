@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -57,7 +57,7 @@ import java.util.Random;
  * Created by dataman on 1/5/2018.
  */
 
-public class FindPaymentTransfer  extends ActionBarActivity {
+public class FindPaymentTransfer  extends AppCompatActivity {
     CustomFindPaymentTransferAdapter contactAdapter;
     private List<FindPaymentController> contacts;
     private Random random;

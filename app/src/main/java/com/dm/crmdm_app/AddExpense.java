@@ -8,7 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
@@ -33,7 +33,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class AddExpense extends ActionBarActivity implements DataTransferInterface,CustomArrayAdopter.HolderListener,AlertMessage.NoticeDialogListenerWithoutView{
+public class AddExpense extends AppCompatActivity implements DataTransferInterface,CustomArrayAdopter.HolderListener,AlertMessage.NoticeDialogListenerWithoutView{
         ListView listView;
     TextView grpNameText, dateText, remText;
     ImageView add, save, sum;ArrayList<Expense> expenseGrpList;

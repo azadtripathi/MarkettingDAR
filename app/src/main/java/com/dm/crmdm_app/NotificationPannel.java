@@ -10,7 +10,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
@@ -42,7 +43,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 @SuppressLint("CommitPrefEdits")
-public class NotificationPannel extends ActionBarActivity {
+public class NotificationPannel extends AppCompatActivity {
     ProgressDialog progressDialog; AlertOkDialog dialogWithOutView;
     String server;ArrayList<AppData> appDataArray;SharedPreferences preferences1;
     String SMID,MOb;ListView listview;SQLiteDatabase mydb;
