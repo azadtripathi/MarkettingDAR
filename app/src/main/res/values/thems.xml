@@ -1,0 +1,38 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+ <style name="MyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:actionBarStyle">@style/MyActionBar</item>
+     <item name="colorPrimary">@color/colorPrimary</item>
+     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+     <item name="colorAccent">@color/colorAccent</item>
+     <item name="android:actionModeBackground">@color/colorPrimary </item>
+     <item name="android:activatedBackgroundIndicator">@drawable/before_listview_click</item>
+</style>
+
+<style name="MyActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    <item name="android:titleTextStyle">@style/MyActionBar.TitleTextStyle</item>
+    <item name="colorPrimary">@color/colorAccent</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+</style>
+
+<style name="MyActionBar.TitleTextStyle"
+    parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+   <item name="android:textColor">#C14200</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">24dip</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:fontFamily">sans-serif-condensed</item>
+</style>
+
+  <style name="MyActionBar.MenuTextStyle"
+    parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">#C14200</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">23dip</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:fontFamily">sans-serif-condensed</item> 
+    
+</style>
+
+</resources>

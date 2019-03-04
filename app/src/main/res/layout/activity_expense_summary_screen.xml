@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_border"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#4052b5"
+            android:padding="10dp"
+            android:weightSum="1">
+            <include layout="@layout/beat_selection"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+<ScrollView
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/boder_nw1"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expTypeText34"
+            android:textSize="@dimen/text_two"
+            android:typeface="serif"
+            android:text="Expense Group:"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expTypeText"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/text_two"
+            android:textStyle="bold"
+            android:text=""
+
+            />
+        <Spinner
+            android:id="@+id/expspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="10dp"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/title_selectExpenseType"
+            android:textSize="@dimen/text_two"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:id="@+id/area_layout"
+            android:orientation="horizontal"></LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <Button
+                android:id="@+id/addExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/button_margin"
+                android:background="@drawable/button_style"
+                android:requiresFadingEdge="vertical"
+                android:text="Add"
+                android:textColor="#ffffff"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+        <!--<ListView
+        android:id="@+id/listView1"
+        style="@style/listStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addExp"
+        android:layout_below="@+id/addExp"
+        android:cacheColorHint="#ffffff"
+        android:layout_marginTop="5dp"
+        />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/scroll_view"
+            android:layout_above="@+id/footer"
+            android:orientation="horizontal">
+
+
+
+                <ListView
+                    android:id="@+id/listView1"
+                    style="@style/listStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@android:color/transparent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:dividerHeight="10dp"
+                    android:listSelector="#fff" />
+            </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

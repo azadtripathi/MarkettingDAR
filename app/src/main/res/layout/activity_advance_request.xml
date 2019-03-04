@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.dm.crmdm_app.Expense_Advance_Request_Details">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/footer_border"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4052b5"
+                android:padding="10dp"
+                android:weightSum="1">
+                <include layout="@layout/find_filterbar"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:id="@+id/linearlayout"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:id="@+id/linear"
+                android:background="@drawable/boder_nw1"
+                >
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+
+                    android:layout_marginTop="10dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        app:met_floatingLabel="highlight">
+                        <EditText
+                            android:id="@+id/adfromDate"
+                            android:textSize="@dimen/text_two"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="From Date: *"
+                            android:editable="false"
+                            android:text=""
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight" >
+                        <EditText
+                            android:id="@+id/adtoDateEditL"
+                            android:textSize="@dimen/text_two"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="To Date: *"
+                            android:editable="false"
+                            android:text=""
+                            />
+                        <!--<Spinner-->
+                        <!--android:id="@+id/toSpinner"-->
+                        <!--style="@style/editLebal"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="25dp"-->
+
+                        <!--/>-->
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear_partyType"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linear_Sales"
+                            android:orientation="vertical">
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_partyType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner-->
+                                <!--android:id="@+id/MaterialBetterSpinner"-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:hint="Sales Person: *"-->
+                                <!--app:met_baseColor="#000000"-->
+                                <!--android:layout_marginLeft="10dp" />-->
+                                <!--android:theme="@style/Theme.AppCompat"-->
+                                <TextView
+                                    android:id="@+id/timespendtextview"
+                                    style="@style/textLebal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/editText1"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="10dp"
+                                    android:text="Status:"
+                                    />
+                                <Spinner
+                                    android:id="@+id/earsp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:spinnerMode="dialog"
+                                    android:drawSelectorOnTop="true"
+                                    android:prompt="@string/title_Status"
+                                    android:textSize="@dimen/text_two"
+                                    />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:id="@+id/traDSR"
+                                    android:background="#666666"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:orientation="horizontal"></LinearLayout>
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            android:layout_marginTop="2dp"
+                            >
+                            <Button
+                                android:id="@+id/btn_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_style"
+                                android:text="Go"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:soundEffectsEnabled="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout></LinearLayout></LinearLayout>
+
+            <ListView
+                android:id="@+id/findLeaveRequestlist"
+                style="@style/listStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:listSelector="#fff"
+                >
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+

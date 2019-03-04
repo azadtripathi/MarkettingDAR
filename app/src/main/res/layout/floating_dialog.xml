@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/floatingAddNoteRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <!--  <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:gravity="bottom"
+                  android:layout_toRightOf="@+id/floatingAddNote"
+                  android:layout_marginLeft="20dp"
+                  android:layout_margin="@dimen/button_margin"
+                  android:src="@drawable/edit"/>-->
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/floatingAddDealRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/floatingAddLead"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Add Contact/Lead"
+                android:fontFamily="serif"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rounded_edge"
+                android:layout_margin="@dimen/button_margin"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+
+            <!-- <ImageView
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:gravity="bottom"
+                 android:layout_toRightOf="@+id/floatingAddDeal"
+                 android:layout_marginLeft="20dp"
+                 android:layout_margin="@dimen/button_margin"
+                 android:src="@drawable/edit"/>-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/floatingAddCallRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/floatingAddTask"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Add Task"
+                android:fontFamily="serif"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/rounded_edge"
+                android:layout_margin="@dimen/button_margin"
+                android:textStyle="bold"
+                android:textAllCaps="false" />
+
+            <!-- <ImageView
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_margin="@dimen/button_margin"
+                 android:layout_marginLeft="20dp"
+                 android:layout_toRightOf="@+id/floatingAddCall"
+                 android:gravity="bottom"
+                 android:src="@drawable/edit" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cross"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_marginBottom="15dp">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cross_icon"
+                android:layout_width="@dimen/width"
+                android:layout_height="@dimen/heignt"
+                android:layout_marginRight="15dp"
+                android:tint="@color/white"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/minus"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

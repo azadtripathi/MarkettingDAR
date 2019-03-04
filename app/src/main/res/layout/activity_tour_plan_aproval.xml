@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tour_plan_aproval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+tools:context="com.dm.crmdm_app.TourPlanAproval">
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <include layout="@layout/tour_plan_aproval_footer"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/TourPlanListLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/boder_nw1"
+        >
+        <ListView
+            android:id="@+id/listView1"
+            style="@style/listStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/linearlayout"
+            android:layout_below="@+id/linearlayout"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@drawable/dk_gray_border"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#839fca"
+            android:weightSum="1">
+            <TextView
+                android:text="Date"
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:text="Document No."
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <TextView
+                android:id="@+id/appDate"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:hint=""/>
+            <TextView
+                android:id="@+id/document"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:background="#839fca">
+            <TextView
+                android:text="SalesPerson"
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="visible"/>
+            <TextView
+                android:text="Status"
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <TextView
+                android:id="@+id/fromDate"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:hint=""/>
+
+            <!--  <TextView
+                  android:id="@+id/sales"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:paddingBottom="@dimen/padding"
+                  android:text="s"
+                  android:layout_weight="1.5"
+                  android:layout_marginLeft="10dp"
+                  android:textSize="12dp" />-->
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:enabled="false"
+                android:hint="" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#000"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <!-- <Button
+                 android:id="@+id/updateparty"
+                 android:layout_width="match_parent"
+                 android:layout_height="25dp"
+                 android:background="@drawable/button_style"
+                 android:gravity="center"
+                 android:text="Update"
+                 android:textColor="#ffffff"
+                 android:textSize="12sp"
+                 android:textStyle="bold" />-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

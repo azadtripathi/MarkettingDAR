@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#656565"
+    android:padding="5dp"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.8"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="2dp"
+                            android:paddingBottom="@dimen/padding"
+                            android:text="Application Date"
+                            android:textColor="#fff"
+                            android:textSize="12dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Document No."
+                android:textColor="#fff"
+                android:textSize="12dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="2dp"
+                            android:paddingBottom="@dimen/padding"
+                            android:text="From Date"
+                            android:textColor="#fff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="2dp"
+                            android:paddingBottom="@dimen/padding"
+                            android:text="To Date"
+                            android:textColor="#fff"
+                            android:textSize="12dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Sales Person"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="2dp"
+                            android:text="Days"
+                            android:textColor="#fff"
+                            android:textSize="12dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Reason"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Remark"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:id="@+id/textView13" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Status"
+                android:gravity="right"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

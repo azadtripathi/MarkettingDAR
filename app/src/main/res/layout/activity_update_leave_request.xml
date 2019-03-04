@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_back"
+
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        
+            >
+             <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+                 android:padding="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/smallbackground"
+    android:orientation="vertical" >
+            <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="3dp"
+   
+    android:orientation="horizontal" >
+        
+<TextView
+        android:id="@+id/appdate"
+        style="@style/textLebal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/text_one"
+        android:text="Application Date:" />
+<TextView
+        android:id="@+id/applicationDate"
+        style="@style/editLebal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="Date" 
+        android:background="@drawable/input_style"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="3dp"
+   
+    android:orientation="horizontal" >
+<TextView
+        android:id="@+id/applied"
+        style="@style/textLebal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="Applied By:" />
+<TextView
+        android:id="@+id/appliedBy"
+        style="@style/editLebal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="applied" 
+         android:background="@drawable/input_style"
+        />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="3dp"
+    
+    android:orientation="horizontal" >
+
+   <TextView
+        android:id="@+id/reportto"
+        style="@style/textLebal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="Report To:" />
+<TextView
+        android:id="@+id/ReportTo"
+         style="@style/editLebal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="ReportTo" 
+        android:background="@drawable/input_style"
+        />
+</LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/smallbackground"  
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         android:layout_marginLeft="5dp"  
+         android:layout_marginRight="5dp"       
+            >
+
+        <TextView
+        android:id="@+id/timespendtextview"
+        style="@style/textLebal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:text="Sales Person: *" />
+           <Spinner
+		    android:id="@+id/salesPerson"
+		    style="@style/editLebal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="25dp"
+		   		   
+		    		    />    
+        
+              
+        </LinearLayout>  
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/smallbackground"  
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         android:layout_marginLeft="5dp"  
+         android:layout_marginRight="5dp"       
+            >
+
+        <TextView
+            android:id="@+id/nodays"
+            style="@style/textLebal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. of Days: *" 
+                                    />
+           
+            <EditText
+                android:id="@+id/noOfDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                 style="@style/editLebal"
+                android:inputType="numberDecimal"
+                
+                >
+
+</EditText>
+     
+    
+             
+          
+        
+        </LinearLayout> 
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/smallbackground"  
+       android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+         android:layout_marginLeft="5dp"  
+         android:layout_marginRight="5dp"
+            android:padding="@dimen/activity_horizontal_margin"
+         
+            >
+        
+        <TextView
+            android:id="@+id/fromdate"
+            style="@style/textLebal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From Date: *" 
+            android:paddingLeft="5dp"
+            
+                       />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+           android:gravity="center_vertical"
+            >
+
+            <ImageButton
+                android:id="@+id/fromdataPickerOnLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/fromDate"
+                android:background="#ffffff"
+                android:onClick="selectDate"
+                android:src="@drawable/cal" />
+
+            <EditText
+                android:id="@+id/fromDate"
+                style="@style/editLebal"
+                android:layout_width="250dp"
+                android:layout_height="47dp"
+                 android:layout_alignTop="@+id/fromdataPickerOnLeave"
+                android:layout_alignParentBottom="true"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="dd/mmm/yyyy"
+                android:inputType="date"
+                android:editable="false" 
+          android:enabled="false"
+                 />
+
+        </RelativeLayout>
+        
+        <Spinner
+		    android:id="@+id/fromSpinner"
+		    style="@style/editLebal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="25dp"
+		   		   
+		    		    />  
+        </LinearLayout>  
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/smallbackground"
+            android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+         android:layout_marginLeft="5dp"  
+         android:layout_marginRight="5dp"       
+            >
+
+        <TextView
+            android:id="@+id/todate"
+            style="@style/textLebal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To Date: *" 
+                                     />
+               
+        
+            <EditText
+         android:id="@+id/toDateEdit"
+         style="@style/editLebal"
+         android:layout_width="279dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="5dp"
+         android:layout_height="wrap_content"
+         android:editable="false" 
+         android:enabled="false"
+         >
+</EditText>
+     
+                
+            
+           <Spinner
+		    android:id="@+id/toSpinner"
+		    style="@style/editLebal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="25dp"
+		   		   
+		    		    />     
+        </LinearLayout>   
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/smallbackground"
+         android:padding="@dimen/activity_horizontal_margin"
+       android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+         android:layout_marginLeft="5dp"  
+         android:layout_marginRight="5dp"     
+         
+            >
+       
+ <TextView
+            android:id="@+id/textView1"
+            style="@style/textLebal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason: *" 
+           
+                           />
+
+ <EditText
+     android:id="@+id/reasonOfleave"
+     style="@style/editLebal"
+     android:layout_width="279dp"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="10dp"
+     android:layout_marginTop="5dp"
+     android:ems="10"
+     android:hint="Enter Reason"
+     android:inputType="textMultiLine" >
+
+     <requestFocus />
+ </EditText>
+
+     </LinearLayout>   
+  
+ <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+           android:gravity="center_vertical"
+            >
+  <Button
+        android:id="@+id/button3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/button2"
+         android:layout_alignParentBottom="true"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+          android:layout_marginTop="5dp"
+        android:requiresFadingEdge="vertical"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+         />
+       <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_toRightOf="@+id/button1"
+         android:layout_alignParentBottom="true"
+        android:background="@drawable/button_style"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+          android:layout_marginTop="5dp"
+        android:requiresFadingEdge="vertical"
+        android:text="Cancel"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:padding="5dp"
+        android:requiresFadingEdge="vertical"
+        android:text="Update"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+    
+    
+
+    </RelativeLayout>
+            
+            </LinearLayout>
+    
+    </ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/boder_nw1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unlocked Entries"
+        android:typeface="monospace"
+        android:background="@android:color/holo_green_dark"
+        android:padding="@dimen/activity_horizontal_margin"
+
+        android:textColor="#fff"
+        android:textSize="@dimen/text_two"
+        android:id="@+id/textview"/>
+    <ListView
+        android:id="@+id/historyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        style="@style/listStyle"
+        android:divider="@android:color/transparent"
+        android:choiceMode="multipleChoice">
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Locked Entries"
+        android:typeface="monospace"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_two"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/historyList"
+        android:id="@+id/textview2"/>
+
+    <ListView
+        android:id="@+id/lockedentries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview2"
+        style="@style/listStyle"
+        android:divider="@android:color/transparent"
+        android:choiceMode="multipleChoice">
+    </ListView>
+    </RelativeLayout>
+</RelativeLayout>

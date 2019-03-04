@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TableRow>
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Date" />
+
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Document No." />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tourdate"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="s" />
+            <TextView
+                android:id="@+id/tourdocid"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="s"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Sales Person" />
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Status" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/toursalesperson"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="s" />
+            <TextView
+                android:id="@+id/tourstaus"
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="s" />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/traDSR"
+            android:background="#666666"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"></LinearLayout>
+
+    </TableLayout>
+</LinearLayout>

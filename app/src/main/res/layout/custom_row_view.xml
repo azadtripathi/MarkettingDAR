@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+ 	android:layout_height="fill_parent"
+	android:background="#5df5e9e9">
+	<android.support.v7.widget.LinearLayoutCompat
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#5df5e9e9"
+		android:orientation="vertical">
+
+		<!--android:background="#5df5e9e9"-->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/layoutparent"
+			android:background="@color/colorAccent"
+
+			>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Plans"
+
+				android:id="@+id/txtparent"
+				android:textAllCaps="false"
+				android:textColor="#FFFFFF"
+				android:layout_marginLeft="@dimen/padding"
+				android:textSize="@dimen/text_new"
+				android:typeface="serif"
+				android:padding="@dimen/activity_horizontal_margin"
+				android:gravity="left"/>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/layoutparent"
+			android:id="@+id/layoutchild"
+			android:background="@color/white"
+			android:paddingBottom="@dimen/padding"
+			android:paddingTop="5dp"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="@dimen/padding"
+				android:layout_weight="0">
+				<ImageView
+					android:id="@+id/icon"
+					android:layout_width="36dp"
+					android:layout_height="36dp"
+					android:src="@drawable/leave_request"
+					android:paddingTop="@dimen/padding"
+					/>
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:paddingLeft="@dimen/padding"
+				android:gravity="center_vertical"
+				android:paddingRight="@dimen/padding"
+				android:layout_weight="0.35">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="Leave Request"
+					android:gravity="center_vertical"
+					android:textColor="@color/colorPrimary"
+					android:textSize="@dimen/text_two"
+					android:id="@+id/txtchild"
+					android:layout_marginLeft="10sp"
+
+					/>
+				<!--<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Related Content will write from here"
+					android:textColor="@color/colorPrimary"
+					android:textSize="@dimen/text_one"
+					android:id="@+id/dsr"
+					android:layout_marginLeft="@dimen/padding_two"
+					/>-->
+			</LinearLayout>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:gravity="center_vertical"
+
+				android:layout_weight="1.8">
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/dashboard_arrow"
+					android:layout_centerVertical="true"
+					android:layout_gravity="right|center_vertical"
+					android:tint="#e3e3e3"
+					/>
+			</RelativeLayout>
+		</LinearLayout>
+	</android.support.v7.widget.LinearLayoutCompat>
+	
+</LinearLayout>

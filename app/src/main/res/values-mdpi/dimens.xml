@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="activity_horizontal_margin">8dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">10dp</dimen>-->
+    <!--<dimen name="padding">5dp</dimen>-->
+    <!--<dimen name="padding_one">10dp</dimen>-->
+    <!--<dimen name="padding_two">20dp</dimen>-->
+    <!--<dimen name="padding_three">30dp</dimen>-->
+    <!--<dimen name="text">10dp</dimen>-->
+    <!--<dimen name="text_one">12sp</dimen>-->
+    <!--<dimen name="text_two">15sp</dimen>-->
+    <!--<dimen name="text_size_one">12dp</dimen>-->
+    <!--<dimen name="text_size">15dp</dimen>-->
+    <!--<dimen name="margin_left">100dp</dimen>-->
+    <!--<dimen name="edit_width">300dp</dimen>-->
+    <!--<dimen name="orderwidth">80dp</dimen>-->
+    <!--<dimen name="orderheight">35dp</dimen>-->
+
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="padding_oneThree">3dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="padding_one">10dp</dimen>
+    <dimen name="padding_two">20dp</dimen>
+    <dimen name="padding_three">30dp</dimen>
+    <dimen name="text">10dp</dimen>
+    <dimen name="text_one">14sp</dimen>
+    <dimen name="text_two">16sp</dimen>
+    <dimen name="text_new">18sp</dimen>
+    <dimen name="text_oneSeven">17sp</dimen>
+    <dimen name="text_three">20sp</dimen>
+    <dimen name="text_size_one">12dp</dimen>
+    <dimen name="text_size">15dp</dimen>
+    <dimen name="margin_left">100dp</dimen>
+    <dimen name="edit_width">300dp</dimen>
+    <dimen name="button_margin">5dp</dimen>
+    <dimen name="orderwidth">80dp</dimen>
+    <dimen name="orderheight">35dp</dimen>
+    <dimen name="cudtom_margin">8dp</dimen>
+    <dimen name="pendinsyn_button_height">30dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#656565"
+    android:padding="5dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingBottom="@dimen/padding"
+                android:text="Date"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding"
+                android:text="Document No."
+                android:layout_weight="0.5"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingBottom="@dimen/padding"
+                android:text="SalesPerson"
+                android:layout_weight="0.5"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:text="Status"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dm.crmdm_app.HistoryViewDetailPopupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:text="Branding Activity"
+                   android:textColor="#000"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/brandActivityLabel"
+                   android:layout_width="0dp"
+                   android:layout_weight="1.5"
+                   android:paddingLeft="5dp"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:text="Meet Activity"
+                   android:textColor="#000"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1.5"
+                   android:paddingLeft="5dp"
+                   android:id="@+id/meetActivityLabel"
+                   android:layout_height="wrap_content" />
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_horizontal_margin"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:text="Road Show"
+                   android:textColor="#000"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/roadShowLabel"
+                   android:layout_width="0dp"
+                   android:layout_weight="1.5"
+                   android:paddingLeft="5dp"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_horizontal_margin"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:textColor="#000"
+                   android:text="Scheme/Offers"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/offerLabel"
+                   android:layout_width="0dp"
+                   android:layout_weight="1.5"
+                   android:paddingLeft="5dp"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/activity_vertical_margin"
+               android:layout_marginBottom="@dimen/activity_vertical_margin"
+               android:orientation="horizontal">
+
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:textColor="#000"
+                   android:text="Other General Info"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:id="@+id/genInfoLabel"
+                   android:layout_width="0dp"
+                   android:layout_weight="1.5"
+                   android:paddingLeft="5dp"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/failedVisitOnOrderMgmt"
+               android:text="Close"
+               android:textAllCaps="false"
+               android:layout_alignParentTop="true"
+               android:layout_margin="@dimen/activity_vertical_margin"
+               android:layout_height="@dimen/pendinsyn_button_height"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="120dp"
+               android:onClick="close"
+               android:background="@drawable/button_style"
+               android:textColor="#FFFFFF"
+               android:textStyle="bold"/>
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

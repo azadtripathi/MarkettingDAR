@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+      android:background="@drawable/app_back"
+    >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+ <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/apptextdate"
+                style="@style/textLebal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="Date"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/appDate"
+                style="@style/editLebal"
+                android:layout_width="233dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.00"
+                android:background="@drawable/input_style"
+                android:ems="10"
+                android:enabled="false"
+                android:hint=""
+                android:inputType="text|textAutoComplete"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/textLebal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="DocId"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/docId"
+                style="@style/editLebal"
+                android:layout_width="233dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.00"
+                android:background="@drawable/input_style"
+                android:ems="10"
+                android:enabled="false"
+                android:hint=""
+                android:inputType="text|textAutoComplete"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/textLebal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:text="AndroidId"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/androidId"
+                style="@style/editLebal"
+                android:layout_width="233dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.00"
+                android:background="@drawable/input_style"
+                android:ems="10"
+                android:enabled="false"
+                android:hint=""
+                android:inputType="text|textAutoComplete"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+             
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/appdetail"
+                style="@style/textLebal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SalesPerson"
+                android:textSize="11sp"
+                android:visibility="visible" 
+                 android:layout_weight="0.65"
+                />
+
+            <TextView
+                android:id="@+id/salesPerson"
+                style="@style/editLebal"
+                android:layout_width="233dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/input_style"
+                android:ems="10"
+                android:enabled="false"
+                android:hint=""
+                android:inputType="text|textAutoComplete"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+           
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Status"
+                android:textSize="12sp"
+                   style="@style/textLebal"            
+                />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/editLebal"
+                android:layout_width="168dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="0.76"
+                android:background="@drawable/input_style"
+                android:ems="10"
+                android:enabled="false"
+                android:hint=""
+                android:inputType="text|textAutoComplete"
+                android:textSize="12sp" />
+
+           
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+ 
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+       
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:padding="5dp"
+        android:requiresFadingEdge="vertical"
+        android:text="Update"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+   
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

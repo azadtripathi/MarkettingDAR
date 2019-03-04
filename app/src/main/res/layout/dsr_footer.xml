@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4052b5"
+    >
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/save1"
+        android:tint="#FFF"
+        android:layout_weight="0.1"
+        />
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel"
+        android:tint="#FFF"
+        android:clickable="true"
+        android:layout_weight="0.1"
+        />
+    <ImageView
+        android:id="@+id/startvisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/parimary"
+        android:tint="#FFF"
+        android:layout_weight="0.1"
+         />
+    <ImageView
+        android:id="@+id/secondrySales"
+        android:src="@drawable/secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="#FFF"
+        android:layout_weight="0.1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/lockbutton2"
+        android:layout_weight="0.1"
+        android:tint="#FFF" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:src="@drawable/find"
+        android:id="@+id/findbutton1"
+        android:layout_weight="0.1"
+        android:tint="#FFF" />
+
+
+</LinearLayout>
+</RelativeLayout>

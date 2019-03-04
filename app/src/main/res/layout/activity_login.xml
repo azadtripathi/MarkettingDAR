@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash_screen" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/backgroun_border"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:orientation="vertical">-->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/splash_msg"
+                android:textColor="@color/textHeader"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/emailText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:hint="Enter Email Id"
+                android:inputType="textEmailAddress"
+
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHighlight="#3F51B5" />
+
+            <EditText
+                android:id="@+id/passwdText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailText"
+                android:layout_marginTop="10dp"
+
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHighlight="#3F51B5" />
+
+            <Button
+                android:id="@+id/asSubmit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="#3F51B5"
+                android:fontFamily="monospace"
+                android:text="Login"
+                android:onClick="onLogin"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="#f3f3f3"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <!--<TextView
+                android:id="@+id/asForgetMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asforgetMob"
+                android:gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="right"
+                android:textStyle="italic"
+                />-->
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true">-->
+
+            <!--<Button-->
+            <!--android:id="@+id/asSubmit"-->
+            <!--style="@style/Widget.AppCompat.Button.Colored"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#3F51B5"-->
+            <!--android:fontFamily="monospace"-->
+            <!--android:text="Get OTP"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Button"-->
+            <!--android:textColor="#f3f3f3"-->
+            <!--android:textSize="15dp"-->
+            <!--android:textStyle="bold" />-->
+            <!--</RelativeLayout>-->
+
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

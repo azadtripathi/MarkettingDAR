@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+    <TextView
+        android:id="@+id/nplrnotid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi"
+        android:visibility="gone"
+        android:padding="20dp" />
+    <TextView
+        android:id="@+id/nplrmsg"
+        android:layout_width="wrap_content"
+        android:text="hi2"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="@dimen/text_two"
+        android:typeface="serif"
+        />
+</LinearLayout>

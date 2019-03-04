@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tourDate"
+                    style="@style/textLebal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:text="Date 1"
+
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="City" />
+
+            </TableRow>
+
+
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/cityValue"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    />
+            </TableRow>
+
+
+            <TableRow
+                android:visibility="gone">
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Distributor"
+                    android:id="@+id/nameView"
+                    />
+            </TableRow>
+            <TableRow
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/distValue"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Purpose Of Visit"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/purpose"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Remarks"/>
+            </TableRow>
+            <TableRow
+                >
+                <TextView
+                    android:id="@+id/remark"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textSize="@dimen/text_one"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="right"
+                >
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@drawable/button_style"
+                    android:requiresFadingEdge="vertical"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:text="Add"
+                    android:textAllCaps="false"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_below="@+id/Layout"></LinearLayout>
+
+   </RelativeLayout>
+
+
+

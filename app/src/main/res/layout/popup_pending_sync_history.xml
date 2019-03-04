@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<LinearLayout
+        android:id="@+id/patient_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/colorPrimary">
+
+        &lt;!&ndash;android:minHeight="@dimen/abc_action_bar_default_height_material"&ndash;&gt;
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:contentDescription="Hello"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:src="@drawable/home1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:textSize="20sp"
+            android:text="Pending Report Summary"
+            android:layout_marginLeft="@dimen/padding_two"
+            android:textColor="#ffffff"/>
+            </LinearLayout>
+
+    </LinearLayout>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:contentPadding="10dp">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_nw1">
+            <TableRow
+                android:id="@+id/tableRowDate"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DATE"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:id="@+id/dateOnOrderMgnt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowCity"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="CITY"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/visitdate"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowArea"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Area"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popuparea"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowBeat"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Beat"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupBeat"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowTotalParty"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Total Party"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popuptotalparty"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowDistFailedVisit"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Dist. Failed Visit"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupdistfailedvisit"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowDistCollection"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Dist. Collection"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupdistcollection"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowDistDiscussion"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Dist. Discussion"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupdistdiscussion"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowRetailerCallVisit"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Retailer Call Visit"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupretailercallvisit"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowTotalOrder"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Order Amount"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popuptotalorder"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowTotalOrderCount"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Order Count"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popuptotalordercount"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowDistStock"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Dist Stock"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupdiststock"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowOrderByPhone"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER BY PHONE"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowOrderByEmail"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER BY EMAIL"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowDemo"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Demo"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupdemo"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowFailedVisit"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Failed Visit"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupfailedvisit"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowCompetitor"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Competitor"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupcompetitor"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowPartyCollection"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Party Collection"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popuppartycollection"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowRetailerPerCallAvgSale"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Retailer Per Call Avg. Sale"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupretailerpercallavgsale"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowNewParties"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="New Parties"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupnewParties"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowClaimExp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Claim Exp."
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupclaimexp"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowRemark"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="REMARK"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remark"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowApprovedExp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Approved Exp."
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupapprovedexp"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowDSRType"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="DSR Type"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popupdsrtype"
+                    android:text="NA"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRowApprovedRemarks"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Approved Remarks"
+                    android:textColor="@color/textHeader"
+                    android:textSize="@dimen/text_one" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="NA"
+                    android:id="@+id/popupapprovedremarks"
+                    android:textColor="@color/textDataColor"
+                    android:textSize="@dimen/text_one" />
+            </TableRow>
+        </TableLayout>
+        </android.support.v7.widget.CardView>
+            <!--Start Button-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/orderOnOrderMgnt"
+                    android:text="Order"
+                    android:textAllCaps="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/demoOnOrderMgmt"
+                    android:text="Demo"
+                    android:textAllCaps="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/button_margin"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/failedVisitOnOrderMgmt"
+                    android:text="Failed Visit"
+                    android:textAllCaps="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/comptitorOnOrderMgmt"
+                    android:layout_alignParentTop="true"
+                    android:text="Competitor"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+
+                    />
+
+                <Button
+                    android:id="@+id/collectionOnOrderMgmt"
+                    android:layout_alignParentTop="true"
+                    android:text="Party Collection"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/relalayout1"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/Layout"
+                android:background="#000"
+                android:orientation="horizontal"></LinearLayout>-->
+            <LinearLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/Layout">
+
+                <Button
+                    android:id="@+id/distributerdiscussion"
+                    android:text="Dist.Disscussion"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/distributerCollection"
+                    android:text="Dist.Collection"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/distributerfailedvisit"
+                    android:text="Dist.Failed Visit"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/distributerStcok"
+                    android:text="Dist. Stock"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/button_margin"
+                    android:layout_height="@dimen/pendinsyn_button_height"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/button_style"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <!--End Button-->
+        </TableLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

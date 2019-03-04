@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="3dp"
+    >
+    <TextView
+        android:id="@+id/displayNameLabel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="hi"
+        android:visibility="visible"
+        style="@style/textLebal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+         />
+    <TextView
+        android:id="@+id/sync_date_time_label"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="18 Aug 2017 05:04 PM"
+        android:layout_height="wrap_content"
+
+        android:textSize="@dimen/text_one"
+
+        android:gravity="right"
+        android:typeface="monospace"
+        android:textColor="#004300"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+
+        />
+</LinearLayout>

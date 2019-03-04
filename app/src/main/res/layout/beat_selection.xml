@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4052b5"
+    >
+
+    <ImageView
+        android:id="@+id/beat_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tint="#FFF"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:foregroundTint="#fff"
+        android:src="@drawable/filter"
+        android:layout_weight="0.5"
+        />
+    <ImageView
+        android:id="@+id/addnewparty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="#FFF"
+        android:layout_weight="0.5"
+         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/start_visit"
+        android:id="@+id/next"
+        android:layout_weight="0.5"
+        android:tint="#FFF" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/purchase_order"
+        android:id="@+id/sum"
+        android:layout_weight="0.5"
+        android:tint="#FFF" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/clear"
+        android:id="@+id/clear"
+        android:layout_weight="0.5"
+        android:tint="#FFF"
+
+        />
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_leave_approval"
+    android:layout_width="match_parent"
+    android:background="@color/backgroung_color"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.dm.crmdm_app.LeaveApproval">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/above_footer">
+    <LinearLayout
+        android:id="@+id/linearLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_nw1"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_Sales"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_partyType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Salestextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textLebal"
+                />
+            <Spinner
+                android:id="@+id/salesPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:drawSelectorOnTop="true"
+                android:prompt="@string/title_selectsalesPerson"
+                android:textSize="@dimen/text_two"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="#666666"
+                android:orientation="horizontal"
+                android:id="@+id/salesL"></LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fillBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="Go"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:soundEffectsEnabled="true"/>
+
+       <!-- <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/btn">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="horizontal">
+
+                <ListView
+                    android:id="@+id/Leaveaprovallist"
+                    style="@style/listStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:listSelector="#fff" />
+
+            </LinearLayout>
+        </HorizontalScrollView>-->
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/above_footer"
+        android:layout_marginTop="5dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/Leaveaprovallist"
+                    style="@style/listStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone"
+                    android:dividerHeight="10dp"
+                    android:divider="@android:color/transparent"
+                    android:listSelector="#fff" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

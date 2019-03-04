@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:id="@+id/anplv">
+
+    </ListView>
+
+    <!-- <android.support.v7.widget.RecyclerView
+         android:id="@+id/anprv"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"/>-->
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acpLinearLayout"
+        android:orientation="vertical">
+     <ListView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/anplv">
+
+     </ListView>
+    </LinearLayout>-->
+</LinearLayout>

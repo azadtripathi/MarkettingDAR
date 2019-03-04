@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:thickness="1dp"
+    android:shape="rectangle">
+    <stroke android:width="2dp"
+        android:color="#D7D7D7"/>
+    <corners android:radius="5dp" />
+    &lt;!&ndash;<gradient
+        android:startColor="@android:color/holo_green_dark"
+        android:endColor="@android:color/holo_green_dark"
+        android:type="linear"
+        android:angle="270"/>&ndash;&gt;
+    <solid android:color="#fff"/>
+</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#cef6f6" />
+            <corners android:radius="5dp"/>
+            <!-- Not needed anymore after using padding and divider in ListView-->
+            <!-- <stroke android:width="20dp"/> -->
+        </shape>
+    </item>
+
+    <item android:right="0.5dp" android:left="0.5dp" android:top="0.5dp" android:bottom="1.5dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#cef6f6"/>
+            <corners android:radius="5dp"/>
+            <!-- Not needed anymore after using padding and divider in ListView-->
+            <!-- <stroke android:width="20dp"/> -->
+            <padding android:left="2dp" android:right="2dp"
+                android:top="2dp" android:bottom="2dp" />
+        </shape>
+    </item>
+</layer-list>

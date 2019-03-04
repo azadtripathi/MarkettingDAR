@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dk_gray_border"
+    android:padding="2dp"
+
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TableRow>
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="DocID" />
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Employee Name" />
+        </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/docid"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s" />
+                <TextView
+                    android:id="@+id/empname"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Travel From Date" />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Travel To Date"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/travelfromdate"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s" />
+                <TextView
+                    android:id="@+id/traveltodate"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Status" />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Ammount"
+                     />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/status"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s"/>
+                <TextView
+                    android:id="@+id/amount"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s"
+                   />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Approved Amount"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/appamt"
+                    android:text="s"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+
+
+            </TableRow>
+            <TableRow android:visibility="gone">
+                <TextView
+                    android:text="Reason : "
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+                <TextView
+                    android:id="@+id/reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text=""
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/padding_one" />
+            </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/traDSR"
+            android:background="#666666"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"></LinearLayout>
+
+    </TableLayout>
+</LinearLayout>
+
+
+    <!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:weightSum="3"
+            android:padding="@dimen/padding_one"
+            android:orientation="horizontal">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/appDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="@dimen/padding"
+                        android:text="s"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/padding_one" />
+                    <TextView
+                        android:id="@+id/fromDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingBottom="@dimen/padding"
+                        android:text="s"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/padding_one" />
+                    <TextView
+                        android:id="@+id/toDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingBottom="@dimen/padding"
+                        android:text="s"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/padding_one" />
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingBottom="@dimen/padding"
+                        android:text="s"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/padding_one" />
+                </TableRow>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/traDSR"
+                    android:background="#666666"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"></LinearLayout>
+                <TableRow android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_one"
+                        android:paddingRight="@dimen/padding_one"
+                        android:paddingBottom="@dimen/padding"
+                        android:text="Reason : "
+                        android:textColor="#000"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/padding_one" />
+                    <TextView
+                        android:id="@+id/reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_three"
+                        android:paddingRight="@dimen/padding_one"
+                        android:paddingBottom="@dimen/padding"
+                        android:text=""
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/padding_one" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>-->

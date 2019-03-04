@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        >
+
+        <TableRow
+            android:background="#839fca"
+            >
+            <TextView
+                android:text="Beat"
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/Text1"
+                />
+
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Area"
+                android:id="@+id/Text2"
+                />
+
+        </TableRow>
+
+        <TableRow
+            >
+            <TextView
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="beat name"
+                android:id="@+id/beatname"
+                />
+
+            <TextView
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="area"
+                android:id="@+id/areaname"
+                />
+
+        </TableRow>
+
+        <!--row 2-->
+
+        <TableRow
+            >
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Sync ID"
+                android:id="@+id/Text7"
+
+                />
+
+
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Description"
+                android:id="@+id/Text8"
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            >
+            <TextView
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/syncId"
+                />
+
+            <TextView
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/description"
+
+                />
+
+        </TableRow>
+
+<!--row 3-->
+
+
+        <TableRow
+            >
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Active"
+                android:id="@+id/activeText"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#FFFFFF"
+            >
+            <TextView
+                style="@style/neweditLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="No"
+                android:id="@+id/active"
+                />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"></LinearLayout>
+</LinearLayout>
+
+

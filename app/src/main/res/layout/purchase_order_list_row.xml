@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/leftpanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/rightpanel"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/productNameOnPruchaseOrder"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:inputType="textMultiLine"
+            android:text="Product Name"
+            android:textColor="#6a6969"
+            android:textSize="@dimen/text_two"
+            android:typeface="monospace" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/listSubItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/leftpanel"
+            android:layout_marginBottom="15dp"
+
+            android:text="Qty"
+            android:textColor="#6a6969"
+            android:visibility="gone"
+            android:typeface="serif"
+            android:textSize="@dimen/text_one" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/priceView" />
+
+
+
+        <TextView
+            android:id="@+id/quantityOnPruchaseOrder"
+            style="@style/listSubItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+
+            android:layout_toRightOf="@+id/textView2"
+            android:gravity="center_vertical|right"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:padding="4dp"
+            android:textColor="#194bff"
+            android:textSize="@dimen/text_one" />
+
+        <TextView
+            android:id="@+id/unitOnPruchaseOrder"
+            style="@style/listSubItemStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quantityOnPruchaseOrder"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/quantityOnPruchaseOrder"
+            android:text="Unit"
+            android:textColor="#6a6969"
+            android:visibility="gone"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_alignTop="@+id/quantityOnPruchaseOrder"
+
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

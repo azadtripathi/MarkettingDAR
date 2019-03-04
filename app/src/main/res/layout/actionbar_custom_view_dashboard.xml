@@ -1,0 +1,103 @@
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/patient_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:theme="@style/AppTheme.Patient"
+    android:background="?attr/colorPrimary"
+    android:minHeight="@dimen/abc_action_bar_default_height_material">
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:src="@drawable/crm_dm1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acvdun"
+        android:text="Hi"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="left"
+        android:textColor="#ffffff"
+        android:typeface="monospace"
+        android:textSize="@dimen/text_two"
+        />
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="32dp"
+        android:contentDescription="Hello"
+        android:layout_height="32dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/logout"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acvdun"
+        android:layout_gravity="right"
+        >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acvdun"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/logout"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="Hello"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:tint="#ffffff"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/notification"
+            android:id="@+id/nacvdNotificationImage"/>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/acvdNotification"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="right|top"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:fontFamily="sans-serif"
+            android:visibility="invisible"
+            android:background="@drawable/circle_view"
+            android:layout_alignParentTop="true" />
+    </FrameLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_toLeftOf="@+id/acvdun"
+        android:layout_width="40dp"
+        android:contentDescription="Hello"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:tint="#ffffff"
+        android:onClick="onDashboardClick"
+
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+
+        android:id="@+id/nacvdNotificationImage"/>
+
+</android.support.v7.widget.Toolbar>
+

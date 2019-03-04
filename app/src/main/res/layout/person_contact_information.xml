@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <!--<TableLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@android:color/transparent"-->
+
+        <!--android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nmLable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:text="Name : " />
+
+        <TextView
+            android:id="@+id/pName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="left"
+            android:textColor="#fff"
+
+
+            android:typeface="monospace"
+            android:text="PersonName"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mbLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center_vertical"
+            android:text="Mobile : "
+            android:typeface="monospace"
+
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/pPhone"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="left"
+            android:textColor="#fff"
+android:typeface="monospace"
+
+            android:text="Phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:id="@+id/emLabel"
+            android:gravity="center_vertical"
+            android:textColor="#fff"/>
+        <TextView
+            android:id="@+id/pEmail"
+            android:layout_width="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="left"
+            android:typeface="monospace"
+            android:textColor="#fff"
+
+            android:textColorLink="#fff"
+
+            android:autoLink="all"
+            android:text="Email"/>
+   </LinearLayout>
+
+
+    </LinearLayout>

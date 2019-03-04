@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_border"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#4052b5"
+            android:padding="10dp"
+            android:weightSum="1">
+            <include layout="@layout/discussion_with_distributor"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:layout_above="@+id/footer"
+        android:background="@drawable/boder_nw1"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lodgingLayout"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/fromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:ems="10"
+                        android:hint="From Date: *"
+                        android:inputType="date"
+                        android:textSize="@dimen/text_two"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                app:met_floatingLabel="highlight"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/toDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:ems="10"
+                    android:hint="To Date: *"
+                    android:inputType="date"
+                    android:textSize="@dimen/text_two"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FText"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="From Time: *"
+                    style="@style/textLebal"
+
+                    />
+                <Spinner
+                    android:id="@+id/fromTimeSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="marquee"
+                    android:prompt="@string/title_spinner_expense"
+                    android:spinnerMode="dialog"
+                    android:dropDownVerticalOffset="50dp"
+                    android:textSize="12dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#000"
+                    android:id="@+id/area_layout"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FText"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="To Time: *"
+                    style="@style/textLebal"
+                    />
+                <Spinner
+                    android:id="@+id/toTimeSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="marquee"
+                    android:prompt="@string/title_spinner_expense"
+                    android:spinnerMode="dialog"
+                    android:dropDownVerticalOffset="50dp"
+                    android:textSize="12dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/area_layout"
+                    android:orientation="horizontal"></LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                app:met_floatingLabel="highlight"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ems="10"
+                    android:hint="Amount: *"
+                    android:inputType="number"
+                    android:visibility="visible"
+                    android:maxLength="12"
+                    android:textSize="@dimen/text_two"
+                    >
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                app:met_floatingLabel="highlight"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/remark"
+                    android:textSize="@dimen/text_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:ems="10"
+                    android:hint="Remark: *"
+                    android:inputType="text"
+                    >
+                </EditText>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/SelectStateBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text_two"
+                        android:hint="State: *" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button android:id="@+id/create"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drop_down_image"/>
+            </RelativeLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:background="#666666">-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear6"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/SelectBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text_two"
+                        android:hint="City: *" />
+
+                </android.support.design.widget.TextInputLayout>
+                <Button android:id="@+id/create"
+                    android:layout_width="10dp"
+                    android:layout_height="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/drop_down_image"/>
+
+            </RelativeLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:background="#666666">-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+        <include layout="@layout/note_layout"
+               />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

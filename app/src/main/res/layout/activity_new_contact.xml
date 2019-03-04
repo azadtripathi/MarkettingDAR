@@ -1,0 +1,1667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dk_gray_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                app:met_floatingLabel="highlight">
+
+                                <EditText
+                                    android:id="@+id/aacFirstName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/textView1"
+                                    android:digits="@string/digits_name"
+                                    android:ems="10"
+                                    android:focusable="true"
+                                    android:hint="Name: *"
+                                    android:inputType="textCapWords"
+                                    android:maxLength="@integer/max_len_name"
+
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorUnderline"
+                            android:orientation="horizontal"
+                            android:visibility="gone"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Industry:"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical"
+                            android:paddingBottom="2dp">
+
+                            <Spinner
+                                android:id="@+id/industrySpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:prompt="@string/title_Tag"
+                                android:spinnerMode="dialog"
+                                android:textSize="@dimen/text_two" />
+
+                            <LinearLayout
+                                android:id="@+id/linearA3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorUnderline"
+                                android:orientation="horizontal"></LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Sub Industry:"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp">
+
+                            <Spinner
+                                android:id="@+id/subindustrySpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:prompt="@string/title_Tag"
+                                android:spinnerMode="dialog"
+                                android:textSize="@dimen/text_two" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/linearA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorUnderline"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                app:met_floatingLabel="highlight">
+
+                                <EditText
+                                    android:id="@+id/aacLastName"
+                                    style="@style/editLebal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/textView1"
+                                    android:ems="10"
+                                    android:focusable="true"
+                                    android:hint="Last Name: *"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/text_two" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingRight="3dp"
+                            android:visibility="visible">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="2.7"
+                                android:paddingLeft="5dp"
+                                app:met_floatingLabel="highlight">
+
+                                <EditText
+                                    android:id="@+id/aacCompany"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:digits="@string/digits_company"
+                                    android:ems="10"
+                                    android:hint="Company: *"
+                                    android:inputType="textCapWords"
+                                    android:maxLength="@integer/max_len_company">
+
+                                </EditText>
+                                <!-- <EditText
+                                     android:id="@+id/aacCompany"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_alignLeft="@+id/textView1"
+                                     android:hint="Company: *"
+                                     android:ems="10"
+                                     style="@style/editLebal"
+                                     android:singleLine="true"
+                                     android:textSize="@dimen/text_two"
+                                     android:inputType="text"
+                                     android:focusable="true"
+                                     />-->
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <CheckBox
+                                android:id="@+id/isDealerCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Is Dealer" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/hqText"
+                                style="@style/editLebal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/textView1"
+                                android:digits="@string/digits_number"
+                                android:enabled="false"
+                                android:focusable="true"
+                                android:hint="HQ Name:"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textSize="@dimen/text_two" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/aacAddCompayDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Add Company Details"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutAddCompanyDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:visibility="visible"></LinearLayout>
+                        <!--<android.support.v7.widget.CardView
+                            android:id="@+id/card_view1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            card_view:cardCornerRadius="2dp"
+                            card_view:cardElevation="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp">-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/dk_gray_border"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/input_layout_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:paddingLeft="5dp"
+                                    app:met_floatingLabel="highlight">
+
+                                    <EditText
+                                        android:id="@+id/aacCompanyAddress"
+                                        style="@style/editLebal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/textView1"
+                                        android:digits="@string/digits_address"
+                                        android:ems="10"
+                                        android:focusable="true"
+                                        android:hint="Address:"
+                                        android:inputType="text"
+                                        android:maxLength="@integer/max_len_input_text"
+                                        android:textSize="@dimen/text_two" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <!--  <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+                                  <android.support.design.widget.TextInputLayout
+                                      android:id="@+id/input_layout_name"
+                                      android:layout_width="match_parent"
+                                      android:paddingLeft="5dp"
+                                      android:layout_marginTop="5dp"
+                                      app:met_floatingLabel="highlight"
+                                      android:layout_height="wrap_content">
+                                      <AutoCompleteTextView
+                                          android:id="@+id/aacspineerCompanyCity"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:layout_alignParentTop="true"
+                                          android:layout_centerHorizontal="true"
+                                          android:hint="City: *"
+                                          android:singleLine="true"
+                                          android:ems="10" >
+
+                                      </AutoCompleteTextView>
+                                  </android.support.design.widget.TextInputLayout>
+                              </LinearLayout>-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Country: *"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/aacspineerCompanyCountry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:dropDownVerticalOffset="50dp"
+                                    android:prompt="@string/title_selectContry"
+                                    android:spinnerMode="dialog"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearA3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorUnderline"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="State: *"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/aacspineerCompanyState"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:dropDownVerticalOffset="50dp"
+                                    android:prompt="@string/title_selectState"
+                                    android:spinnerMode="dialog"
+                                    android:textSize="12dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearA3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorUnderline"
+                                android:orientation="horizontal"></LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="City: *"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Spinner
+                                    android:id="@+id/aacspineerCompanyCity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="7dp"
+                                    android:layout_weight="0.5"
+                                    android:dropDownVerticalOffset="50dp"
+                                    android:prompt="@string/title_selectCity"
+                                    android:spinnerMode="dialog"
+                                    android:textSize="@dimen/text_two" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearA3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@color/colorUnderline"
+                                android:orientation="horizontal"></LinearLayout>
+                            <!-- <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content">
+                                 <android.support.design.widget.TextInputLayout
+                                     android:id="@+id/input_layout_name"
+                                     android:layout_width="match_parent"
+                                     android:paddingLeft="5dp"
+                                     android:layout_marginTop="10dp"
+                                     app:met_floatingLabel="highlight"
+                                     android:layout_height="wrap_content">
+                                     <EditText   style="@style/editLebal"
+                                         android:id="@+id/aacspineerCompanyState"
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:layout_alignLeft="@+id/textView1"
+                                         android:hint="State: "
+                                         android:ems="10"
+                                         android:singleLine="true"
+                                         android:textSize="@dimen/text_two"
+                                         android:inputType="text"
+                                         android:focusable="true"
+                                         />
+                                 </android.support.design.widget.TextInputLayout>
+                             </LinearLayout>-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/input_layout_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:paddingLeft="5dp"
+                                    app:met_floatingLabel="highlight">
+
+                                    <EditText
+                                        android:id="@+id/aacCompanyZip"
+                                        style="@style/editLebal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/textView1"
+                                        android:focusable="true"
+                                        android:hint="Zip:"
+                                        android:inputType="number"
+                                        android:maxLength="6"
+                                        android:textSize="@dimen/text_two" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Site address same as company address:" />
+
+                                <CheckBox
+                                    android:id="@+id/accSameAsCompany"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/input_layout_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:paddingLeft="5dp"
+                                    app:met_floatingLabel="highlight">
+
+                                    <EditText
+                                        android:id="@+id/aacDescription"
+                                        style="@style/editLebal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/textView1"
+                                        android:focusable="true"
+                                        android:hint="Remarks:"
+                                        android:isScrollContainer="true"
+                                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                                        android:scrollbarStyle="insideOverlay"
+                                        android:scrollbars="vertical"
+                                        android:scrollHorizontally="true"
+                                        android:textSize="@dimen/text_two" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/input_layout_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:paddingLeft="5dp"
+                                    app:met_floatingLabel="highlight">
+
+                                    <EditText
+                                        android:id="@+id/aacCompanyPhone"
+                                        style="@style/editLebal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignLeft="@+id/textView1"
+                                        android:focusable="true"
+                                        android:hint="Phone :"
+                                        android:inputType="number"
+                                        android:isScrollContainer="true"
+                                        android:maxLength="10"
+                                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                                        android:scrollbarStyle="insideOverlay"
+                                        android:scrollbars="vertical"
+                                        android:scrollHorizontally="true"
+                                        android:textSize="@dimen/text_two" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"></LinearLayout>
+                        <!--  </android.support.v7.widget.CardView>-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/aacJobTitle"
+                                style="@style/editLebal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/textView1"
+                                android:ems="10"
+                                android:focusable="true"
+                                android:hint="Job Title: *"
+                                android:inputType="text"
+                                android:textSize="@dimen/text_two" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/dk_gray_border"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                app:met_floatingLabel="highlight">
+
+                                <EditText
+                                    android:id="@+id/aacAddress"
+                                    style="@style/editLebal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/textView1"
+                                    android:digits="@string/digits_address"
+                                    android:ems="10"
+                                    android:focusable="true"
+                                    android:hint="Address:"
+                                    android:inputType="textCapWords"
+                                    android:maxLength="@integer/max_len_input_text"
+                                    android:textSize="@dimen/text_two" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="5dp">-->
+
+                        <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:text="Country:"-->
+                        <!--android:textSize="14sp" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<Spinner-->
+                        <!--android:id="@+id/aacspineerCountry"-->
+
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:dropDownVerticalOffset="50dp"-->
+                        <!--android:prompt="@string/title_selectContry"-->
+                        <!--android:spinnerMode="dialog"-->
+                        <!--android:textSize="@dimen/text_two" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                        <!--android:id="@+id/linearA3"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginLeft="9dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:background="@color/colorUnderline"-->
+                        <!--android:orientation="horizontal"></LinearLayout>-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="State:"
+
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <Spinner
+                                android:id="@+id/aacspineerState"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:dropDownVerticalOffset="50dp"
+                                android:prompt="@string/title_selectState"
+                                android:spinnerMode="dialog"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorUnderline"
+                            android:orientation="horizontal"
+                            android:visibility="gone"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="City:"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/aacspineerCity"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="0.5"
+                                android:dropDownVerticalOffset="50dp"
+                                android:prompt="@string/title_selectCity"
+                                android:spinnerMode="dialog"
+                                android:textSize="@dimen/text_two" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorUnderline"
+                            android:orientation="horizontal"></LinearLayout>
+                        <!-- <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+                             <android.support.design.widget.TextInputLayout
+                                 android:id="@+id/input_layout_name"
+                                 android:layout_width="match_parent"
+                                 android:paddingLeft="5dp"
+                                 android:layout_marginTop="5dp"
+                                 app:met_floatingLabel="highlight"
+                                 android:layout_height="wrap_content">
+                                 <AutoCompleteTextView
+                                     android:id="@+id/aacspineerCity"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_alignParentTop="true"
+                                     android:layout_centerHorizontal="true"
+                                     android:hint="City: *"
+                                     android:singleLine="true"
+                                     android:ems="10" >
+
+                                 </AutoCompleteTextView>
+                             </android.support.design.widget.TextInputLayout>
+                         </LinearLayout>-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                app:met_floatingLabel="highlight">
+
+                                <EditText
+                                    android:id="@+id/aacZip"
+                                    style="@style/editLebal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/textView1"
+                                    android:digits="@string/digits_number"
+                                    android:focusable="true"
+                                    android:hint="Zip:"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:textSize="@dimen/text_two" />
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/input_layout_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                app:met_floatingLabel="highlight">
+
+                                <EditText
+                                    android:id="@+id/aacPhone"
+                                    style="@style/editLebal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignLeft="@+id/textView1"
+                                    android:digits="@string/digits_number"
+                                    android:focusable="true"
+                                    android:hint="Phone:"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:textSize="@dimen/text_two" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Contacts-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/dk_gray_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/aacPersonName"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:digits="@string/digits_name"
+                            android:ems="10"
+                            android:focusable="true"
+                            android:hint="Contact Name: *"
+                            android:inputType="textCapWords"
+                            android:maxLength="@integer/max_len_input_text"
+                            android:textSize="@dimen/text_two" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <Spinner
+                            android:id="@+id/adcspinnerJobTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="28dp"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="bottom"
+                            android:prompt="@string/title_selectJobTitle"
+                            android:spinnerMode="dialog"
+                            android:textSize="@dimen/text_two" />
+
+                        <LinearLayout
+                            android:id="@+id/linearA3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorUnderline"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/aacmbno"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/digits_number"
+                            android:hint="Enter Phone No. *"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:textSize="@dimen/text_two"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/aacPersonEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:ems="10"
+                            android:focusable="true"
+                            android:hint="Email:"
+                            android:inputType="text"
+                            android:maxLength="30"
+                            android:textSize="@dimen/text_two" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/addPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/addfields" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dynamicfieldsPersonInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dk_gray_border"
+
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.5"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/aacURL"
+                                style="@style/editLebal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:hint="Web :"
+                                android:inputType="textUri"
+                                android:maxLength="50"
+                                android:textSize="@dimen/text_two" />
+                        </android.support.design.widget.TextInputLayout>
+                        <!-- <Spinner
+                             android:id="@+id/adcspinnerURL"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="5dp"
+                             android:spinnerMode="dialog"
+                             android:prompt="@string/title_Type"
+                             android:dropDownVerticalOffset="50dp"
+                             android:textSize="@dimen/text_two"
+                             android:layout_weight="0.5"
+                             style="@style/Widget.AppCompat.Spinner.Underlined"
+                             android:theme="@style/ThemeSpinner"
+                             android:layout_gravity="bottom"
+                             />-->
+                        <ImageView
+                            android:id="@+id/addfielsURL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/addfields"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dynamicfieldsURL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dk_gray_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Status:"
+
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <Spinner
+                        android:id="@+id/aacspineerStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:dropDownVerticalOffset="50dp"
+                        android:prompt="@string/title_Status"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/text_two" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorUnderline"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Party Ref By:"
+
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <Spinner
+                        android:id="@+id/aacspineerLeadSource"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:dropDownVerticalOffset="50dp"
+                        android:prompt="@string/title_LeadSource"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/text_two" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorUnderline"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/party_addbyText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:focusable="true"
+                            android:hint="Party Added By:"
+                            android:maxLength="@integer/max_len_remark"
+                            android:textSize="@dimen/text_two" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Dealer Name:"
+
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <Spinner
+                        android:id="@+id/dealerSpiner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:dropDownVerticalOffset="50dp"
+                        android:prompt="@string/tite_dealer_name"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/text_two" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearA3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorUnderline"
+                android:orientation="horizontal"
+                android:visibility="gone"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/dk_gray_border"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Product:"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/aacspineerProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:dropDownVerticalOffset="50dp"
+                        android:prompt="@string/title_product"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/text_two" />
+
+                    <LinearLayout
+                        android:id="@+id/linearA3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorUnderline"
+                        android:orientation="horizontal"></LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/valueText"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/digits_number"
+                            android:hint="Value"
+
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/text_two"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/advDetailText"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/digits_number"
+                            android:hint="Adv Detail"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/text_two"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="5dp"
+                    app:met_floatingLabel="highlight">
+
+                    <EditText
+                        android:id="@+id/empNoText"
+                        style="@style/editLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="@string/digits_number"
+                        android:hint="No Of Employee"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="@dimen/text_two"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/siteNoText"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/digits_number"
+                            android:hint="Site"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/text_two"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/computerNoText"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/digits_number"
+                            android:hint="Computer"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:textSize="@dimen/text_two"
+
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Owner:"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp">
+
+                    <Spinner
+                        android:id="@+id/aacspineerOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:dropDownVerticalOffset="50dp"
+                        android:prompt="@string/title_Owner"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/text_two" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorUnderline"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/onDateText"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:digits="@string/digits_address"
+                            android:ems="10"
+                            android:focusable="true"
+                            android:hint="On Date:"
+                            android:inputType="none"
+                            android:maxLength="@integer/max_len_input_text"
+                            android:textSize="@dimen/text_two" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/validuptoText"
+                            style="@style/editLebal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:digits="@string/digits_address"
+                            android:ems="10"
+                            android:focusable="true"
+                            android:hint="Valid Upto:"
+                            android:inputType="none"
+                            android:maxLength="@integer/max_len_input_text"
+                            android:textSize="@dimen/text_two" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorUnderline"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="5dp"
+                    app:met_floatingLabel="highlight">
+
+                    <EditText
+                        android:id="@+id/softwareUsingText"
+                        style="@style/editLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="@string/digits_number"
+                        android:hint="Software Using"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="@dimen/text_two"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorUnderline"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/aacBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:focusable="true"
+                            android:hint="Remark:"
+                            android:maxLength="@integer/max_len_remark"
+                            android:textSize="@dimen/text_two" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorUnderline"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Active:"
+                        android:textColor="@color/textHeader"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/aacActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:checked="true"
+                        android:enabled="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Block TeleCaller:"
+                        android:textColor="@color/textHeader"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/aacblockTeleActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:checked="true"
+                        android:enabled="false" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

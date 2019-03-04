@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    android:id="@+id/fdrRelativeLayout"
+
+
+
+    >
+    
+     <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="2dp"
+        android:layout_alignParentRight="true"
+         android:background="@drawable/dk_gray_border"
+
+        android:orientation="horizontal">
+
+<TableLayout
+    android:layout_width="match_parent"
+android:background="#ffffff"
+    android:layout_height="match_parent">
+      <TableRow>
+        <TextView
+            style="@style/newtextLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+              android:text="Party Name"
+
+             />
+          <TextView
+              style="@style/newtextLebal"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.5"
+              android:text="Document Date"
+
+              />
+
+    </TableRow>
+
+    <TableRow
+
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/name"
+            style="@style/neweditLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/visit_date"
+            style="@style/neweditLebal"
+            android:layout_width="0dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+           android:text=""
+            
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            style="@style/newtextLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Document No."
+            />
+        <TextView
+            style="@style/newtextLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Product Class"
+            />
+
+
+    </TableRow>
+    <TableRow
+
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/docno"
+            style="@style/neweditLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text=""
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
+        <TextView
+            android:id="@+id/pclass"
+            style="@style/neweditLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text=""
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            style="@style/newtextLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Product Segment"
+            />
+        <TextView
+            style="@style/newtextLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Product Group"
+            />
+
+
+    </TableRow>
+    <TableRow
+
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/psegment"
+            style="@style/neweditLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text=""
+            />
+        <TextView
+            android:id="@+id/pgroup"
+            style="@style/neweditLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text=""
+            />
+
+
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            style="@style/newtextLebal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Remark"
+             />
+            </TableRow>
+    <TableRow
+
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/remark"
+            style="@style/neweditLebal"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text=""
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/imageTableRow"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/viewImage"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="View Image"
+            style="@style/textLebal"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_style"
+            />
+    </TableRow>
+        </TableLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:visibility="gone"
+
+        android:layout_below="@+id/Layout"
+        android:layout_marginTop="3dp"
+        android:background="#e3e3e3"></LinearLayout>
+    </RelativeLayout>

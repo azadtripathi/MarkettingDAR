@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:padding="2sp"
+    >
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:background="@drawable/dk_gray_border"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:background="#839fca">
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Document Date" />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Distributor Name"
+                    android:textColor="#000"
+                    />
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/disdate"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="24/12/15"
+                    />
+                <TextView
+                    android:id="@+id/disname"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="xyz"
+                   />
+            </TableRow>
+
+            <TableRow
+                android:background="#839fca">
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Start Time" />
+
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="End Time"
+                    android:id="@+id/textView" />
+            </TableRow>
+            <TableRow
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/starttime"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="24/12/15" />
+                <TextView
+                    android:id="@+id/endtime"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="03:30"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:background="#839fca">
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Next Visit Date" />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Next Visit Time" />
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/visitdate"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="24/12/15" />
+                <TextView
+                    android:id="@+id/visittime"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="12:30"
+                     />
+            </TableRow>
+            <TableRow
+                android:id="@+id/fddrtablerow"
+                android:background="#839fca">
+                <TextView
+                    android:id="@+id/stockTxt"
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Stock"
+
+                     />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Remark"
+                     />
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowdetails"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/stock"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="Stock"
+                     />
+                <TextView
+                    android:id="@+id/remark"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:enabled="false"
+                    android:text="Remark"
+                     />
+            </TableRow>
+            <TableRow android:gravity="center"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/viewImage"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="View Image"
+                    style="@style/textLebal"
+                    android:background="@drawable/button_style"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/text_two"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:visibility="gone"
+        android:layout_below="@+id/Layout"></LinearLayout>
+</RelativeLayout>

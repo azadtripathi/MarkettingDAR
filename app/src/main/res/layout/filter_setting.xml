@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            app:met_floatingLabel="highlight">
+            <EditText
+                android:id="@+id/fromDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="From Date: *"
+                android:editable="false"
+                android:textSize="@dimen/text_two"
+                android:textColor="#000"
+                android:text=""
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            app:met_floatingLabel="highlight" >
+            <EditText
+                android:id="@+id/toDate"
+                android:textSize="@dimen/text_two"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="To Date: *"
+                android:editable="false"
+                android:textColor="#000"
+                android:text=""
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/asSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/button_style"
+            android:requiresFadingEdge="vertical"
+            android:text="Go"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

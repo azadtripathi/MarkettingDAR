@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:background="@color/backgroung_color"
+
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/mainSerchPannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/fromDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:hint="From Date:"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_two" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/toDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView1"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:hint="To Date:"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_two" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1.5"
+                        android:text="Party"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:theme="@style/ThemeSpinner"
+                        android:layout_marginLeft="5dp"
+                        android:spinnerMode="dialog"
+                        android:prompt="@string/title_selectParty"
+                        android:dropDownVerticalOffset="50dp"
+                        android:textSize="12dp"
+                        android:layout_weight="0.5"
+                        android:id="@+id/prParty">
+
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/asSubmit"
+                    android:text="Find"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textColor="@color/white"
+                    android:layout_margin="@dimen/button_margin"
+                    android:background="@drawable/button_style"
+                    android:requiresFadingEdge="vertical"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_border"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#4052b5"
+            android:padding="10dp"
+            android:weightSum="1">
+            <include layout="@layout/find_filterbar"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/mainSerchPannel"
+        android:layout_toRightOf="@+id/card_view2"
+        android:layout_toEndOf="@+id/card_view2"
+        android:layout_above="@+id/footer" />
+
+
+</RelativeLayout>

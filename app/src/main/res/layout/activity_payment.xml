@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cordinat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_nw1"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/chqLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/amtChq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Enter Amount:*"
+                            android:inputType="numberDecimal"
+                            android:maxLength="6"
+                            android:textSize="@dimen/text_size">
+
+                            <requestFocus />
+                        </EditText>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/paymentmode01"
+                        style="@style/textLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Payment Mode: *" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGrpMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/chqRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cheque"
+                            android:textColor="#6a6969"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/draftRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Draft"
+                            android:textColor="#6a6969"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rtgsRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="RTGS"
+                            android:textColor="#6a6969"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/cashRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cash"
+                            android:textColor="#6a6969"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/NotCashLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/chqdraNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="@string/digits_character_without_space"
+                                android:ems="10"
+                                android:hint="Enter Instrument No.:*"
+                                android:inputType="text"
+                                android:maxLength="15"
+                                android:textSize="@dimen/text_size"
+
+                                />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/dateTextOnDsr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/dataPickerOnDsr"
+                                android:ems="10"
+                                android:gravity="center_vertical"
+                                android:hint="Instrument Date:*"
+                                android:inputType="date"
+                                android:textSize="@dimen/text_size" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/bankName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="@string/digits_character"
+                                android:ems="10"
+                                android:hint="Enter Bank Name:*"
+                                android:inputType="text"
+                                android:maxLength="50"
+                                android:textSize="@dimen/text_size" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight">
+
+                            <EditText
+                                android:id="@+id/branchAddressName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:digits="@string/digits_address"
+                                android:ems="10"
+                                android:hint="Enter Branch Address:*"
+                                android:inputType="text|textAutoComplete"
+                                android:maxLength="100"
+                                android:textSize="@dimen/text_size" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        app:met_floatingLabel="highlight">
+
+                        <EditText
+                            android:id="@+id/narrationChq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/digits_remark"
+                            android:ems="10"
+                            android:hint="Enter Remark:*"
+                            android:inputType="text|textAutoComplete|textMultiLine"
+                            android:maxLength="@integer/max_len_remark"
+                            android:textSize="@dimen/text_size" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/asSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+
+                        android:requiresFadingEdge="vertical"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/asCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_style"
+                        android:requiresFadingEdge="vertical"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

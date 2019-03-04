@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <View
+                android:id="@+id/vi"
+                android:layout_width="3dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tagCallName"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Call/Email"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                style="@style/textLebal"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_arrow_1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/vi"
+                android:layout_below="@id/tagCallName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/border"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:id="@+id/emailphoonelabel"
+                                android:textColor="#0073b7"
+
+                                style="@style/neweditLebal"
+                                android:text="Phone"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+
+                                style="@style/neweditLebal"
+                                android:padding="5dp"
+                                android:id="@+id/callPhone"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="#0073b7"
+                                style="@style/neweditLebal"
+                                android:text="Result"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                style="@style/neweditLebal"
+                                android:padding="5dp"
+                                android:id="@+id/callResult"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+android:visibility="gone"
+                                android:textStyle="bold"
+                                android:textColor="#0073b7"
+                                style="@style/neweditLebal"
+                                android:text=""/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                style="@style/neweditLebal"
+                                android:paddingTop="5dp"
+                                android:id="@+id/callNote"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textStyle="bold"
+                                android:textColor="#0073b7"
+                                style="@style/neweditLebal"
+                                android:text="By"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="N/A"
+                                style="@style/neweditLebal"
+                                android:padding="5dp"
+                                android:id="@+id/callNoteusername"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:visibility="visible"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:id="@+id/editCall"
+                                android:layout_width="65dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Edit"
+                                android:textColor="@color/white"
+                                android:layout_margin="@dimen/button_margin"
+                                android:background="@drawable/button_style"
+                                android:requiresFadingEdge="vertical"
+                                android:textStyle="bold"
+                                android:textAllCaps="false" />
+                            <TextView
+                                android:id="@+id/deleteCall"
+                                android:layout_width="65dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:backgroundTint="@color/tamato"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Delete"
+                                android:textColor="@color/white"
+                                android:layout_margin="@dimen/button_margin"
+                                android:background="@drawable/button_style"
+                                android:requiresFadingEdge="vertical"
+                                android:textStyle="bold"
+                                android:textAllCaps="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent" >
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_border"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#4052b5"
+            android:padding="10dp"
+            android:weightSum="1">
+            <include layout="@layout/dsr_footer1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear"
+                android:background="@drawable/boder_nw1">
+                <TextView
+                    android:id="@+id/appdate"
+                    style="@style/textLebal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText1"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="Application Date:"
+                    android:visibility="gone"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_name"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/applicationDate"
+                        style="@style/editLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Application Date:"
+                        android:paddingLeft="5dp"
+                        android:focusable="false"
+                        android:editable="false"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/applied"
+                        style="@style/textLebal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText1"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="Applied By:"
+                        android:visibility="gone"/>
+                    <EditText
+                        android:id="@+id/appliedBy"
+                        style="@style/textLebalDisable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Applied By:"
+                        android:paddingLeft="5dp"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/reportto"
+                        style="@style/textLebal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText1"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="Report To:"
+                        android:visibility="gone"/>
+                    <EditText
+                        android:id="@+id/ReportTo"
+                        style="@style/textLebalDisable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Report To:"
+                        android:paddingLeft="5dp"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear_Sales"
+                    android:orientation="vertical">
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_partyType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/spinner_text_transportModeOnDsr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:text=""
+                            />
+
+
+                        <!-- <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                             android:id="@+id/MaterialBetterSpinner"
+                             android:layout_width="fill_parent"
+                             android:layout_height="wrap_content"
+                             android:hint="Sales Person: *"
+                             app:met_baseColor="#000000"
+                             android:layout_marginLeft="10dp"
+
+                             />-->
+                        <!--android:theme="@style/Theme.AppCompat"-->
+                        <TextView
+                            android:id="@+id/timespendtextview"
+                            style="@style/textLebal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/editText1"
+                            android:gravity="right|center_vertical"
+                            android:paddingRight="10dp"
+                            android:text="Sales Person: *"
+                            android:visibility="gone"/>
+
+                        <Spinner
+                            android:id="@+id/MaterialBetterSpinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:spinnerMode="dialog"
+                            android:textSize="12dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/traDSR"
+
+
+                            android:background="#666666"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    app:met_floatingLabel="highlight"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/nodays"
+                        style="@style/textLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No. of Days: *"
+                        android:visibility="gone"
+                        />
+                    <EditText
+                        android:id="@+id/noOfDays"
+                        style="@style/editLebal"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="No. of Days: *"
+
+                        android:maxLength="4"
+                        android:inputType="numberDecimal"
+                        android:digits="0123456789."
+                        />
+                    <!-- -->
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="@dimen/padding"
+                        android:gravity="center"
+                        app:met_floatingLabel="highlight">
+                        <EditText
+                            android:id="@+id/fromDate"
+                            style="@style/editLebal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="From Date: *"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="left"
+                            android:gravity="left"
+                            android:editable="false"
+                            android:textColor="#000"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/both_fromleave"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/two"
+                        android:paddingLeft="@dimen/padding"
+                        app:met_floatingLabel="highlight">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:textSize="@dimen/text_one"
+                            android:id="@+id/from_text_Spinner"
+                            />
+                        <Spinner
+                            android:id="@+id/fromSpinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:spinnerMode="dialog"
+
+                            android:drawSelectorOnTop="true"
+                            android:prompt="@string/title_selectFromLeaveTime"
+                            android:textSize="@dimen/text_two"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/fromLinerSpinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#666666"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="@dimen/padding"
+                        android:gravity="center"
+                        app:met_floatingLabel="highlight">
+                        <EditText
+                            android:id="@+id/toDateEdit"
+                            style="@style/editLebal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="To Date: *"
+                            android:paddingLeft="5dp"
+                            android:editable="false"
+                            android:textColor="#000"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:id="@+id/both_toleave"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/two"
+                        android:paddingLeft="@dimen/padding"
+                        app:met_floatingLabel="highlight">
+                        <TextView
+                            android:id="@+id/to_text_Spinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:text=""
+                            android:textSize="@dimen/text_one"
+                            />
+
+                        <Spinner
+                            android:id="@+id/toSpinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:spinnerMode="dialog"
+                            android:drawSelectorOnTop="true"
+                            android:prompt="@string/title_selectLeaveTime"
+                            android:textSize="@dimen/text_two"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/toLinerSpinner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#666666"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_partyNameNew"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="10dp"
+                    app:met_floatingLabel="highlight"
+
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/reasonOfleave"
+                        style="@style/editLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reason: *"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/textLebal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To Date: *"
+                        android:visibility="gone"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:id="@+id/statusLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            style="@style/textstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status: *" />
+
+                        <RadioGroup
+                            android:id="@+id/approvalGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/approve"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:checked="true"
+                                android:text="Approved"
+                                android:textColor="#6a6969"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <RadioButton
+                                android:id="@+id/reject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:text="Rejected"
+                                android:textColor="#6a6969"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </RadioGroup>
+                    </RelativeLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_name"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:met_floatingLabel="highlight"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editText7"
+                            style="@style/editLebal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView10"
+                            android:layout_below="@+id/textView10"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:ems="10"
+                            android:hint="Remark: *"
+                            android:inputType="textMultiLine" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <include layout="@layout/tour_plan_footer"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/boder_nw1"
+                    android:id="@+id/linearSearchBox">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linear_Sales"
+                        android:orientation="vertical">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_partyType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/Salestextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/activity_vertical_margin"
+                                android:text="Sales Person: *"
+                                style="@style/textLebal"
+                                />
+                            <Spinner
+                                android:id="@+id/salesPerson"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:spinnerMode="dialog"
+                                android:drawSelectorOnTop="true"
+                                android:prompt="@string/title_selectsalesPerson"
+                                android:textSize="@dimen/text_two"
+
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:background="#666666"
+                                android:orientation="horizontal"
+                                android:id="@+id/salesL"></LinearLayout>
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            app:met_floatingLabel="highlight">
+                            <EditText
+                                android:id="@+id/fromDate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="From Date: *"
+                                android:editable="false"
+                                android:textSize="@dimen/text_two"
+                                android:textColor="#000"
+                                android:text=""
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            app:met_floatingLabel="highlight" >
+                            <EditText
+                                android:id="@+id/toDate"
+                                android:textSize="@dimen/text_two"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="To Date: *"
+                                android:editable="false"
+                                android:textColor="#000"
+                                android:text=""
+                                />
+                            <!--<Spinner-->
+                            <!--android:id="@+id/toSpinner"-->
+                            <!--style="@style/editLebal"-->
+                            <!--android:layout_width="fill_parent"-->
+                            <!--android:layout_height="25dp"-->
+
+                            <!--/>-->
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/DateBeatPlan"
+                        style="@style/editLebal"
+                        android:layout_width="@dimen/edit_width"
+                        android:layout_height="47dp"
+                        android:layout_alignTop="@+id/datePickerOnBeatPlan"
+                        android:layout_alignParentBottom="true"
+                        android:ems="10"
+                        android:gravity="center_vertical"
+                        android:hint="Date"
+                        android:inputType="date"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:visibility="gone"
+                        android:textSize="@dimen/text_size_one"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+                        <Button
+                            android:id="@+id/addTour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/padding_one"
+                            android:paddingRight="@dimen/padding_one"
+                            android:layout_margin="@dimen/button_margin"
+                            android:background="@drawable/button_style"
+                            android:requiresFadingEdge="vertical"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:text="Add Tour Plan"
+                            android:textAllCaps="false"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/TourPlanListLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFF"
+                    android:layout_gravity="center"
+                    >
+                    <ListView
+                        android:id="@+id/listView1"
+                        style="@style/listStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignLeft="@+id/linearlayout"
+                        android:layout_below="@+id/linearlayout"
+                        android:dividerHeight="1dp"
+                        android:divider="#000"
+                        android:cacheColorHint="#ffffff" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

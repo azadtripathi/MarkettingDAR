@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gstin_regitered_label">GSTIN Registered</string>
+    <string name="vendor_name">Vendor/Party Name:*</string>
+    <string name="igst_amt">IGST Amount:*</string>
+    <string name="cgst_amt">CGST Amount:*</string>
+    <string name="scgst_amt">SGST Amount:*</string>
+    <string name="notecalls">Note &amp; Calls</string>
+    <string name="app_name">Grahaak CRM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="login_input_hint">Enter User Id</string>
+    <string name="login_password_hint">Enter Password</string>
+    <string name="title_activity_login_activity">Login</string>
+    <string name="title_activity_dash_borad">DashBoard</string>
+    <string name="title_activity_main_activity">MainActivity</string>
+    <string name="title_activity_splash">Splash Screen</string>
+    <string name="title_activity_user_permission">User Permission</string>
+    <string name="title_activity_beat_selection">Beat Coverage</string>
+    <string name="title_activity_retailer_dashboard">Party Dashboard</string>
+    <string name="title_activity_book_order">Book Order</string>
+    <string name="title_activity_product_add">Add new Product</string>
+    <string name="title_activity_failed_visit">Failed Visit</string>
+    <string name="title_activity_new_party">New Party</string>
+    <string name="title_spinner_area">Select Area</string>
+    <string name="title_spinner_beat">Select Beat</string>
+    <string name="title_spinner_expense">Select One</string>
+    <string name="title_activity_history">History Party Wise</string>
+    <string name="title_activity_demo">Demo</string>
+    <string name="title_activity_daily_sales_report">Beat Coverage</string>
+    <string name="title_activity_order_management">Trade History</string>
+    <string name="title_activity_history_view">History View</string>
+    <string name="title_activity_party_list_on_date_wise_on_order_mgmt">Party List</string>
+    <string name="title_activity_demo_party_list_date_wise">Party List</string>
+    <string name="title_activity_failed_visit_party_list_date_wise">Party List</string>
+    <string name="title_activity_order_product_date_wise">Order Product List</string>
+    <string name="title_activity_order_demo_product_date_wise">Demo Product List</string>
+    <string name="title_activity_failed_visitdyt">Failed Visit Remarks</string>
+    <string name="title_activity_dialog_box">Summary</string>
+    <string name="title_activity_purchse_order">Purchase Order</string>
+    <string name="title_activity_purchase_pre">Distributor</string>
+    <string name="search_hint">enter your party</string>
+    <string name="title_activity_demo_pre_information">Demo</string>
+    <string name="Rs">\u20B9</string>
+    <string name="zero">0.00</string>
+    <string name="title_activity_syncronization">Synchronization</string>
+    <string name="title_activity_purchase_order_history">Purchase Order History</string>
+    <string name="title_activity_purchase_order_product_list">Purchase Order Product List</string>
+    <string name="title_activity_reports">Reports</string>
+    <string name="title_activity_retailer_above_value">Retailer Above Value</string>
+    <string name="title_activity_area_beat_item_wise_monthly_purchase">Area Beat Item Wise Monthly Purchase</string>
+    <string name="title_activity_new_party_made">New Party Made</string>
+    <string name="title_activity_beat_wise_monthly_secondary">Beat Wise Monthly Secondary</string>
+    <string name="title_activity_get_pda_id">Login</string>
+    <string name="title_activity_read_values_from_file">ReadValuesFromFile</string>
+    <string name="title_activity_purcase">Purcase</string>
+    <string name="title_activity_export_db">ExportDB</string>
+    <string name="title_activity_collection">Collection</string>
+    <string name="lbltitle">"Title : "</string>
+    <string name="lbltext">"Particulars : "</string>
+    <string name="notification">Notification</string>
+    <string name="customnotification">Custom Notification</string>
+    <string name="title_activity_collection_list">Collection List</string>
+    <string name="text_bluetooth_off">Bluetooth is Off</string>
+    <string name="text_bluetooth_on">Bluetooth is On</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_disconnect">Diconnect</string>
+    <string name="text_enable_bluetooth">Enable Bluetooth</string>
+    <string name="text_disable_bluetooth">Disable Bluetooth</string>
+    <string name="text_scan_devices">Scan Devices</string>
+    <string name="text_stop_scan">Scan Devices</string>
+    <string name="text_list_paired_devices">Paired Devices</string>
+    <string name="text_list_devices">List of Devices</string>
+    <string name="text_pair">Pair</string>
+    <string name="text_print_demo">Print Receipt</string>
+    <string name="text_print_barcode">Print Barcode</string>
+    <string name="text_print_image">Print Image</string>
+    <string name="text_print_receipt">Print Receipt</string>
+    <string name="text_print_text">Print Text</string>
+    <string name="title_activity_print_from_history">PrintFromHistory</string>
+    <string name="title_activity_purchase_order1">PurchaseOrder1</string>
+    <string name="title_activity_auto_purchase_order">AutoPurchaseOrder</string>
+    <string name="title_activity_purchase_order_item_detail">PurchaseOrderItemDetail</string>
+    <string name="title_activity_dispatch_purchase_order">DispatchPurchaseOrder</string>
+    <string name="title_activity_party_collection">PartyCollection</string>
+    <string name="title_activity_competitor_entry">CompetitorEntry</string>
+    <string name="title_activity_distributer_dashboard">DistributerDashboard</string>
+    <string name="title_activity_distributer_discussion">DistributerDiscussion</string>
+    <string name="title_activity_competitor_party_list_date_wise_pending">CompetitorPartyListDateWisePending</string>
+    <string name="title_activity_competitor_party_list_date_wise">CompetitorPartyListDateWise</string>
+    <string name="title_activity_add_competitor">AddCompetitor</string>
+    <string name="title_activity_party_coolection_list_datewise">PartyCoolectionListDatewise</string>
+    <string name="title_activity_distributer_discussion_list_date_wise_pending">DistributerDiscussionListDateWisePending</string>
+    <string name="title_activity_party_collection_list_date_wise_pending">PartyCollectionListDateWisePending</string>
+    <string name="title_activity_distributer_discussion_list_date_wise">DistributerDiscussionListDateWise</string>
+    <string name="title_activity_find_party_list">FindPartyList</string>
+    <string name="title_activity_new_party_from_beat_coverage">NewPartyFromBeatCoverage</string>
+    <string name="title_activity_distributer_collection_list_date_wise">DistributerCollectionListDateWise</string>
+    <string name="title_activity_leave_request">LeaveRequest</string>
+    <string name="title_activity_find_leave_request_list">FindLeaveRequestList</string>
+    <string name="title_activity_update_leave_request">UpdateLeaveRequest</string>
+    <string name="title_activity_beat_plan_entry">BeatPlanEntry</string>
+    <string name="title_activity_find_beat_plan_list">FindBeatPlanList</string>
+    <string name="title_activity_update_beat_plan">UpdateBeatPlan</string>
+    <string name="title_activity_multiple_book_order">MultipleBookOrder</string>
+    <string name="title_activity_book_order_entry">BookOrderEntry</string>
+    <string name="title_activity_multiple_order_party_list_date_wise_pending">MultipleOrderPartyListDateWisePending</string>
+    <string name="title_activity_multi_order_party_list_date_wise">MultiOrderPartyListDateWise</string>
+    <string name="title_activity_find_daily_sales_report">FindDailySalesReport</string>
+    <string name="title_activity_find_demo_list">FindDemoList</string>
+    <string name="title_activity_find_book_order_list">FindBookOrderList</string>
+    <string name="title_activity_find_collection_list">FindCollectionList</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!--                         Ashutosh                                  -->
+    <string name="title_selectJobTitle">Select Job Title</string>
+    <string name="title_selectState">Select State</string>
+    <string name="title_selectCity">Select City</string>
+    <string name="title_selectParty">Select Party</string>
+    <string name="title_selectArea">Select Area</string>
+    <string name="title_selectBeat">Select Beat</string>
+    <string name="title_selectDistributor">Select Distributor</string>
+    <string name="title_selectIndustry">Select Industry</string>
+    <string name="title_selectTransportMode">Select Mode Of Transport</string>
+    <string name="title_selectVehicleUsed">Select Vehicle Used</string>
+    <string name="title_selectwithL2OnDsr">Select With Whom</string>
+    <string name="title_selectwithL3OnDsr">Select Next Visit With Whom</string>
+    <string name="title_selectnextCityField">Select Next City</string>
+    <string name="title_selectAreaId">Select Travel From Area</string>
+    <string name="title_selectareaIdSpinnerTo">Select Travel To Area</string>
+    <string name="title_selectvisitNameSpinner">Select Visit Type</string>
+    <string name="title_selectattandanceSpinner">Select Attendance</string>
+    <string name="title_selectchargeableSpinner">Select Conveyance</string>
+    <string name="title_selectsalesPerson">Select Sales Person</string>
+    <string name="title_selectLeaveTime">Select To Leave Time</string>
+    <string name="title_selectFromLeaveTime">Select From Leave Time</string>
+    <string name="title_selectAreaName">Select Area Name</string>
+    <string name="title_selectBeatName">Select Beat Name</string>
+    <string name="title_selectExpenseType">Select Expense Type</string>
+    <string name="title_selectFromTime">Select From Time</string>
+    <string name="title_selectToTime">Select To Time</string>
+    <string name="title_selectConveyanceMode">Select Conveyance Mode</string>
+    <string name="title_selectReason">Select Reason</string>
+    <string name="title_productClass">Select Product Class</string>
+    <string name="title_productSegment">Select Product Segment</string>
+    <string name="title_productGroup">Select Product Group</string>
+    <string name="title_Status">Select Status</string>
+
+    <string name="tite_dealer_name">Select Dealer</string>
+    <string name="title_Type">Select Type</string>
+    <string name="title_product">Select Product</string>
+    <string name="title_Department">Select Department</string>
+    <string name="title_Nature">Select Nature</string>
+    <string name="title_PartyType">Select Party Type</string>
+    <string name="title_PartyName">Select Party Name</string>
+
+    <string name="alert_date_select">alert_date_select</string>
+    <string name="date_card_formate">date_card_formate</string>
+
+    <!--                         Ashutosh                                  -->
+
+
+    <string name="title_selectContry">Select Contary</string>
+    <string name="title_Tag">Select Lead Type</string>
+    <string name="title_LeadSource">Select Lead Source</string>
+    <string name="title_LeadSource_as_partyrefby">Select Party Refered By</string>
+    <string name="title_Owner">Select Owner</string>
+    <string name="select_str">Select</string>
+
+    <!-- Tracker-->
+    <string name="title_activity_registration_form">Registration</string>
+    <string name="title_activity_fence_tagging">Fence Tagging</string>
+    <string name="splash_msg">Login with you email id</string>
+    <string name="asforgetMob">Click <u>Forget mobile no.</u>?</string>
+    <string name="otp">Enter One Time Password:</string>
+    <string name="resend">Resend OTP</string>
+
+    <string name="assignTO">Select Assign TO</string>
+    <string name="title_phone">Select Phone</string>
+    <string name="title_result">Select Result</string>
+    <string name="title_deal_stage">Select Deal Stage</string>
+
+    <string name="remark_digit">"(\"\"\''/:=,.@\&amp;\%[]{}|+)0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz "</string>
+    <string name="digits_company">"(\"\"\''/:=,.@\&amp;\)0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz "</string>
+    <string name="digits_competitor_activity">"0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz "</string>
+    <string name="digits_remark">"(\"\"\''/:=,.@\&amp;\%[]{}|+)0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz "</string>
+    <string name="digits_name">"QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz "</string>
+    <string name="digits_address">"\"\"\''/:0123456789:.,-=QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz "</string>
+    <string name="digits_character_without_space">"0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz"</string>
+    <string name="digits_character">" 0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz"</string>
+    <string name="digits_number">"0123456789"</string>
+    <integer name="max_len_remark">255</integer>
+    <integer name="max_len_name">70</integer>
+    <integer name="max_len_company">70</integer>
+    <integer name="max_len_input_text">60</integer>
+</resources>

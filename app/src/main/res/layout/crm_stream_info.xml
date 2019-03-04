@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/listPersonInfo">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="1dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card_view1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                    <LinearLayout
+                            android:id="@+id/ImagelinearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/personImage"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_user"
+                            android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pInfoRealativLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/ImagelinearLayout"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/personName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PersonName"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp"
+                            style="@style/neweditLebal"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/personCompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/personName"
+                            style="@style/neweditLebal"
+                            android:text="Company" />
+
+                        <TextView
+                            android:id="@+id/personAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/personCompany"
+                            style="@style/neweditLebal"
+                            android:text="PersonAddress" />
+
+                        <TextView
+                            android:id="@+id/personWebsite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/personAddress"
+                            style="@style/neweditLebal"
+                            android:layout_marginBottom="10dp"
+                            android:text="PersonWebsite"
+                            android:textColor="@color/colorPrimary" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/listOwnerTagInfo">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/personHeaderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Name"
+                        style="@style/neweditLebal"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/neweditLebal"
+                            android:textColor="#000000"
+                            android:text="Owner" />
+
+                        <Spinner
+                                android:id="@+id/ownerSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:padding="2dp"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:theme="@style/ThemeSpinner"
+                                android:layout_marginLeft="5dp"
+                                android:spinnerMode="dialog"
+                                android:prompt="@string/title_Owner"
+                                android:textSize="12dp"></Spinner>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/neweditLebal"
+                                    android:textColor="#000000"
+                                    android:text="Tag" />
+
+                            <Spinner
+                                android:id="@+id/tagSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:padding="2dp"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:theme="@style/ThemeSpinner"
+                                android:layout_marginLeft="5dp"
+                                android:spinnerMode="dialog"
+                                android:prompt="@string/title_Tag"
+                                android:textSize="12dp"
+                                ></Spinner>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/neweditLebal"
+                                android:textColor="#000000"
+                                android:text="Status" />
+
+                            <Spinner
+                                android:id="@+id/statusSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:padding="2dp"
+                                style="@style/Widget.AppCompat.Spinner.Underlined"
+                                android:theme="@style/ThemeSpinner"
+                                android:layout_marginLeft="5dp"
+                                android:spinnerMode="dialog"
+                                android:prompt="@string/title_LeadSource"
+                                android:textSize="12dp"></Spinner>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="2dp"
+                     android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:id="@+id/personInfoListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/csiAll"
+                        android:layout_weight="1"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/button_style"
+                        android:gravity="center"
+                        android:requiresFadingEdge="vertical"
+                        android:text="All"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/csiNoteAndCall"
+                        android:layout_weight="1"
+                        android:layout_width="55dp"
+                        android:layout_height="35dp"
+
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@drawable/deactive_button"
+                        android:gravity="center"
+                        android:requiresFadingEdge="vertical"
+                        android:text="@string/notecalls"
+                        android:textAllCaps="false"
+
+                        android:textColor="@color/white"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/csiDeal"
+                        android:layout_weight="1"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@drawable/deactive_button"
+                        android:gravity="center"
+                        android:requiresFadingEdge="vertical"
+                        android:text="Deal"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/csiAction"
+                        android:layout_weight="1"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@drawable/deactive_button"
+                        android:gravity="center"
+                        android:requiresFadingEdge="vertical"
+                        android:text="Action"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/neweditLebal"
+                    android:text="History"
+                    android:paddingLeft="1dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

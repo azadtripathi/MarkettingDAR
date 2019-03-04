@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dm.crmdm_app.UserDashboard">
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/pLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                
+                android:gravity="center"
+                android:background="#BF3739"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Sales"
+                    android:textSize="24sp"
+                    android:typeface="monospace"
+                    android:gravity="center"
+                    android:textColor="#fff"/>
+
+
+
+                <TextView
+                    android:id="@+id/pQTYLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Qty: 20"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/pAmtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary Amt: 199"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:typeface="serif"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="#FEF008"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary Sales"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:typeface="monospace"
+                    android:textColor="#494949"/>
+                <TextView
+                    android:id="@+id/sQtyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary Qty: 20"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textColor="#494949"/>
+
+                <TextView
+                    android:id="@+id/sAmtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary Amt: 199"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:textColor="#494949"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/newPartyLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="#240774"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/newPartyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Party"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:typeface="monospace"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/totalNewPartyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Party"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:typeface="monospace"
+                    android:textColor="#fff"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/totalCallsLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="5dp"
+                
+                android:gravity="center"
+                android:background="#D42688"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Calls"
+                    android:textSize="24sp"
+                    android:typeface="monospace"
+                    android:gravity="center"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/pCallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Productive Calls: 20"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+
+                    android:typeface="serif"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/failedVisitCallLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Failed Visit: 199"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:typeface="serif"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

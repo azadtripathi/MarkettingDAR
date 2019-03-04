@@ -1,0 +1,53 @@
+<LinearLayout android:id="@+id/pLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:background="#BF3739"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="210dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary Sales"
+            android:textSize="24sp"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+
+
+        <TextView
+            android:id="@+id/pQTYLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary Qty: 20"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/pAmtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary Amt: 199"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:typeface="serif"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+</LinearLayout>

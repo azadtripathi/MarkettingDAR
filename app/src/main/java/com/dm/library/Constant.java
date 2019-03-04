@@ -1,0 +1,42 @@
+package com.dm.library;
+public class Constant {
+	public static final String SERVER_LICENSE_WEBSERVICE_URL="license.dataman.in";
+	public static  String SERVER_WEBSERVICE_URL="http://crmtest.dataman.net.in/MarketingDARService.asmx/";
+	//  public static  String APP_TYPE="";
+	public static  String SERVER_DATABASE_URL="";
+	public static  String DATABASE_NAME="";
+	public static  String DATABASE_USER_NAME="";
+	public static  String DATABASE_PASSWORD="";
+	public static  String DATABASE_PORT="";
+	public static  String DATABASE_INSTANCE="";
+	public static  String IMAGE_DIRECTORY_NAME = "";
+	public static  String FTP_USER_NAME = "";
+	public static  String FTP_PASSWORD = "";
+	public static  String FTP_DIRECTORY = "";
+	public static  String FTP_HOST = "";
+	public static  String PREV_CITY_SESSION = "0";
+	public static  String PREV_AREA_SESSION = "0";
+	public static  String PREV_BEAT_SESSION = "0";
+	// public static  String LAST_PIN_USED = "0";
+// public static  String LAST_INDUSTRY_USED = "0";
+// public static  String LAST_ADDRESS1_USED = "0";
+// public static  String LAST_ADDRESS2_USED = "0";
+	public static  String PARTY_CAPTION = "";
+	public static final String Tracker_SERVER_WEBSERVICE_URL="dmtracker.dataman.in";
+	public static final String WEBSERVICE_URL_VALID="http://demotracker.dataman.in/jwebservice.asmx/";
+	public static final String WEBSERVICE_URL_LICENSE="http://license.dataman.in/jsonwebservice.asmx/";
+	public static final String GOOGLE_PROJECT_ID = "298558708375";
+	public static final String MESSAGE_KEY = "message";
+	public static final String INTERNET_CONNECTION_ERROR = "OOPS! No Internet Connection. Please Check Your Internet Connection";
+	public static final String MOBILE_NUMBER_ERROR = "Enter Valid Mobile No.";
+
+	public static String JSGetuser = "JSGetuser";
+	public static String get_states = "JSGetstate_IdWise";
+	public static String get_industry = "JSGetindustry";
+	public static String get_subindustry = "JSGetsubindustry";
+	public static String get_city = "JSGetcity_IdWise";
+	public static String getProducts = "JSGetProduct";
+	public static String getStatus = "JSGetSatus";
+	public static String JSGetEmployee = "JSGetEmployee";
+	public static String designation = "JSGetDesignation";
+}

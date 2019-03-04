@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:padding="2sp">
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/dk_gray_border"
+
+
+        android:orientation="horizontal"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Document Date"
+                    />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Distributor Name"
+                    android:id="@+id/partyname01"
+                    />
+            </TableRow>
+            <TableRow
+                android:background="@color/white"
+                >
+                <TextView
+                    android:id="@+id/disdate"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="24/12/15"
+                   />
+                <TextView
+                    android:id="@+id/disname"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="xyz"
+                     />
+            </TableRow>
+
+            <TableRow
+                >
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Amount" />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Mode"
+                    />
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/amount"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="2611"
+                     />
+                <TextView
+                    android:id="@+id/mode"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Cheque"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Instrument No."
+                    android:id="@+id/instView"
+                    />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Instrument Date"
+                    android:id="@+id/instDateView"
+                    />
+            </TableRow>
+            <TableRow
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/insno"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="2456"
+                   />
+                <TextView
+                    android:id="@+id/insdate"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="26/11/16"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="#000"
+        android:layout_below="@+id/Layout"></LinearLayout>
+
+
+</RelativeLayout>

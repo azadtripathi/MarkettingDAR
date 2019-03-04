@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_user"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/InnerRelativeLayout">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/buttonCheckIn"
+            android:layout_width="match_parent"
+            android:text="Capture"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:requiresFadingEdge="vertical"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            >
+        </Button>
+        <Button
+            android:id="@+id/buttonCheckOut"
+            android:layout_width="match_parent"
+            android:text="Capture"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:requiresFadingEdge="vertical"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

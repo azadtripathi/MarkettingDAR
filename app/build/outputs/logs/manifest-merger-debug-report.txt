@@ -1,0 +1,1688 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+MERGED from [com.google.firebase:firebase-core:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-11.4.0.aar\f454129eaa376d48e164693566749ce4\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\736731b750ad733955f11c95508ed3da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:17:1-28:12
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-material-1.1.0.aar\506b7ae306e9d9935a6afca0375dcc29\AndroidManifest.xml:2:1-16:12
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:2:1-35:12
+MERGED from [com.rengwuxian.materialedittext:library:2.0.3] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-2.0.3.aar\9d529fecd6c24fc80f353effaee4db0f\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\bc73a2b3461afc7157bdb757b98a01d4\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\2ad84e69237f132971436bd241d75794\AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\5b9ae775c7a8195285ffdf8288d27b8e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\palette-v7-25.3.1.aar\0a0f4fd91ccae5b5b6969c3f04418858\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a81b7971699f61640ba43e20f5b40ca0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:17:1-28:12
+MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\14c04b8381fe93a9ca70bb73aacad02a\AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-tagmanager:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.4.0.aar\3cd9b6fe7cf3fb63c63d280cbd2ecb01\AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:16:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:16:1-35:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\47851632019001484da1f5e0c6247124\AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:16:1-33:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\7ca5e09c68bb303c2e886ddbb0a5ac85\AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.4.0.aar\06ae82e4376405abd8abc0423fa52fc9\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.4.0.aar\91be713f8d3440119015bf13c53559fe\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\80a95a43228af9cd9bf35b8c15036a8d\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\a87257cf36d36e972e1603a71aecaf2f\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\514f4dd7a220fb8ecf430f249c91761a\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\4c88178de5c8c3e39b4a73599d6f350c\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\9b051a6fdc189befbb500c5d223a6dcf\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\487c4ab164a9807ac1b22463df1e87e9\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\09cddcf9c4d8495c6db979d1b4dfc1d8\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\9a764d9e8c84def82a08e99014165305\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\ae84c94c217dfbeb8c15a8fdb5a85557\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-wallet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.4.0.aar\37f6e571d1c5cd54bbe7d7685f2b2457\AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\53089d9c5fb14efa56a16704d6100bf5\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-instantapps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.4.0.aar\3c0aa14cf58748285d4371e64c1573da\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\12115ebd3a69e64259d49478666b9621\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\ac2ace3457a13d543da6a707c8d778cd\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\7ec65476ff9bbe9e0ff187bac412a14b\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\658a23cbba338df5dbe6952db4c96cc4\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\7b1d3df0149b2c177bf47e3c73394e6e\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\71c23fbba1ca611a0a295884e62ef591\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\8c0e5648f96805792f3657c409ab1b15\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\49e7074ce6a61007527dfd029186ca69\AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-database:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-database-11.4.0.aar\b54a0c219097ba2f44e1fb612c54ec16\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-database-connection:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.4.0.aar\76f520909a53e60cf68b9c5916ad0c28\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:16:1-30:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:16:1-50:12
+MERGED from [com.google.firebase:firebase-storage:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.4.0.aar\37b3d3e8f5f75d05bd6a658c791562ba\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-storage-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.4.0.aar\e6844506477923e1752d25a9de833373\AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\cb5cb07eff99f22927aa8827eec28ff9\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\c55466c12943179f70f8f7d276acce0a\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-479:12
+	package
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:7:5-67
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:11:5-67
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:8:5-81
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:11:5-81
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:11:5-81
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:14:5-81
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:9:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:4:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:19:5-78
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:11:22-72
+uses-permission#android.permission.GET_TASKS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:14:22-78
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:15:5-84
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:15:22-81
+permission#android.permission.CLEAR_APP_CACHE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:17:5-69
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:17:17-66
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:24:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:25:22-63
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:26:5-80
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:12:5-80
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:12:5-80
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:15:5-80
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:26:22-77
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:28:5-71
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:28:22-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:29:5-68
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:29:22-65
+uses-permission#android.intent.action.QUICKBOOT_POWERON
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:30:5-79
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:30:22-76
+uses-permission#android.permission.READ_SYNC_SETTINGS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:31:5-77
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:31:22-74
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:32:5-76
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:32:22-73
+uses-feature#android.hardware.location.gps
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:34:5-66
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:34:19-63
+uses-permission#android.permission.REORDER_TASKS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:39:5-72
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:39:22-69
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:41:5-72
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:41:22-69
+uses-permission#android.permission.READ_PROFILE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:42:5-71
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:42:22-68
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:43:5-69
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:43:22-66
+permission#com.dm.dmgrahak.permission.C2D_MESSAGE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:45:5-47:47
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:47:9-44
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:46:9-62
+uses-permission#com.dm.dmgrahak.permission.C2D_MESSAGE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:48:5-78
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:48:22-75
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:49:5-82
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:22:5-81
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:49:22-79
+supports-screens
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:51:5-63
+	android:largeScreens
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:54:9-36
+	android:smallScreens
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:57:9-36
+	android:normalScreens
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:55:9-37
+	android:requiresSmallestWidthDp
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:51:23-60
+	android:xlargeScreens
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:58:9-37
+	android:resizeable
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:56:9-34
+	android:anyDensity
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:53:9-34
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:60:5-68
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:60:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:61:5-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:61:22-71
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:63:5-70
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:63:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:64:5-67
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:64:22-64
+uses-permission#android.permission.SEND_SMS
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:65:5-67
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:65:22-64
+application
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:68:5-477:19
+MERGED from [com.google.firebase:firebase-core:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-11.4.0.aar\f454129eaa376d48e164693566749ce4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-11.4.0.aar\f454129eaa376d48e164693566749ce4\AndroidManifest.xml:5:5-20
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:22:5-26:19
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:14:5-33:19
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:14:5-33:19
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-material-1.1.0.aar\506b7ae306e9d9935a6afca0375dcc29\AndroidManifest.xml:11:5-14:19
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-material-1.1.0.aar\506b7ae306e9d9935a6afca0375dcc29\AndroidManifest.xml:11:5-14:19
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:17:5-33:19
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:17:5-33:19
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\bc73a2b3461afc7157bdb757b98a01d4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\bc73a2b3461afc7157bdb757b98a01d4\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\2ad84e69237f132971436bd241d75794\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\2ad84e69237f132971436bd241d75794\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\5b9ae775c7a8195285ffdf8288d27b8e\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\5b9ae775c7a8195285ffdf8288d27b8e\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\palette-v7-25.3.1.aar\0a0f4fd91ccae5b5b6969c3f04418858\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\palette-v7-25.3.1.aar\0a0f4fd91ccae5b5b6969c3f04418858\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a81b7971699f61640ba43e20f5b40ca0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a81b7971699f61640ba43e20f5b40ca0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\14c04b8381fe93a9ca70bb73aacad02a\AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\14c04b8381fe93a9ca70bb73aacad02a\AndroidManifest.xml:11:5-14:19
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:24:5-34:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:26:5-31:19
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:26:5-31:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\7ca5e09c68bb303c2e886ddbb0a5ac85\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\7ca5e09c68bb303c2e886ddbb0a5ac85\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\80a95a43228af9cd9bf35b8c15036a8d\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\80a95a43228af9cd9bf35b8c15036a8d\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\a87257cf36d36e972e1603a71aecaf2f\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\a87257cf36d36e972e1603a71aecaf2f\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\514f4dd7a220fb8ecf430f249c91761a\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\514f4dd7a220fb8ecf430f249c91761a\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\4c88178de5c8c3e39b4a73599d6f350c\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\4c88178de5c8c3e39b4a73599d6f350c\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\9b051a6fdc189befbb500c5d223a6dcf\AndroidManifest.xml:5:3-6:17
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\9b051a6fdc189befbb500c5d223a6dcf\AndroidManifest.xml:5:3-6:17
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\487c4ab164a9807ac1b22463df1e87e9\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\487c4ab164a9807ac1b22463df1e87e9\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\09cddcf9c4d8495c6db979d1b4dfc1d8\AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\09cddcf9c4d8495c6db979d1b4dfc1d8\AndroidManifest.xml:5:3-17
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\9a764d9e8c84def82a08e99014165305\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\9a764d9e8c84def82a08e99014165305\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\ae84c94c217dfbeb8c15a8fdb5a85557\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\ae84c94c217dfbeb8c15a8fdb5a85557\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\53089d9c5fb14efa56a16704d6100bf5\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\53089d9c5fb14efa56a16704d6100bf5\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\12115ebd3a69e64259d49478666b9621\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\12115ebd3a69e64259d49478666b9621\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\ac2ace3457a13d543da6a707c8d778cd\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\ac2ace3457a13d543da6a707c8d778cd\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\7ec65476ff9bbe9e0ff187bac412a14b\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\7ec65476ff9bbe9e0ff187bac412a14b\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\658a23cbba338df5dbe6952db4c96cc4\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\658a23cbba338df5dbe6952db4c96cc4\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\7b1d3df0149b2c177bf47e3c73394e6e\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\7b1d3df0149b2c177bf47e3c73394e6e\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\71c23fbba1ca611a0a295884e62ef591\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\71c23fbba1ca611a0a295884e62ef591\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\8c0e5648f96805792f3657c409ab1b15\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\8c0e5648f96805792f3657c409ab1b15\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\49e7074ce6a61007527dfd029186ca69\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\49e7074ce6a61007527dfd029186ca69\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\cb5cb07eff99f22927aa8827eec28ff9\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\cb5cb07eff99f22927aa8827eec28ff9\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\c55466c12943179f70f8f7d276acce0a\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\c55466c12943179f70f8f7d276acce0a\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:25:5-29:19
+	android:supportsRtl
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:72:9-41
+	android:uiOptions
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:74:9-53
+	android:icon
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:71:9-41
+	android:allowBackup
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:70:9-35
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:73:9-42
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:69:9-39
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:75:9-76:39
+	android:required
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:75:23-60
+activity#com.dm.crmdm_app.DigitalSignature
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:80:9-85:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:84:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:83:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:85:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:82:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:81:13-45
+activity#com.dm.crmdm_app.FindPaymentTransfer
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:86:9-91:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:90:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:89:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:91:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:88:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:87:13-48
+activity#com.dm.crmdm_app.FindPaymentReceived
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:92:9-97:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:96:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:95:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:97:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:94:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:93:13-48
+activity#com.dm.crmdm_app.PaymentReceived
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:98:9-103:58
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:102:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:101:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:103:13-55
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:100:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:99:13-44
+activity#com.dm.crmdm_app.PaymentTransfer
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:104:9-109:58
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:108:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:107:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:109:13-55
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:106:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:105:13-44
+activity#com.dm.crmdm_app.PaymentLedger
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:110:9-114:52
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:114:13-50
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:113:13-43
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:112:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:111:13-42
+activity#com.dm.crmdm_app.CRMStreamInfo
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:115:9-120:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:119:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:118:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:120:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:117:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:116:13-42
+activity#com.dm.crmdm_app.DealsAttachments
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:122:9-128:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:126:13-49
+	android:stateNotNeeded
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:127:13-43
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:125:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:128:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:124:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:123:13-45
+activity#com.dm.crmdm_app.CRMDeal
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:129:9-135:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:133:13-49
+	android:stateNotNeeded
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:134:13-43
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:132:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:135:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:131:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:130:13-36
+activity#com.dm.crmdm_app.CRMCall
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:136:9-143:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:140:13-49
+	android:stateNotNeeded
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:141:13-43
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:139:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:143:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:138:13-74
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:142:13-46
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:137:13-36
+activity#com.dm.crmdm_app.CRMNote
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:144:9-151:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:148:13-49
+	android:stateNotNeeded
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:149:13-43
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:147:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:151:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:146:13-74
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:150:13-46
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:145:13-36
+activity#com.dm.crmdm_app.CrmTask
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:152:9-159:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:156:13-49
+	android:stateNotNeeded
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:157:13-43
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:155:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:159:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:154:13-74
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:158:13-46
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:153:13-36
+activity#com.dm.crmdm_app.CrmPayment
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:160:9-167:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:164:13-49
+	android:stateNotNeeded
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:165:13-43
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:163:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:167:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:162:13-74
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:166:13-46
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:161:13-39
+activity#com.dm.crmdm_app.CRMstream
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:168:9-173:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:172:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:171:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:173:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:170:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:169:13-38
+activity#com.dm.crmdm_app.AddContact
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:174:9-179:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:178:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:177:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:179:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:176:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:175:13-39
+activity#com.dm.crmdm_app.FindAddContact
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:180:9-185:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:184:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:183:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:185:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:182:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:181:13-43
+activity#com.dm.crmdm_app.UserPermission
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:186:9-197:20
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:190:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:189:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:191:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:188:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:187:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:192:13-196:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:193:17-69
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:193:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:195:17-77
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:195:27-74
+activity#com.dm.crmdm_app.MainActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:198:9-204:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:203:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:201:13-65
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:202:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:204:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:200:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:199:13-41
+activity#com.dm.crmdm_app.SplashScreen
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:205:9-211:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:210:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:208:13-58
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:209:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:211:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:207:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:206:13-41
+activity#com.dm.crmdm_app.Attendence
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:212:9-218:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:217:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:215:13-62
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:216:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:218:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:214:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:213:13-39
+activity#com.dm.crmdm_app.DashBoradActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:219:9-225:63
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:224:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:222:13-62
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:223:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:225:13-60
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:221:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:220:13-46
+activity#com.dm.crmdm_app.ReportSummary
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:226:9-231:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:229:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:228:13-62
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:231:13-52
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:230:13-79
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:227:13-42
+activity#com.dm.crmdm_app.ExportData
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:232:9-238:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:237:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:235:13-66
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:236:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:238:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:234:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:233:13-39
+activity#com.dm.crmdm_app.GetPdaId
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:239:9-245:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:244:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:242:13-62
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:243:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:245:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:241:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:240:13-37
+activity#com.dm.crmdm_app.ExportDB
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:246:9-248:64
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:248:13-61
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:247:13-37
+activity#com.dm.crmdm_app.NotificationView
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:249:9-255:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:254:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:252:13-41
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:253:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:255:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:251:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:250:13-45
+activity#com.dm.crmdm_app.LeaveRequest
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:256:9-262:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:261:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:259:13-65
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:260:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:262:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:258:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:257:13-41
+activity#com.dm.crmdm_app.FindLeaveRequestList
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:263:9-269:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:268:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:266:13-75
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:267:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:269:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:265:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:264:13-49
+activity#com.dm.crmdm_app.UpdateLeaveRequest
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:270:9-276:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:275:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:273:13-72
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:274:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:276:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:272:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:271:13-47
+activity#com.dm.crmdm_app.FindLeave
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:278:9-283:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:282:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:281:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:283:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:280:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:279:13-38
+activity#com.dm.crmdm_app.GeneratePdf
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:284:9-289:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:288:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:287:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:289:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:286:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:285:13-40
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:294:9-296:69
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:296:13-66
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:295:13-58
+activity#com.dm.crmdm_app.TourPlan
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:298:9-303:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:302:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:301:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:303:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:300:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:299:13-37
+activity#com.dm.crmdm_app.Utility
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:304:9-309:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:308:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:307:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:309:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:306:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:305:13-36
+activity#com.dm.crmdm_app.LeaveApproval
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:310:9-315:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:314:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:313:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:315:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:312:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:311:13-42
+activity#com.dm.crmdm_app.AprovalLiveDetails
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:316:9-321:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:320:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:319:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:321:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:318:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:317:13-47
+activity#com.dm.crmdm_app.AddExpense
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:322:9-327:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:326:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:325:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:327:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:324:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:323:13-39
+activity#com.dm.crmdm_app.ExpenseGroupEntry
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:328:9-333:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:332:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:331:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:333:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:330:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:329:13-46
+activity#com.dm.crmdm_app.ExpenseSummaryScreen
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:334:9-339:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:338:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:337:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:339:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:336:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:335:13-49
+activity#com.dm.crmdm_app.AdvanceExpenseRequest
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:340:9-345:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:344:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:343:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:345:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:342:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:341:13-50
+activity#com.dm.crmdm_app.Expense_Advance_Request_Details
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:346:9-351:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:350:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:349:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:351:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:348:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:347:13-60
+activity#com.dm.crmdm_app.ExpenseAdvanceRequest
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:352:9-357:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:356:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:355:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:357:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:354:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:353:13-50
+activity#com.dm.crmdm_app.TourPlanEntry
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:358:9-364:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:362:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:361:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:364:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:360:13-74
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:363:13-46
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:359:13-42
+activity#com.dm.crmdm_app.FindTourPlan
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:365:9-370:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:369:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:368:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:370:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:367:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:366:13-41
+activity#com.dm.crmdm_app.NotificationPannel
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:371:9-376:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:375:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:374:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:376:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:373:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:372:13-47
+service#com.dm.service.NotificationService
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:378:9-381:44
+	android:enabled
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:380:13-35
+	android:stopWithTask
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:381:13-41
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:379:13-62
+activity#com.dm.crmdm_app.TourApproval
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:383:9-388:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:387:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:386:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:388:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:385:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:384:13-41
+activity#com.dm.crmdm_app.TourPlanPopupAproval
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:389:9-395:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:393:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:392:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:395:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:391:13-74
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:394:13-46
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:390:13-49
+activity#com.dm.crmdm_app.TourPlanAproval
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:396:9-401:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:400:13-49
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:399:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:401:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:398:13-74
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:397:13-44
+receiver#com.dm.service.BootBroadcastReceiver
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:403:9-412:20
+	android:enabled
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:405:13-35
+	android:permission
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:406:13-75
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:404:13-64
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:407:13-411:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:408:17-79
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:408:25-76
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:410:17-76
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:410:27-73
+service#com.dm.crmdm_app.NewLocationService
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:414:9-416:45
+	android:process
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:416:13-42
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:415:13-47
+receiver#com.dm.service.NetworkChangeReceiver
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:418:9-425:20
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:420:13-50
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:419:13-64
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:421:13-424:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:422:17-79
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:422:25-76
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:423:17-78
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:423:25-75
+activity#com.dm.crmdm_app.GridViewActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:427:9-434:55
+	android:screenOrientation
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:433:13-49
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:431:13-61
+	android:launchMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:432:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:434:13-52
+	android:configChanges
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:429:13-74
+	android:icon
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:430:13-47
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:428:13-45
+receiver#com.dm.crmdm_app.SmsReceiver
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:441:10-445:21
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:441:20-63
+intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:442:10-444:26
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:443:10-75
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:443:18-72
+activity#com.dm.module.Login
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:456:9-457:60
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:457:13-58
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:456:19-53
+activity#com.dm.crmdm_app.UserDashboard
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:459:9-51
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:459:19-48
+service#com.dm.crmdm_app.MyFirebaseMessagingService
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:461:9-465:19
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:461:18-60
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:462:13-464:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:463:17-78
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:463:25-75
+service#com.dm.crmdm_app.FirebaseIDService
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:466:9-470:19
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:466:18-51
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:467:13-469:29
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:468:17-80
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:468:25-77
+activity#com.dm.crmdm_app.ViewMileStoneActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:472:9-59
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:472:19-56
+activity#com.dm.crmdm_app.ViewAttachments
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:473:9-53
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:473:19-50
+activity#com.dm.crmdm_app.AddNewContactPage
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:474:9-55
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:474:19-52
+activity#com.dm.crmdm_app.NewDashboard
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:475:9-50
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:475:19-47
+activity#com.dm.crmdm_app.NewMainActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:476:9-53
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:476:19-50
+uses-sdk
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-11.4.0.aar\f454129eaa376d48e164693566749ce4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-11.4.0.aar\f454129eaa376d48e164693566749ce4\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\736731b750ad733955f11c95508ed3da\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\736731b750ad733955f11c95508ed3da\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:20:5-43
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:21:5-23:62
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-material-1.1.0.aar\506b7ae306e9d9935a6afca0375dcc29\AndroidManifest.xml:7:5-9:41
+MERGED from [com.weiwangcn.betterspinner:library-material:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-material-1.1.0.aar\506b7ae306e9d9935a6afca0375dcc29\AndroidManifest.xml:7:5-9:41
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:7:5-9:41
+MERGED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.rengwuxian.materialedittext:library:2.0.3] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-2.0.3.aar\9d529fecd6c24fc80f353effaee4db0f\AndroidManifest.xml:6:5-8:41
+MERGED from [com.rengwuxian.materialedittext:library:2.0.3] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-2.0.3.aar\9d529fecd6c24fc80f353effaee4db0f\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\bc73a2b3461afc7157bdb757b98a01d4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-11.4.0.aar\bc73a2b3461afc7157bdb757b98a01d4\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\2ad84e69237f132971436bd241d75794\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-11.4.0.aar\2ad84e69237f132971436bd241d75794\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\5b9ae775c7a8195285ffdf8288d27b8e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\mediarouter-v7-25.2.0.aar\5b9ae775c7a8195285ffdf8288d27b8e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\palette-v7-25.3.1.aar\0a0f4fd91ccae5b5b6969c3f04418858\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\palette-v7-25.3.1.aar\0a0f4fd91ccae5b5b6969c3f04418858\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a81b7971699f61640ba43e20f5b40ca0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\a81b7971699f61640ba43e20f5b40ca0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:20:5-43
+MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\14c04b8381fe93a9ca70bb73aacad02a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.jorgecastilloprz:fabprogresscircle:1.01] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\fabprogresscircle-1.01.aar\14c04b8381fe93a9ca70bb73aacad02a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-crash:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-crash-11.4.0.aar\8131d1c5b150f6206d8b7baf8b855c35\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.4.0.aar\3cd9b6fe7cf3fb63c63d280cbd2ecb01\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-11.4.0.aar\3cd9b6fe7cf3fb63c63d280cbd2ecb01\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\47851632019001484da1f5e0c6247124\AndroidManifest.xml:17:5-94
+MERGED from [com.google.android.gms:play-services-ads:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.4.0.aar\47851632019001484da1f5e0c6247124\AndroidManifest.xml:17:5-94
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\7ca5e09c68bb303c2e886ddbb0a5ac85\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-v4-impl-11.4.0.aar\7ca5e09c68bb303c2e886ddbb0a5ac85\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-impl-11.4.0.aar\21850387b73049a46e9928f03ec0187c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.4.0.aar\06ae82e4376405abd8abc0423fa52fc9\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.4.0.aar\06ae82e4376405abd8abc0423fa52fc9\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.4.0.aar\91be713f8d3440119015bf13c53559fe\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-base-11.4.0.aar\91be713f8d3440119015bf13c53559fe\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\80a95a43228af9cd9bf35b8c15036a8d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-config-11.4.0.aar\80a95a43228af9cd9bf35b8c15036a8d\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\a87257cf36d36e972e1603a71aecaf2f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-awareness-11.4.0.aar\a87257cf36d36e972e1603a71aecaf2f\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\514f4dd7a220fb8ecf430f249c91761a\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-games-11.4.0.aar\514f4dd7a220fb8ecf430f249c91761a\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\4c88178de5c8c3e39b4a73599d6f350c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-drive-11.4.0.aar\4c88178de5c8c3e39b4a73599d6f350c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\9b051a6fdc189befbb500c5d223a6dcf\AndroidManifest.xml:4:3-41
+MERGED from [com.google.android.gms:play-services-fido:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fido-11.4.0.aar\9b051a6fdc189befbb500c5d223a6dcf\AndroidManifest.xml:4:3-41
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\487c4ab164a9807ac1b22463df1e87e9\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-auth-11.4.0.aar\487c4ab164a9807ac1b22463df1e87e9\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\09cddcf9c4d8495c6db979d1b4dfc1d8\AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-dynamic-links-11.4.0.aar\09cddcf9c4d8495c6db979d1b4dfc1d8\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\9a764d9e8c84def82a08e99014165305\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fitness:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-fitness-11.4.0.aar\9a764d9e8c84def82a08e99014165305\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gcm-11.4.0.aar\3c4aec645e4cf922c52f88d13e123165\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\ae84c94c217dfbeb8c15a8fdb5a85557\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-appindexing-11.4.0.aar\ae84c94c217dfbeb8c15a8fdb5a85557\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.4.0.aar\37f6e571d1c5cd54bbe7d7685f2b2457\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wallet-11.4.0.aar\37f6e571d1c5cd54bbe7d7685f2b2457\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\53089d9c5fb14efa56a16704d6100bf5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.4.0.aar\53089d9c5fb14efa56a16704d6100bf5\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-iid-11.4.0.aar\c5c20d8b48203d92e90961bfc65a8d58\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.4.0.aar\3c0aa14cf58748285d4371e64c1573da\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-instantapps-11.4.0.aar\3c0aa14cf58748285d4371e64c1573da\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\12115ebd3a69e64259d49478666b9621\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-location-11.4.0.aar\12115ebd3a69e64259d49478666b9621\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\ac2ace3457a13d543da6a707c8d778cd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-places-11.4.0.aar\ac2ace3457a13d543da6a707c8d778cd\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-nearby-11.4.0.aar\ddb5bdf6f84b712a69024032dc5fd021\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\7ec65476ff9bbe9e0ff187bac412a14b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-panorama-11.4.0.aar\7ec65476ff9bbe9e0ff187bac412a14b\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\658a23cbba338df5dbe6952db4c96cc4\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-plus-11.4.0.aar\658a23cbba338df5dbe6952db4c96cc4\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\7b1d3df0149b2c177bf47e3c73394e6e\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-safetynet-11.4.0.aar\7b1d3df0149b2c177bf47e3c73394e6e\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\71c23fbba1ca611a0a295884e62ef591\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-11.4.0.aar\71c23fbba1ca611a0a295884e62ef591\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\8c0e5648f96805792f3657c409ab1b15\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-vision-common-11.4.0.aar\8c0e5648f96805792f3657c409ab1b15\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\49e7074ce6a61007527dfd029186ca69\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-wearable-11.4.0.aar\49e7074ce6a61007527dfd029186ca69\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-database-11.4.0.aar\b54a0c219097ba2f44e1fb612c54ec16\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-database-11.4.0.aar\b54a0c219097ba2f44e1fb612c54ec16\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.4.0.aar\76f520909a53e60cf68b9c5916ad0c28\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-11.4.0.aar\76f520909a53e60cf68b9c5916ad0c28\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.4.0.aar\37b3d3e8f5f75d05bd6a658c791562ba\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-storage-11.4.0.aar\37b3d3e8f5f75d05bd6a658c791562ba\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.4.0.aar\e6844506477923e1752d25a9de833373\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-storage-common-11.4.0.aar\e6844506477923e1752d25a9de833373\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\cb5cb07eff99f22927aa8827eec28ff9\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.4.0.aar\cb5cb07eff99f22927aa8827eec28ff9\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\c55466c12943179f70f8f7d276acce0a\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.4.0.aar\c55466c12943179f70f8f7d276acce0a\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.4.0.aar\2b0827fdc4dd7a8ca2c65430dadcf5f0\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:design:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\7e673b7da7950878f47e9ec9206fb54d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\f614b0c66a32d5d1d7d76c7ba3cd96d1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\992835fc15c6b5aec07f101b2896e506\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\d4458b784afb67115927a511062cb361\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\18ffcdca274d5214681b7abd0aaf87c9\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\bd2ec8b4454574aa5bacb3f2bb0f271f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\3252edc1b11d7d5b094d9e447eaf1183\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\ce50cd5fcebc136b39059df39083ccba\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\9d0d4d1e8da33e928f9bec605d1217fb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\aba9bd5f934798831108d993e63b6ee5\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\d99a18d07db5b5cc60c6023d988a692d\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\7536a50a12157bc05ec563a6c6716fed\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:25:13-35
+	android:name
+		ADDED from [com.android.support:cardview-v7:25.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\03d833e60fd14766be4fab1c318277af\AndroidManifest.xml:24:13-51
+activity#droidninja.filepicker.FilePickerActivity
+ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:17:9-19:66
+	android:configChanges
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:19:13-63
+	android:name
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:18:13-68
+activity#droidninja.filepicker.MediaDetailsActivity
+ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:20:9-22:66
+	android:configChanges
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:22:13-63
+	android:name
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:21:13-70
+provider#droidninja.filepicker.utils.FilePickerProvider
+ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:24:9-32:20
+	android:grantUriPermissions
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:28:13-47
+	android:authorities
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:26:13-82
+	android:exported
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:25:13-74
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:29:13-31:58
+	android:resource
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:31:17-55
+	android:name
+		ADDED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\5a009c1a6a28d5962a6c27a9cd0706a1\AndroidManifest.xml:30:17-67
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:12:5-82
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:12:22-79
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:13:5-88
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:13:22-85
+service#br.com.bemobi.medescope.service.impl.DownloadCommandService
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:18:9-20:43
+	android:process
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:20:13-40
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:19:13-87
+service#br.com.bemobi.medescope.service.impl.DMIntentService
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:21:9-23:43
+	android:process
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:23:13-40
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:22:13-80
+receiver#br.com.bemobi.medescope.receiver.DMDownloaderReceiver
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:25:9-32:20
+	android:exported
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:26:13-81
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:28:13-31:29
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:29:25-79
+action#android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED
+ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:30:17-94
+	android:name
+		ADDED from [br.com.bemobi:medescope:1.1.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\medescope-1.1.0.aar\64afc740309e3091fd18d7f86c7a326a\AndroidManifest.xml:30:25-91
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-cast-framework-11.4.0.aar\277558c00c5d0bc8403e3dd8cdc4c889\AndroidManifest.xml:7:18-90
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:25:118-142
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:25:94-117
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:25:19-93
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.${applicationId}
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:26:13-31:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.com.dm.dmgrahak
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-tagmanager-api-11.4.0.aar\46e2407e0edd60be4f77f36aceb2a891\AndroidManifest.xml:30:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:27:17-104
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-11.4.0.aar\dffcaec06717ba5b834be77e2a9c220c\AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-analytics-11.4.0.aar\676fed58d1694ae4d6176371e332088f\AndroidManifest.xml:33:16-90
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:25:9-257
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:25:231-255
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.4.0.aar\6bd785f24bc0e321d780f8d2502b6829\AndroidManifest.xml:25:19-71
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:27:9-28:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:27:85-107
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:27:108-132
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:27:19-84
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:29:9-132
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:29:83-105
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:29:106-130
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:29:18-82
+service#com.google.android.gms.analytics.AnalyticsJobService
+ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:30:9-192
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:30:143-165
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:30:166-190
+	android:permission
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:30:86-142
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-analytics-11.4.0.aar\ebbf45467a8f661944f4ffd136f3e77b\AndroidManifest.xml:30:18-85
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:20:19-50
+intent-filter#action:name:com.google.android.gms.appinvite.ACTION_PREVIEW+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-appinvite-11.4.0.aar\4188a5b0aef97d68b77011c26de27a6d\AndroidManifest.xml:22:25-87
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.4.0.aar\c4216bbdf1827e563a68535d71d09acb\AndroidManifest.xml:24:18-63
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-maps-11.4.0.aar\c349083dbfe9b159802cb51414d60a90\AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\play-services-base-11.4.0.aar\389effb09518fda3377fac7ee4081755\AndroidManifest.xml:19:19-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-messaging-11.4.0.aar\94d6ecde53c6dfb43c3541f8469a3865\AndroidManifest.xml:23:18-87
+permission#${applicationId}.permission.C2D_MESSAGE
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:24:5-109
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+MERGED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:26:5-78
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:30:19-84
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:31:13-34:29
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.dm.dmgrahak
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:33:27-58
+category#com.dm.dmgrahak
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-iid-11.4.0.aar\e7230a143df3baf0b6357efc755ea688\AndroidManifest.xml:43:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.4.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-common-11.4.0.aar\066df430548f35c3b21653471df7e008\AndroidManifest.xml:6:79-143

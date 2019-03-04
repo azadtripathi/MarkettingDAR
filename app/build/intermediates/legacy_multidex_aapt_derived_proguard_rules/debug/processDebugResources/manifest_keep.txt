@@ -1,0 +1,2 @@
+# Referenced at C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:84
+-keep class com.dm.crmdm_app.CrmApplication { <init>(); }

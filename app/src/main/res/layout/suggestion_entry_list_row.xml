@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dk_gray_border"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        >
+        <TableRow>
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Date" />
+            <TextView
+                style="@style/newtextLebal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Sales Person" />
+        </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txt_date"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s" />
+                <TextView
+                    android:id="@+id/txt_Salesperson"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="DocId" />
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Nature"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txt_docid"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s" />
+                <TextView
+                    android:id="@+id/txt_nature"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Product" />
+                <!--<TextView
+                    style="@style/newtextLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Distributor Name"
+                     />-->
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/txt_product"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s"/>
+                <!--<TextView
+                    android:id="@+id/txt_distributor"
+                    style="@style/neweditLebal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="s"
+                   />-->
+            </TableRow>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/traDSR"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/viewImage"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+
+
+                android:background="@drawable/button_style"
+                android:gravity="center"
+                android:text="View Image"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:background="#666666"/>
+
+    </TableLayout>
+</LinearLayout>

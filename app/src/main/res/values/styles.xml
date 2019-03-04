@@ -1,0 +1,236 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="exp_details_dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowTitleStyle">@style/exp_dialog_title</item>
+    </style>
+
+    <style name="exp_dialog_title" parent="android:Widget.TextView">
+        <item name="android:background">#4052b5</item>
+        <!--<item name="android:background">#367fa9</item>-->
+        <item name="android:textSize">@dimen/text_two</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!-- Text color -->
+    <style name="TextDashboard">
+        <item name="android:textColor">#f26222</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold|italic</item>
+
+    </style>
+    <style name="AppTheme.Patient" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@string/app_name</item> <!-- what values to put here -->
+    </style>
+    <style name="listStyle">
+    <item name="android:divider">#FFFFFF</item>
+        <item name="android:scrollbars">none</item>
+
+    <item name="android:layout_marginTop">@dimen/padding</item>
+    <item name="android:dividerHeight">0dp</item>
+
+
+    <item name="android:footerDividersEnabled">false</item>
+   </style>
+
+    <style name="listStyle_distributer">
+        <item name="android:divider">#000000</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:footerDividersEnabled">false</item>
+
+    </style>
+    <style name="spinnerDropDownItemStyle">
+        <item name="android:textSize">5dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="textLebalDisable">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:editable">false</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_bg</item>
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+        <!--<item name="android:layout_marginBottom">10dp</item>-->
+        <!--<item name="android:paddingLeft">8dp</item>-->
+        <!--<item name="android:paddingTop">5dp</item>-->
+        <!--<item name="android:paddingBottom">5dp</item>-->
+    </style>
+
+    <style name="listItemStyle">
+        <item name="android:textSize">19sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="listSubItemStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="textView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textLebal">
+    <item name="android:textColor">#666666</item>
+    <item name="android:textSize">@dimen/text_two</item>
+    <item name="android:paddingTop">2dp</item>
+    <item name="android:paddingBottom">2dp</item>
+        <item name="android:typeface">monospace</item>
+    <!-- <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>-->
+    <!--<item name="android:textStyle">bold</item>-->
+</style>
+    <style name="textNotification">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/text_two</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <!-- <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>-->
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="textstatus">
+    <item name="android:textColor">#666666</item>
+    <item name="android:textSize">@dimen/text_one</item>
+    <item name="android:paddingTop">2dp</item>
+    <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+    <style name="textLebalHeader">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">@dimen/text_size_one</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <style name="customLabal">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">@dimen/cudtom_margin</item>
+
+    </style>
+
+    <style name="editLebal">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">15sp</item>
+
+
+    </style>
+    <style name="neweditLebal">
+        <item name="android:textColor">#666666</item>
+        <!--<item name="android:layout_margin">2dp</item>-->
+
+
+        <item name="android:textSize">@dimen/text_two</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+    <style name="newtextLebal">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/text_two</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:background">#e3e3e3</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+    <style name="customtheme" parent="@android:style/Theme.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/my_rectangle</item>
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/my_rectangle</item>
+    </style>
+
+    <style name="editLebal1">
+        <item name="android:textColor">#2a2a2a</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="MyAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="LineBelowViewLinearLayout">
+        <item name="android:background">#666666</item>
+        <item name="android:layout_marginLeft">@dimen/padding</item>
+        <item name="android:layout_marginRight">@dimen/padding</item>
+    </style>
+    <style name="MyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorBackgroundCacheHint">@color/colorAccent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">#666666</item>
+        <item name="android:textSize">15sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">#666666</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="ThemeSpinner">
+        <!-- Color when pressed -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">#666666</item>
+    </style>
+    <style name="DynamicEdittext" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+</resources>

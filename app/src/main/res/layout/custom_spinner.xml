@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Spinner
+        android:id="@+id/dynamicSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:theme="@style/ThemeSpinner"
+        android:layout_marginLeft="5dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/title_selectContry"
+        android:dropDownVerticalOffset="50dp"
+        android:textSize="12dp"
+        />
+</LinearLayout>

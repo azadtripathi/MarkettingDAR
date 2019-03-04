@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:gravity="center_vertical"
+
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/attachmentImageView"
+            android:layout_width="48dp"
+            android:visibility="gone"
+            android:layout_height="48dp"
+            />
+        <TextView
+            android:id="@+id/milesStoneLabel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:clickable="true"
+            android:textColor="#000"
+            android:text="Milestone"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="Quantity"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/rate"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="Rate"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/amtLabel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="Amount"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

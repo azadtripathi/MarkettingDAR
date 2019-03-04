@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/companyID"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:text="ID"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+        <TextView
+            android:id="@+id/companyName"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+        <TextView
+            android:id="@+id/companyContaty"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:text="Contary"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+        <TextView
+            android:id="@+id/companyState"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="State"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+        <TextView
+            android:id="@+id/companyCity"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:text="City"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+        <TextView
+            android:id="@+id/companyAddress"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:text="Address"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+        <TextView
+            android:id="@+id/companyZip"
+            style="?android:attr/dropDownItemStyle"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:singleLine="true"
+            android:text="Zip"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:ellipsize="marquee" />
+    </LinearLayout>
+</LinearLayout>

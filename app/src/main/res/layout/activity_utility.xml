@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/boder_nw1"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:context=".Utility" >
+
+        <Button
+            android:id="@+id/exportDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:requiresFadingEdge="vertical"
+            android:text="Export Db"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_two"
+            android:typeface="monospace"
+            />
+
+        <Button
+            android:id="@+id/claerData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:requiresFadingEdge="vertical"
+            android:text="Clear Data"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/exportDb"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_two"
+            android:typeface="monospace"
+            />
+
+
+        <Button
+            android:id="@+id/email_exportDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:background="@drawable/button_style"
+            android:requiresFadingEdge="vertical"
+            android:text="Email DB to Support"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textSize="@dimen/text_two"
+            android:layout_below="@+id/claerData"
+            android:onClick="emailDb"
+            android:typeface="monospace"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/email_exportDb"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/vLabel"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            android:textColor="#000"/>
+
+
+
+        </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

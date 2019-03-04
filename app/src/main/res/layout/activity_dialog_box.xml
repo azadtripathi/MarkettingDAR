@@ -1,0 +1,336 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="@drawable/app_back"
+    android:padding="5dp"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:weightSum="3"
+        android:padding="@dimen/padding_one"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Day Secondary"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/DaySecondary"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Day Collection"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one"
+                    android:id="@+id/DayCollectionView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/DayCollection"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/NoofRetailerVisitView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="No. Of Retailer Visit"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/NoofRetailerVisit"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="No. Of Productive Visit"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/NoofProductiveVisit"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="No. Of Party Failed Visit"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/NoofpartyFailedVisit"
+                    />
+
+            </TableRow>
+
+
+
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="No. Of Demo"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/NoofDemo"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Day Primary"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one"
+                    android:id="@+id/dayPrimaryView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/dayPrimary"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Primary Collection"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/primaryCollection"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="No. Of Dist. Failed Visit"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/NoofdistFailedVisit"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Current Month Secondary"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one"
+                    android:id="@+id/CurrentMonthSecondaryView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/CurrentMonthSecondary"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_one"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="Current Month Primary"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_one"
+                    android:id="@+id/CurrentMonthPrimaryView"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_three"
+                    android:paddingRight="@dimen/padding_one"
+                    android:paddingBottom="@dimen/padding"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="@dimen/padding_one"
+                    android:id="@+id/CurrentMonthPrimary"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

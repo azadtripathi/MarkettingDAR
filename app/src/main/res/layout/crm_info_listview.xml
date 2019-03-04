@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/personHistoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:paddingBottom="8dp"
+        android:clickable="true"
+        android:divider="@android:color/transparent"
+
+        >
+    </ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addActionButton"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/heignt"
+        android:layout_marginRight="@dimen/margin_right"
+        android:tint="@color/white"
+        android:layout_marginBottom="@dimen/marging_bottom"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/floating_button" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboardlistview"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:divider="#d3d3d3"
+    android:dividerHeight="1dp"
+    android:orientation="vertical">
+
+</ListView>

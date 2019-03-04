@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: br.com.bemobi:medescope:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/medescope-1.1.0.aar/64afc740309e3091fd18d7f86c7a326a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/medescope-1.1.0.aar/64afc740309e3091fd18d7f86c7a326a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/br.com.bemobi/medescope/1.1.0/f221dc965e7ba22865f816c27451c968d341a1b2/medescope-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
