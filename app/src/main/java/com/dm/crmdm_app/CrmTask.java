@@ -117,8 +117,8 @@ public class CrmTask extends AppCompatActivity {
             appDataController1.open();
             appDataArray = appDataController1.getAppTypeFromDb();
             appDataController1.close();
-            appData = appDataArray.get(0);
-            server = appData.getCompanyUrl();
+//            appData = appDataArray.get(0);
+//            server = appData.getCompanyUrl();
 
             this.requestWindowFeature(Window.FEATURE_ACTION_BAR);
             this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND,
@@ -216,7 +216,7 @@ public class CrmTask extends AppCompatActivity {
             currentDate = df.format(cal.getTime());
             timeEdittext.setText(mFormat.format(Double.valueOf(hour)) + ":" + mFormat.format(Double.valueOf(minute)));
             dateEdittext.setText(currentDate);
-            new statusTagLeadSourceOwnerData().execute("Owner");
+//            new statusTagLeadSourceOwnerData().execute("Owner");
             dateEdittext.setOnClickListener(new View.OnClickListener() {
 
                 @Override

@@ -36,7 +36,8 @@ import java.util.ArrayList;
 public class AddExpense extends AppCompatActivity implements DataTransferInterface,CustomArrayAdopter.HolderListener,AlertMessage.NoticeDialogListenerWithoutView{
         ListView listView;
     TextView grpNameText, dateText, remText;
-    ImageView add, save, sum;ArrayList<Expense> expenseGrpList;
+    ImageView add, save, sum;
+    ArrayList<Expense> expenseGrpList;
     CustomArrayAdopter customArrayAdopter;ArrayList<AppData> appDataArray;
     SharedPreferences preferences1;String server;AppDataController appDataController1;
     AlertOkDialog dialogWithOutView;ConnectionDetector connectionDetector;ProgressDialog progressDialog;
@@ -44,13 +45,12 @@ public class AddExpense extends AppCompatActivity implements DataTransferInterfa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_expense);
-
         getSupportActionBar().setCustomView(R.layout.actionbar_custom_view_home);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        ImageView iv = (ImageView)findViewById(R.id.image);
+        ImageView iv = findViewById(R.id.image);
 
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,14 +60,14 @@ public class AddExpense extends AppCompatActivity implements DataTransferInterfa
             }
         });
 
-        TextView tv = (TextView)findViewById(R.id.text);
+        TextView tv = findViewById(R.id.text);
         tv.setText("Expense Active Sheet");
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3F51B5")));
         actionBar.setTitle(Html.fromHtml("<font color='#FFFFFF'>Expense Active Sheet </font>"));
-        add = (ImageView) findViewById(R.id.add_new);
+        add = findViewById(R.id.add_new);
         add.setImageResource(R.drawable.addgroup);
-        listView = (ListView) findViewById(R.id.listView1);
+        listView = findViewById(R.id.listView1);
         preferences1 = getSharedPreferences("MyPref", MODE_PRIVATE);
         appDataController1=new AppDataController(AddExpense.this);
         connectionDetector=new ConnectionDetector(getApplicationContext());

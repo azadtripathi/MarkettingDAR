@@ -4,13 +4,13 @@
             "outputFile": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.4.0.aar\\37f6e571d1c5cd54bbe7d7685f2b2457\\res\\values-en-rSG\\values.xml",
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-12.0.1.aar\\175c9a6eaacf46b551469528af5c1b25\\res\\values-en-rSG\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "244",
+                        "startOffsets": "206",
                         "endColumns": "99",
-                        "endOffsets": "343"
+                        "endOffsets": "305"
                     },
                     "to": {
                         "startLines": "2",

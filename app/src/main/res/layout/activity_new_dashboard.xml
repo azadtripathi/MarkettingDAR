@@ -2,14 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#F3F1F1"
     android:layout_height="match_parent">
+    <include layout="@layout/header_default"/>
 
     <LinearLayout
         android:id="@+id/layoutchild"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutparent"
-        android:background="@color/white"
+        android:background="@android:color/white"
         android:orientation="horizontal"
         android:onClick="onAddContact"
         android:paddingTop="5dp"
@@ -29,6 +34,10 @@
                 android:paddingTop="@dimen/padding"
                 android:src="@drawable/leave_request" />
         </LinearLayout>
+        <View
+            android:layout_width="01dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="match_parent"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,5 +92,13 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#d7d7d7" />
+        android:background="#A8A7A7" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_contacts"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

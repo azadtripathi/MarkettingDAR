@@ -101,6 +101,9 @@ attr behavior_hideable
 attr behavior_overlapTop
 attr behavior_peekHeight
 attr behavior_skipCollapsed
+attr behindOffset
+attr behindScrollScale
+attr behindWidth
 attr borderWidth
 attr borderlessButtonStyle
 attr bottomAppBarStyle
@@ -258,6 +261,7 @@ attr counterMaxLength
 attr counterOverflowTextAppearance
 attr counterTextAppearance
 attr customNavigationLayout
+attr customThemeStyle
 attr defaultIntentAction
 attr defaultIntentActivity
 attr defaultIntentData
@@ -301,6 +305,8 @@ attr fabCradleRoundedCornerRadius
 attr fabCradleVerticalOffset
 attr fabCustomSize
 attr fabSize
+attr fadeDegree
+attr fadeEnabled
 attr fastScrollEnabled
 attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
@@ -465,6 +471,7 @@ attr maxImageSize
 attr measureWithLargestChild
 attr mediaRouteAudioTrackDrawable
 attr mediaRouteButtonStyle
+attr mediaRouteButtonTint
 attr mediaRouteCloseDrawable
 attr mediaRouteControlPanelThemeOverlay
 attr mediaRouteDefaultIconDrawable
@@ -472,6 +479,7 @@ attr mediaRoutePauseDrawable
 attr mediaRoutePlayDrawable
 attr mediaRouteSpeakerGroupIconDrawable
 attr mediaRouteSpeakerIconDrawable
+attr mediaRouteStopDrawable
 attr mediaRouteTheme
 attr mediaRouteTvIconDrawable
 attr menu
@@ -504,6 +512,7 @@ attr met_textColor
 attr met_textColorHint
 attr met_typeface
 attr met_underlineColor
+attr mode
 attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
@@ -563,8 +572,12 @@ attr sectionWeight
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr selectorDrawable
+attr selectorEnabled
 attr semanticallySearchable
 attr settingsDescription
+attr shadowDrawable
+attr shadowWidth
 attr showAsAction
 attr showDividers
 attr showMotionSpec
@@ -687,6 +700,8 @@ attr toolbarTextColorStyle
 attr tooltipForegroundColor
 attr tooltipFrameBackground
 attr tooltipText
+attr touchModeAbove
+attr touchModeBehind
 attr track
 attr trackTint
 attr trackTintMode
@@ -704,6 +719,8 @@ attr useViewLifecycle
 attr userInputSection
 attr userInputTag
 attr userInputValue
+attr viewAbove
+attr viewBehind
 attr viewInflaterClass
 attr voiceIcon
 attr windowActionBar
@@ -872,6 +889,7 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color place_autocomplete_prediction_primary_text
 color place_autocomplete_prediction_primary_text_highlight
 color place_autocomplete_prediction_secondary_text
@@ -1210,6 +1228,12 @@ dimen place_autocomplete_progress_horizontal_margin
 dimen place_autocomplete_progress_size
 dimen place_autocomplete_separator_start
 dimen progress_arc_stroke_width
+dimen shadow_width
+dimen slidingmenu_offset
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen text
 dimen text_new
 dimen text_one
@@ -1534,6 +1558,8 @@ drawable ic_media_pause_dark
 drawable ic_media_pause_light
 drawable ic_media_play_dark
 drawable ic_media_play_light
+drawable ic_media_stop_dark
+drawable ic_media_stop_light
 drawable ic_mr_button_connected_00_dark
 drawable ic_mr_button_connected_00_light
 drawable ic_mr_button_connected_01_dark
@@ -1580,6 +1606,22 @@ drawable ic_mr_button_connected_21_dark
 drawable ic_mr_button_connected_21_light
 drawable ic_mr_button_connected_22_dark
 drawable ic_mr_button_connected_22_light
+drawable ic_mr_button_connected_23_dark
+drawable ic_mr_button_connected_23_light
+drawable ic_mr_button_connected_24_dark
+drawable ic_mr_button_connected_24_light
+drawable ic_mr_button_connected_25_dark
+drawable ic_mr_button_connected_25_light
+drawable ic_mr_button_connected_26_dark
+drawable ic_mr_button_connected_26_light
+drawable ic_mr_button_connected_27_dark
+drawable ic_mr_button_connected_27_light
+drawable ic_mr_button_connected_28_dark
+drawable ic_mr_button_connected_28_light
+drawable ic_mr_button_connected_29_dark
+drawable ic_mr_button_connected_29_light
+drawable ic_mr_button_connected_30_dark
+drawable ic_mr_button_connected_30_light
 drawable ic_mr_button_connecting_00_dark
 drawable ic_mr_button_connecting_00_light
 drawable ic_mr_button_connecting_01_dark
@@ -1626,6 +1668,22 @@ drawable ic_mr_button_connecting_21_dark
 drawable ic_mr_button_connecting_21_light
 drawable ic_mr_button_connecting_22_dark
 drawable ic_mr_button_connecting_22_light
+drawable ic_mr_button_connecting_23_dark
+drawable ic_mr_button_connecting_23_light
+drawable ic_mr_button_connecting_24_dark
+drawable ic_mr_button_connecting_24_light
+drawable ic_mr_button_connecting_25_dark
+drawable ic_mr_button_connecting_25_light
+drawable ic_mr_button_connecting_26_dark
+drawable ic_mr_button_connecting_26_light
+drawable ic_mr_button_connecting_27_dark
+drawable ic_mr_button_connecting_27_light
+drawable ic_mr_button_connecting_28_dark
+drawable ic_mr_button_connecting_28_light
+drawable ic_mr_button_connecting_29_dark
+drawable ic_mr_button_connecting_29_light
+drawable ic_mr_button_connecting_30_dark
+drawable ic_mr_button_connecting_30_light
 drawable ic_mr_button_disabled_dark
 drawable ic_mr_button_disabled_light
 drawable ic_mr_button_disconnected_dark
@@ -1678,6 +1736,8 @@ drawable mr_media_pause_dark
 drawable mr_media_pause_light
 drawable mr_media_play_dark
 drawable mr_media_play_light
+drawable mr_media_stop_dark
+drawable mr_media_stop_light
 drawable mr_vol_type_audiotrack_dark
 drawable mr_vol_type_audiotrack_light
 drawable mtrl_snackbar_background
@@ -1873,6 +1933,7 @@ id accSameAsCompany
 id acrmstreamDate
 id acslv
 id acsspineerMain
+id action0
 id actionAssBy
 id actionAssDt
 id actionAssTo
@@ -2003,6 +2064,7 @@ id bottomOverlay
 id branchAddressName
 id brandActivityLabel
 id btn
+id btnAddContact
 id btn_connect
 id btn_enable
 id btn_print_demo
@@ -2028,6 +2090,7 @@ id callNoteusername
 id callPhone
 id callResult
 id cancel
+id cancel_action
 id capturedImage
 id card_view
 id card_view1
@@ -2218,6 +2281,7 @@ id empNoText
 id empname
 id empty_view
 id end
+id end_padder
 id end_text
 id endtime
 id enterAlways
@@ -2286,10 +2350,12 @@ id fromdataPickerOnLeave
 id fromdate
 id fromdateTextOnDsr
 id fromstatespinner
+id fullscreen
 id genInfoLabel
 id getsign
 id ghost_view
 id gobutton
+id googleMaterial2
 id google_wallet_classic
 id google_wallet_grayscale
 id google_wallet_monochrome
@@ -2306,6 +2372,7 @@ id gstValue
 id gst_note
 id gstininput_layout
 id header
+id header_text
 id highlight
 id historyList
 id holo_dark
@@ -2329,6 +2396,7 @@ id imageTableRow
 id imageView
 id imageView1
 id imgLogo
+id img_home
 id index_entity_types
 id industrySpinner
 id industryType
@@ -2427,11 +2495,14 @@ id logo_only
 id logout
 id mainOption
 id mainSerchPannel
+id margin
 id masked
 id match_global_nicknames
 id match_parent
+id material
 id materialspinner
 id mbLabel
+id media_actions
 id meetActivityLabel
 id message
 id messageToastText
@@ -2459,7 +2530,7 @@ id mr_chooser_route_name
 id mr_chooser_title
 id mr_close
 id mr_control_divider
-id mr_control_play_pause
+id mr_control_playback_ctrl
 id mr_control_subtitle
 id mr_control_title
 id mr_control_title_container
@@ -2523,6 +2594,7 @@ id pQTYLabel
 id packed
 id parallax
 id parent
+id parentLL
 id parentPanel
 id parent_matrix
 id parrentLinerLayout
@@ -2703,6 +2775,7 @@ id seek_bar_controls
 id segmentspinner
 id select_dialog_listview
 id selected
+id selected_view
 id selectionDetails
 id separator
 id shortcut
@@ -2713,6 +2786,7 @@ id sideIndex
 id signature
 id siteNoText
 id slide
+id slidingmenumain
 id smallLabel
 id smanSpinner
 id snackbar_action
@@ -2743,6 +2817,7 @@ id status
 id statusLayout
 id statusLinearLayout
 id statusSpinner
+id status_bar_latest_event_content
 id status_text
 id stayWithRelative
 id stayWithRelativeText
@@ -3139,6 +3214,7 @@ layout get_images_tittlebar
 layout get_product_tittlebar
 layout grid_item_layout
 layout header_beatplan_list
+layout header_default
 layout header_exp_grp_list_row
 layout header_expence_list
 layout header_leave_list
@@ -3163,6 +3239,7 @@ layout list_alphabet
 layout list_layout
 layout listview_crmstream
 layout listview_find_add_contact
+layout menu
 layout milestone_item_layout
 layout milestone_layout
 layout more_person_info
@@ -3179,9 +3256,18 @@ layout new_person_info
 layout note_layout
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
 layout notification_pannel_list_row
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout notificationview
@@ -3214,6 +3300,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout simple_spinner_dropdown_item
 layout simple_spinner_item
+layout slidingmenumain
 layout spinner_adapter_view
 layout spinner_item
 layout spinner_layout
@@ -3301,6 +3388,7 @@ string cast_invalid_stream_position_text
 string cast_mute
 string cast_notification_connected_message
 string cast_notification_connecting_message
+string cast_notification_default_channel_name
 string cast_notification_disconnect
 string cast_pause
 string cast_play
@@ -3330,6 +3418,7 @@ string common_google_play_services_enable_title
 string common_google_play_services_install_button
 string common_google_play_services_install_text
 string common_google_play_services_install_title
+string common_google_play_services_notification_channel_name
 string common_google_play_services_notification_ticker
 string common_google_play_services_unknown_issue
 string common_google_play_services_unsupported_text
@@ -3391,6 +3480,7 @@ string mr_controller_no_media_selected
 string mr_controller_pause
 string mr_controller_play
 string mr_controller_stop
+string mr_controller_stop_casting
 string mr_controller_volume_slider
 string mr_system_route_name
 string mr_user_route_category_name
@@ -3422,6 +3512,7 @@ string s3
 string s4
 string s5
 string s6
+string s7
 string scgst_amt
 string search_hint
 string search_menu_title
@@ -3889,9 +3980,14 @@ style TextAppearance_CastMiniController_Subtitle
 style TextAppearance_CastMiniController_Title
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -4188,7 +4284,7 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable Corpus contentProviderUri corpusId corpusVersion documentMaxAgeSecs perAccountTemplate schemaOrgType semanticallySearchable trimmable
 styleable CustomCastTheme castExpandedControllerStyle castIntroOverlayStyle castMiniControllerStyle
-styleable CustomWalletTheme toolbarTextColorStyle windowTransitionStyle
+styleable CustomWalletTheme customThemeStyle toolbarTextColorStyle windowTransitionStyle
 styleable DesignTheme bottomSheetDialogTheme bottomSheetStyle
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable FABProgressCircle arcColor arcWidth circleSize finalIcon reusable roundedStroke
@@ -4215,7 +4311,7 @@ styleable MaterialButton android_insetLeft android_insetRight android_insetTop a
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle
 styleable MaterialEditText met_accentTypeface met_autoValidate met_baseColor met_bottomTextSize met_clearButton met_errorColor met_floatingLabel met_floatingLabelAlwaysShown met_floatingLabelAnimating met_floatingLabelPadding met_floatingLabelText met_floatingLabelTextColor met_floatingLabelTextSize met_helperText met_helperTextAlwaysShown met_helperTextColor met_hideUnderline met_iconLeft met_iconPadding met_iconRight met_maxCharacters met_minBottomTextLines met_minCharacters met_primaryColor met_singleLineEllipsis met_textColor met_textColorHint met_typeface met_underlineColor
-styleable MediaRouteButton android_minWidth android_minHeight buttonTint externalRouteEnabledDrawable
+styleable MediaRouteButton android_minWidth android_minHeight externalRouteEnabledDrawable mediaRouteButtonTint
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow
@@ -4230,6 +4326,7 @@ styleable SearchView android_focusable android_maxWidth android_inputType androi
 styleable Section indexPrefixes noIndex schemaOrgProperty sectionFormat sectionId sectionWeight subsectionSeparator
 styleable SectionFeature featureType
 styleable SignInButton buttonSize colorScheme scopeUris
+styleable SlidingMenu behindOffset behindScrollScale behindWidth fadeDegree fadeEnabled mode selectorDrawable selectorEnabled shadowDrawable shadowWidth touchModeAbove touchModeBehind viewAbove viewBehind
 styleable SmoothCheckBox color_checked color_tick color_unchecked color_unchecked_stroke duration stroke_width
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth
@@ -4248,5 +4345,6 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable WalletFragmentOptions appTheme environment fragmentMode fragmentStyle
 styleable WalletFragmentStyle buyButtonAppearance buyButtonHeight buyButtonText buyButtonWidth maskedWalletDetailsBackground maskedWalletDetailsButtonBackground maskedWalletDetailsButtonTextAppearance maskedWalletDetailsHeaderTextAppearance maskedWalletDetailsLogoImageType maskedWalletDetailsLogoTextColor maskedWalletDetailsTextAppearance
+xml network_security_config
 xml provider_paths
 xml searchable

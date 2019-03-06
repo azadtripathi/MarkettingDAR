@@ -14,10 +14,10 @@ public final class R {
 
         public static final int arcColor = 0x7f04002f;
         public static final int arcWidth = 0x7f040030;
-        public static final int circleSize = 0x7f0400aa;
-        public static final int finalIcon = 0x7f040113;
-        public static final int reusable = 0x7f0401fc;
-        public static final int roundedStroke = 0x7f0401ff;
+        public static final int circleSize = 0x7f0400ad;
+        public static final int finalIcon = 0x7f040119;
+        public static final int reusable = 0x7f040205;
+        public static final int roundedStroke = 0x7f040208;
     }
     public static final class color {
         private color() {}
@@ -26,7 +26,7 @@ public final class R {
         public static final int fab_orange_bright = 0x7f060060;
         public static final int fab_orange_dark = 0x7f060061;
         public static final int fab_orange_light = 0x7f060062;
-        public static final int white = 0x7f0600c5;
+        public static final int white = 0x7f0600c6;
     }
     public static final class dimen {
         private dimen() {}
@@ -43,15 +43,15 @@ public final class R {
         private drawable() {}
 
         public static final int ic_done = 0x7f08010f;
-        public static final int oval_complete = 0x7f0801db;
+        public static final int oval_complete = 0x7f0801ff;
     }
     public static final class id {
         private id() {}
 
-        public static final int completeFabIcon = 0x7f090133;
-        public static final int completeFabRoot = 0x7f090134;
-        public static final int mini = 0x7f090297;
-        public static final int normal = 0x7f0902cd;
+        public static final int completeFabIcon = 0x7f090136;
+        public static final int completeFabRoot = 0x7f090137;
+        public static final int mini = 0x7f0902a2;
+        public static final int normal = 0x7f0902d8;
     }
     public static final class integer {
         private integer() {}
@@ -67,12 +67,12 @@ public final class R {
         private string() {}
 
         public static final int app_name = 0x7f0e002e;
-        public static final int child_count_error = 0x7f0e005f;
+        public static final int child_count_error = 0x7f0e0060;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] FABProgressCircle = { 0x7f04002f, 0x7f040030, 0x7f0400aa, 0x7f040113, 0x7f0401fc, 0x7f0401ff };
+        public static final int[] FABProgressCircle = { 0x7f04002f, 0x7f040030, 0x7f0400ad, 0x7f040119, 0x7f040205, 0x7f040208 };
         public static final int FABProgressCircle_arcColor = 0;
         public static final int FABProgressCircle_arcWidth = 1;
         public static final int FABProgressCircle_circleSize = 2;

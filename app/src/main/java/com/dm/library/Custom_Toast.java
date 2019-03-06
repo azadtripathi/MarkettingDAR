@@ -41,7 +41,7 @@ Context context;private String Message;private int image_Id;
         toast.setView(toastRoot);
         toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL,
                 0, 0);
-        toast.setDuration(1500);
+        toast.setDuration(Toast.LENGTH_LONG);
         toast.show(); 
          
     }

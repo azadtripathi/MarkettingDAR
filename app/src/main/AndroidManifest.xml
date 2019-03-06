@@ -71,6 +71,7 @@
         android:icon="@drawable/crm_dm1"
         android:label="@string/app_name"
         android:theme="@style/MyAppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:uiOptions="splitActionBarWhenNarrow">
         <uses-library android:name="org.apache.http.legacy"
             android:required="false"/>
@@ -471,9 +472,15 @@
 
         <activity android:name=".ViewMileStoneActivity" />
         <activity android:name=".ViewAttachments" />
-        <activity android:name=".AddNewContactPage" />
-        <activity android:name=".NewDashboard" />
-        <activity android:name=".NewMainActivity" />
+        <activity android:name=".AddNewContactPage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".NewDashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".NewMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>

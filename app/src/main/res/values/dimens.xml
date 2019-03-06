@@ -50,5 +50,7 @@
     <dimen name="floating_marging_right">12sp</dimen>
     <dimen name="floating_heignt">55sp</dimen>
     <dimen name="floating_width">55sp</dimen>
+    <dimen name="shadow_width">180dp</dimen>
+    <dimen name="slidingmenu_offset">80dp</dimen>
 
 </resources>

@@ -31,7 +31,7 @@ import static android.content.Context.MODE_PRIVATE;
  * Created by dataman on 12/13/2017.
  */
 
-public class CommonFunctions  {
+public class CommonFunctions {
     Context context;
     UserDataController userDataController;
     public static boolean mSuccess=false;
@@ -47,13 +47,6 @@ public class CommonFunctions  {
         this.server=Constant.SERVER_WEBSERVICE_URL;
 
     }
-
-
-
-
-
-
-
 
     public boolean insertCityTimestampWise()
     {

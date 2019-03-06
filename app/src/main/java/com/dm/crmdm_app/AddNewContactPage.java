@@ -10,18 +10,22 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.InputFilter;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -37,6 +41,7 @@ import com.dm.library.CustomAdapterCRMStreamInfo;
 import com.dm.library.Custom_Toast;
 import com.dm.library.DateAndTimePicker;
 import com.dm.model.Owner;
+import com.dm.util.Util;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -53,6 +58,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -62,93 +68,107 @@ import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class AddNewContactPage extends AppCompatActivity
-{
+public class AddNewContactPage extends AppCompatActivity {
     LinearLayout linearLayoutAddCompanyDetails, linearLayoutdynamicAllBelowfields, linearlayoutdynamicfieldsURL, linearLayoutdynamicfieldForPersonInfo;
 
     ArrayList<Owner> statusList = new ArrayList<>();
     ArrayList<Owner> employeeList = new ArrayList<>();
+    ArrayList<Owner> ownerList = new ArrayList<>();
     ArrayList<Owner> cityArray = new ArrayList<>();
     ArrayList<Owner> industryArray = new ArrayList<>();
     ArrayList<Owner> subindustryArray = new ArrayList<>();
     ArrayList<Owner> productArray = new ArrayList<>();
-    Spinner spinnerIdustry,spinnerSubIndustry,spinnerCity, spinnerCompanyCity, spinnerState, spinnerAddCompanyDetailsState, spinnerAddCompanyDetailsCountry, spinnerCountry,
-            spinnerStatue, spinnerTag, spinnerLeadSource, spinnerOwner, spinnerProduct, spinnerProductGroup, spinnerIndustry,
-            spinnerJobTitle,aacspineerStatus,employeeSpinner;
+    ArrayList<Owner> dealerArray = new ArrayList<>();
+    Spinner spinnerIdustry, spinnerSubIndustry, spinnerCity, spinnerCompanyCity, spinnerState, spinnerAddCompanyDetailsState, spinnerAddCompanyDetailsCountry, spinnerCountry,
+            spinnerStatue, spinnerTag, aacspineerOwner, dealerSpiner, spinnerProduct, spinnerProductGroup, spinnerIndustry,
+            spinnerJobTitle, aacspineerStatus, employeeSpinner;
 
-    EditText computerNoText,siteNoText,empNoText,valueText,advDetailText,editTextCompany, editTextMainEmail, editTextPersonName, editTextAddCompanyDetailsDiscription, editTextAddCompanyDetailsZip, editTextAddCompanyDetailsAddress, editTextFirstName, editTextLastName, editTextJobTittle,
-            editTextMainMobNo, editTextMainUrl, editTextZip, editTextAddress, editTextBackground,companyNameText,hqText,phoneText,onDateText,validUptoText;
-    ArrayList<Owner>jobTitleArray = new ArrayList<>();
-    CheckBox isDealerCheckBox,aacActive,isBlockTeleCaller;
+    EditText computerNoText, siteNoText, empNoText, valueText, advDetailText, softwareUsingText, editTextMainEmail, editTextPersonName, editTextAddCompanyDetailsDiscription, editTextAddCompanyDetailsZip, editTextAddCompanyDetailsAddress, editTextFirstName, editTextLastName, editTextJobTittle,
+            editTextMainMobNo, editTextMainUrl, party_addbyText, editTextAddress, aacBackground, companyNameText, hqText, phoneText, onDateText, validUptoText;
+    ArrayList<Owner> jobTitleArray = new ArrayList<>();
+    CheckBox isDealerCheckBox, aacActive, isBlockTeleCaller;
     ImageView imgAddMorePersonInfo;
-    String hqcode,hqname;
+    String hqcode, hqname, LoginId;
+    //Azad
+    Button btnAddContact;
+    LinearLayout parentLL;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_contact);
 
-
-        computerNoText = (EditText)findViewById(R.id.computerNoText);
-        siteNoText = (EditText)findViewById(R.id.siteNoText);
-        empNoText = (EditText)findViewById(R.id.empNoText);
-        advDetailText = (EditText)findViewById(R.id.advDetailText);
-        valueText = (EditText)findViewById(R.id.valueText);
-        hqText = (EditText)findViewById(R.id.hqText);
-        SharedPreferences pref = getSharedPreferences("LoginData",MODE_PRIVATE);
-        hqcode = pref.getString("HqCode","");
-        hqname = pref.getString("HqName","");
+        setHeader();
+        computerNoText = findViewById(R.id.computerNoText);
+        parentLL = findViewById(R.id.parentLL);
+        siteNoText = findViewById(R.id.siteNoText);
+        empNoText = findViewById(R.id.empNoText);
+        advDetailText = findViewById(R.id.advDetailText);
+        softwareUsingText = findViewById(R.id.softwareUsingText);
+        aacBackground = findViewById(R.id.aacBackground);
+        valueText = findViewById(R.id.valueText);
+        hqText = findViewById(R.id.hqText);
+        SharedPreferences pref = getSharedPreferences("LoginData", MODE_PRIVATE);
+        hqcode = pref.getString("HqCode", "");
+        hqname = pref.getString("HqName", "");
+        LoginId = pref.getString("LoginId", "");
         hqText.setText(hqname);
 
-        employeeSpinner = (Spinner)findViewById(R.id.aacspineerLeadSource);
-        isDealerCheckBox = (CheckBox)findViewById(R.id.isDealerCheckBox);
-        aacActive = (CheckBox)findViewById(R.id.aacActive);
-        isBlockTeleCaller = (CheckBox)findViewById(R.id.aacblockTeleActive);
+        employeeSpinner = findViewById(R.id.aacspineerLeadSource);
+        isDealerCheckBox = findViewById(R.id.isDealerCheckBox);
+        aacActive = findViewById(R.id.aacActive);
+        isBlockTeleCaller = findViewById(R.id.aacblockTeleActive);
+        btnAddContact = findViewById(R.id.btnAddContact);
 
         NewLocationService track = new NewLocationService(this);
-        if (track.canGetLocation)
-        {
+        if (track.canGetLocation) {
             latitude = track.getLatitude();
             longitude = track.getLongitude();
             latlngtime = track.getLatLngTime();
-        }
-        else
-        {
+        } else {
             latitude = track.getLatitude();
             longitude = track.getLongitude();
             latlngtime = track.getLatLngTime();
         }
 
 
-        linearLayoutdynamicfieldForPersonInfo = (LinearLayout) findViewById(R.id.dynamicfieldsPersonInfo);
-        onDateText = (EditText)findViewById(R.id.onDateText);
-        validUptoText = (EditText)findViewById(R.id.validuptoText);
+        linearLayoutdynamicfieldForPersonInfo = findViewById(R.id.dynamicfieldsPersonInfo);
+        onDateText = findViewById(R.id.onDateText);
+        validUptoText = findViewById(R.id.validuptoText);
 
         onDateText.setFocusable(false);
         onDateText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                onDateText.setError(null);
+                Util.hideKeyboard(AddNewContactPage.this);
                 showDatePicker(1);
             }
         });
+        validUptoText.setFocusable(false);
         validUptoText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                validUptoText.setError(null);
+                Util.hideKeyboard(AddNewContactPage.this);
                 showDatePicker(2);
             }
         });
-        imgAddMorePersonInfo = (ImageView) findViewById(R.id.addPhone);
-        spinnerProduct = (Spinner) findViewById(R.id.aacspineerProduct);
-        spinnerIndustry = (Spinner)findViewById(R.id.industrySpinner);
-        spinnerSubIndustry = (Spinner)findViewById(R.id.subindustrySpinner);
-        aacspineerStatus = (Spinner)findViewById(R.id.aacspineerStatus);
-        spinnerCity = (Spinner)findViewById(R.id.aacspineerCity);
-        spinnerJobTitle = (Spinner)findViewById(R.id.adcspinnerJobTitle);
+        imgAddMorePersonInfo = findViewById(R.id.addPhone);
+        spinnerProduct = findViewById(R.id.aacspineerProduct);
+        spinnerIndustry = findViewById(R.id.industrySpinner);
+        spinnerSubIndustry = findViewById(R.id.subindustrySpinner);
+        aacspineerStatus = findViewById(R.id.aacspineerStatus);
+        aacspineerOwner = findViewById(R.id.aacspineerOwner);
+        spinnerCity = findViewById(R.id.aacspineerCity);
+        spinnerJobTitle = findViewById(R.id.adcspinnerJobTitle);
         getCityFromDb();
         getIndustry();
         getproduct();
         getDesignation();
         getStatus();
         getEmployee();
+        getDealers();
 
         spinnerIndustry.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -163,21 +183,19 @@ public class AddNewContactPage extends AppCompatActivity
         });
 
 
-        editTextFirstName = (EditText) findViewById(R.id.aacFirstName);
-        companyNameText = (EditText) findViewById(R.id.aacCompany);
-        hqText = (EditText)findViewById(R.id.hqText);
-        phoneText = (EditText)findViewById(R.id.aacPhone);
+        editTextFirstName = findViewById(R.id.aacFirstName);
+        companyNameText = findViewById(R.id.aacCompany);
+        hqText = findViewById(R.id.hqText);
+        phoneText = findViewById(R.id.aacPhone);
         //contact section ...
-        editTextPersonName = (EditText) findViewById(R.id.aacPersonName);
-        spinnerJobTitle = (Spinner) findViewById(R.id.adcspinnerJobTitle);
-        editTextMainMobNo = (EditText) findViewById(R.id.aacmbno);
-        editTextMainEmail = (EditText) findViewById(R.id.aacPersonEmail);
+        editTextPersonName = findViewById(R.id.aacPersonName);
+        spinnerJobTitle = findViewById(R.id.adcspinnerJobTitle);
+        editTextMainMobNo = findViewById(R.id.aacmbno);
+        editTextMainEmail = findViewById(R.id.aacPersonEmail);
         /////////
-        editTextMainUrl = (EditText) findViewById(R.id.aacURL);
-        editTextPersonName = (EditText) findViewById(R.id.aacPersonName);
-        editTextMainMobNo = (EditText) findViewById(R.id.aacmbno);
-        editTextMainEmail = (EditText) findViewById(R.id.aacPersonEmail);
-        editTextAddress = (EditText)findViewById(R.id.aacAddress);
+        editTextMainUrl = findViewById(R.id.aacURL);
+        party_addbyText = findViewById(R.id.party_addbyText);
+        editTextAddress = findViewById(R.id.aacAddress);
 
 
         imgAddMorePersonInfo.setOnClickListener(new View.OnClickListener() {
@@ -188,6 +206,134 @@ public class AddNewContactPage extends AppCompatActivity
             }
         });
 
+        btnAddContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (validated())
+                    new saveDataOnServer().execute();
+            }
+        });
+        parentLL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Util.hideKeyboard(AddNewContactPage.this);
+            }
+        });
+
+    }
+
+    private boolean validated() {
+        if (TextUtils.isEmpty(editTextFirstName.getText().toString().trim())) {
+            editTextFirstName.setError("Please enter Name.");
+            editTextFirstName.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(companyNameText.getText().toString().trim())) {
+            companyNameText.setError("Please enter Company Name.");
+            companyNameText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(editTextAddress.getText().toString().trim())) {
+            editTextAddress.setError("Please enter Address.");
+            editTextAddress.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(phoneText.getText().toString().trim())) {
+            phoneText.setError("Please enter Phone Number.");
+            phoneText.requestFocus();
+            return false;
+
+        } else if (TextUtils.isEmpty(editTextPersonName.getText().toString().trim())) {
+            editTextPersonName.setError("Please enter Contact Person Name.");
+            editTextPersonName.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(editTextMainMobNo.getText().toString().trim())) {
+            editTextMainMobNo.setError("Please enter Contact Person's Mobile Number.");
+            editTextMainMobNo.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(editTextMainEmail.getText().toString().trim())) {
+            editTextMainEmail.setError("Please enter Contact Person Email.");
+            editTextMainEmail.requestFocus();
+
+            return false;
+        } else if (TextUtils.isEmpty(editTextMainUrl.getText().toString().trim())) {
+            editTextMainUrl.setError("Please enter Company URL.");
+            editTextMainUrl.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(party_addbyText.getText().toString().trim())) {
+            party_addbyText.setError("Please enter Influence by Name.");
+            party_addbyText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(valueText.getText().toString().trim())) {
+            valueText.setError("Please enter Value.");
+            valueText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(advDetailText.getText().toString().trim())) {
+            advDetailText.setError("Please enter Advertisement Detail.");
+            advDetailText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(empNoText.getText().toString().trim())) {
+            empNoText.setError("Please enter Number Of Employees.");
+            empNoText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(siteNoText.getText().toString().trim())) {
+            siteNoText.setError("Please enter Site Number.");
+            siteNoText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(computerNoText.getText().toString().trim())) {
+            computerNoText.setError("Please enter Number of Computer System used.");
+            computerNoText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(onDateText.getText().toString().trim())) {
+            onDateText.setError("Please enter on Date.");
+            onDateText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(validUptoText.getText().toString().trim())) {
+            validUptoText.setError("Please enter valid up-to.");
+            validUptoText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(softwareUsingText.getText().toString().trim())) {
+            softwareUsingText.setError("Please enter software using.");
+            softwareUsingText.requestFocus();
+            return false;
+        } else if (TextUtils.isEmpty(aacBackground.getText().toString().trim())) {
+            aacBackground.setError("Please enter remark.");
+            aacBackground.requestFocus();
+            return false;
+        }
+        return true;
+    }
+
+    private void setHeader() {
+        findViewById(R.id.img_home).setVisibility(View.VISIBLE);
+        findViewById(R.id.img_home).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        TextView headerText = findViewById(R.id.header_text);
+        headerText.setText("Add Contact");
+    }
+
+    private void getDealers() {
+        SharedPreferences pref = getSharedPreferences("EmpData", MODE_PRIVATE);
+        String js = pref.getString("emplist", "[]");
+        try {
+            JSONArray jsonArray = new JSONArray(js);
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                if (jsonObject.getString("Designation").equalsIgnoreCase("3")) {
+                    String id = jsonObject.getString("Id");
+                    String name = jsonObject.getString("EmployeeName");
+                    Owner data = new Owner();
+                    data.setName(name);
+                    data.setId(id);
+                    dealerArray.add(data);
+                }
+            }
+            if (dealerArray.size() > 0)
+                setStateContarySpinner(dealerSpiner, dealerArray);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     void addDynamicPersonInfo(Context myContext, final String Flag, boolean isUpload, JSONObject jsonValues) {
@@ -313,7 +459,6 @@ public class AddNewContactPage extends AppCompatActivity
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, 2);
         v.setBackgroundColor(Color.BLACK);
         v.setLayoutParams(lp);
-
         jobtitleLayout.addView(v);
 
         if (isUpload) {
@@ -372,7 +517,7 @@ public class AddNewContactPage extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 LinearLayout linearLayout = (LinearLayout) v.getParent().getParent().getParent().getParent();
-             //   LinearLayoutArrayListForPersonInfo.remove(linearLayout);
+                //   LinearLayoutArrayListForPersonInfo.remove(linearLayout);
                 linearLayoutdynamicfieldForPersonInfo.removeView(linearLayout);
 //                    linearLayout.removeAllViews();
                 // new Custom_Toast(getApplicationContext(),Flag+" Field Remove Successfully").showCustomAlert();
@@ -385,44 +530,40 @@ public class AddNewContactPage extends AppCompatActivity
             }
         });
         linearLayoutdynamicfieldForPersonInfo.addView(parent);
-       // LinearLayoutArrayListForPersonInfo.add(parent);
+        // LinearLayoutArrayListForPersonInfo.add(parent);
     }
 
 
-public void getEmployee()
-{
-    SharedPreferences pref = getSharedPreferences("StatusData",MODE_PRIVATE);
-    String js = pref.getString("statuslist","[]");
-    try {
-        JSONArray jsonArray = new JSONArray(js);
-        for (int i = 0; i < jsonArray.length(); i++) {
-            JSONObject jsonObject = jsonArray.getJSONObject(i);
-                String id = jsonObject.getString("Id");
-            String name = jsonObject.getString("EmployeeName");
-            Owner data = new Owner();
-            data.setName(name);
-//                data.setId(id);
-            statusList.add(data);
-        }
-
-        setStateContarySpinner(employeeSpinner, employeeList);
-    }
-    catch (Exception e)
-    {
-        e.printStackTrace();
-    }
-    }
-
-
-
-    public void getStatus()
-    {
-        SharedPreferences pref = getSharedPreferences("StatusData",MODE_PRIVATE);
-        String js = pref.getString("statuslist","[]");
+    public void getEmployee() {
+        SharedPreferences pref = getSharedPreferences("EmpData", MODE_PRIVATE);
+        String js = pref.getString("emplist", "[]");
         try {
             JSONArray jsonArray = new JSONArray(js);
-            for(int i=0;i< jsonArray.length();i++)
-            {
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                String id = jsonObject.getString("Id");
+                String name = jsonObject.getString("EmployeeName");
+                Owner data = new Owner();
+                data.setName(name);
+                data.setId(id);
+                employeeList.add(data);
+                ownerList.add(data);
+            }
+
+            setStateContarySpinner(employeeSpinner, employeeList);
+            setStateContarySpinner(aacspineerOwner, ownerList);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void getStatus() {
+        SharedPreferences pref = getSharedPreferences("StatusData", MODE_PRIVATE);
+        String js = pref.getString("statuslist", "[]");
+        try {
+            JSONArray jsonArray = new JSONArray(js);
+            for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
 //                String id = jsonObject.getString("Id");
                 String name = jsonObject.getString("party_status");
@@ -433,26 +574,20 @@ public void getEmployee()
             }
 
             setStateContarySpinner(aacspineerStatus, statusList);
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
 
 
     }
 
 
-
-    public void getDesignation()
-    {
-        SharedPreferences pref = getSharedPreferences("DesignationData",MODE_PRIVATE);
-        String js = pref.getString("desiglist","[]");
+    public void getDesignation() {
+        SharedPreferences pref = getSharedPreferences("DesignationData", MODE_PRIVATE);
+        String js = pref.getString("desiglist", "[]");
         try {
             JSONArray jsonArray = new JSONArray(js);
-            for(int i=0;i< jsonArray.length();i++)
-            {
+            for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
                 String id = jsonObject.getString("Id");
                 String name = jsonObject.getString("Designation");
@@ -463,12 +598,9 @@ public void getEmployee()
             }
 
             setStateContarySpinner(spinnerJobTitle, jobTitleArray);
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
 
 
     }
@@ -476,15 +608,13 @@ public void getEmployee()
 
     // DB FUnctions to read data ....
 
-    public void getCityFromDb()
-    {
+    public void getCityFromDb() {
 
         DatabaseConnection db = new DatabaseConnection(this);
         SQLiteDatabase dbx = db.getReadableDatabase();
         String query = "select webcode,name from MastCity order by name";
-        Cursor cursor = dbx.rawQuery(query,null);
-        while(cursor.moveToNext())
-        {
+        Cursor cursor = dbx.rawQuery(query, null);
+        while (cursor.moveToNext()) {
             Owner data = new Owner();
             data.setId(cursor.getString(0));
             data.setName(cursor.getString(1));
@@ -492,70 +622,60 @@ public void getEmployee()
 //            cityIdList.add(cursor.getString(0));
 //            cityNameList.add(cursor.getString(1));
         }
-        setStateContarySpinner(spinnerCity,cityArray);
+        setStateContarySpinner(spinnerCity, cityArray);
         cursor.close();
         dbx.close();
 
     }
 
 
-
-
-
-    public void getproduct()
-    {
+    public void getproduct() {
 
         DatabaseConnection db = new DatabaseConnection(this);
         SQLiteDatabase dbx = db.getReadableDatabase();
         String query = "select webcode,name from MastProduct order by name";
-        Cursor cursor = dbx.rawQuery(query,null);
-        while(cursor.moveToNext())
-        {
+        Cursor cursor = dbx.rawQuery(query, null);
+        while (cursor.moveToNext()) {
             Owner data = new Owner();
             data.setId(cursor.getString(0));
             data.setName(cursor.getString(1));
             productArray.add(data);
 
         }
-        setStateContarySpinner(spinnerProduct,productArray);
+        setStateContarySpinner(spinnerProduct, productArray);
         cursor.close();
         dbx.close();
 
     }
 
 
-
-    public void getIndustry()
-    {
+    public void getIndustry() {
 
         DatabaseConnection db = new DatabaseConnection(this);
         SQLiteDatabase dbx = db.getReadableDatabase();
         String query = "select webcode,name from Industrymast order by name";
-        Cursor cursor = dbx.rawQuery(query,null);
-        while(cursor.moveToNext())
-        {
+        Cursor cursor = dbx.rawQuery(query, null);
+        while (cursor.moveToNext()) {
             Owner data = new Owner();
             data.setId(cursor.getString(0));
             data.setName(cursor.getString(1));
             industryArray.add(data);
 
         }
-        setStateContarySpinner(spinnerIndustry,industryArray);
+        setStateContarySpinner(spinnerIndustry, industryArray);
         cursor.close();
         dbx.close();
 
     }
 
-    public void getSubIndustryByIndustry(String indName)
-    {
+    public void getSubIndustryByIndustry(String indName) {
 
         subindustryArray.clear();
         DatabaseConnection db = new DatabaseConnection(this);
         SQLiteDatabase dbx = db.getReadableDatabase();
-        String query = "select webcode,name from SubIndustrymast where indname='"+indName+"' order by name";
-        Cursor cursor = dbx.rawQuery(query,null);
-        while(cursor.moveToNext())
-        {
+        String query = "select webcode,name from SubIndustrymast where indname='" + indName + "' order by name";
+        Cursor cursor = dbx.rawQuery(query, null);
+        while (cursor.moveToNext()) {
             Owner data = new Owner();
             data.setId(cursor.getString(0));
             data.setName(cursor.getString(1));
@@ -563,7 +683,7 @@ public void getEmployee()
 //            cityIdList.add(cursor.getString(0));
 //            cityNameList.add(cursor.getString(1));
         }
-        setStateContarySpinner(spinnerSubIndustry,subindustryArray);
+        setStateContarySpinner(spinnerSubIndustry, subindustryArray);
         cursor.close();
         dbx.close();
 
@@ -574,7 +694,6 @@ public void getEmployee()
         spinner.setAdapter(adapter);
         return true;
     }
-
 
 
     private void showDatePicker(final int n) {
@@ -590,7 +709,7 @@ public void getEmployee()
             public void onDateSet(DatePicker view, int year, int monthOfYear,
                                   int dayOfMonth) {
 
-                String strDate=(dayOfMonth<10?("0"+dayOfMonth):(dayOfMonth))+"/"+(((monthOfYear+1)<10?("0"+(monthOfYear+1)):(monthOfYear+1)))+"/"+year;
+                String strDate = (dayOfMonth < 10 ? ("0" + dayOfMonth) : (dayOfMonth)) + "/" + (((monthOfYear + 1) < 10 ? ("0" + (monthOfYear + 1)) : (monthOfYear + 1))) + "/" + year;
                 SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
                 SimpleDateFormat format2 = new SimpleDateFormat("dd/MMM/yyyy");
                 Date date = null;
@@ -601,15 +720,12 @@ public void getEmployee()
                     e.printStackTrace();
                 }
                 System.out.println(format2.format(date));
-                if(n == 1)
-                {
+                if (n == 1) {
                     onDateText.setText(format2.format(date));
-                }
-                else
-                {
+                } else {
                     validUptoText.setText(format2.format(date));
                 }
-              //  dateTextOnDsr.setText(format2.format(date));
+                //  dateTextOnDsr.setText(format2.format(date));
 
 //			 dateTextOnDsr.setText((dayOfMonth<10?("0"+dayOfMonth):(dayOfMonth))+"/"+(((monthOfYear+1)<10?("0"+(monthOfYear+1)):(monthOfYear+1)))+"/"+year);
 
@@ -619,11 +735,10 @@ public void getEmployee()
     }
 
 
-
-
     String latitude = "", longitude = "";
     String latlngtime;
     ProgressDialog progressDialog;
+
     public class saveDataOnServer extends AsyncTask<String, Void, String> {
         String server_response;
         List<NameValuePair> params = new ArrayList<NameValuePair>();
@@ -637,269 +752,74 @@ public void getEmployee()
             progressDialog.setCancelable(false);
             progressDialog.show();
 
-            params.add(new BasicNameValuePair("Cname", companyNameText.getText().toString()));
-            params.add(new BasicNameValuePair("Fname", editTextFirstName.getText().toString()));
-            params.add(new BasicNameValuePair("JobTitle", editTextCompany.getText().toString()));
-            params.add(new BasicNameValuePair("Add", editTextAddress.getText().toString()));
-
-            params.add(new BasicNameValuePair("Cityid", cityArray.get(spinnerCity.getSelectedItemPosition()).getId()));
-            params.add(new BasicNameValuePair("CityName", cityArray.get(spinnerCity.getSelectedItemPosition()).getName()));
-
-            params.add(new BasicNameValuePair("Status", statusList.get(aacspineerStatus.getSelectedItemPosition()).getName()));
-            params.add(new BasicNameValuePair("Tagid", editTextCompany.getText().toString())); // status id
-
-            params.add(new BasicNameValuePair("PartyRefby", employeeList.get(employeeSpinner.getSelectedItemPosition()).getName()));
-            params.add(new BasicNameValuePair("Owner", editTextFirstName.getText().toString()));
-
-            params.add(new BasicNameValuePair("Active", String.valueOf(aacActive.isChecked())));
-            params.add(new BasicNameValuePair("phnval", editTextCompany.getText().toString()));
-
-            params.add(new BasicNameValuePair("Active", editTextCompany.getText().toString()));
-            params.add(new BasicNameValuePair("phnddlval", editTextCompany.getText().toString()));
-
-            params.add(new BasicNameValuePair("phncontName", editTextCompany.getText().toString()));
-            params.add(new BasicNameValuePair("url", editTextMainUrl.getText().toString()));
-            params.add(new BasicNameValuePair("emailval", editTextCompany.getText().toString()));
-            params.add(new BasicNameValuePair("Flag", editTextCompany.getText().toString()));
-            params.add(new BasicNameValuePair("longitude", longitude));
-            params.add(new BasicNameValuePair("latitude", latitude));
-            params.add(new BasicNameValuePair("lat_long_dt", String.valueOf(System.currentTimeMillis())));
-
-            params.add(new BasicNameValuePair("productid", productArray.get(spinnerProduct.getSelectedItemPosition()).getId()));
-            params.add(new BasicNameValuePair("IndustrySub", subindustryArray.get(spinnerSubIndustry.getSelectedItemPosition()).getName()));
-            params.add(new BasicNameValuePair("Phone", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("PartyRefName", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("OnDate", onDateText.getText().toString()));
-            params.add(new BasicNameValuePair("PartyAddedby", String.valueOf(System.currentTimeMillis())));
-
-            params.add(new BasicNameValuePair("Ad_Detail", advDetailText.getText().toString()));
-            params.add(new BasicNameValuePair("noemp", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("nocom", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("nosite", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("Softwareusing", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("businessremark", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("Dealerid", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("Valid_Upto", validUptoText.getText().toString()));
-            params.add(new BasicNameValuePair("Influence_Any", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("Block_Telecaller", String.valueOf(isBlockTeleCaller.isChecked())));
-            params.add(new BasicNameValuePair("Reason", String.valueOf(System.currentTimeMillis())));
-
-            params.add(new BasicNameValuePair("Value", valueText.getText().toString()));
-            params.add(new BasicNameValuePair("Userid", String.valueOf(System.currentTimeMillis())));
-            params.add(new BasicNameValuePair("industrycode", industryArray.get(spinnerIndustry.getSelectedItemPosition()).getId()));
-            params.add(new BasicNameValuePair("HQCode", hqcode));
-
-            params.add(new BasicNameValuePair("HQName", hqname));
-            params.add(new BasicNameValuePair("isdealer", String.valueOf(isDealerCheckBox.isChecked())));
-
-
-           /* //User Contact
-             DynamicFieldsPhoneNo.append(editTextMainMobNo.getText().toString());
-             DynamicFieldsPhoneNo.append(",");
-
-             *//*DynamicFieldsNameType.append(spinnerMainPhoneType.getSelectedItem().toString());
-             DynamicFieldsNameType.append(",");*//*
-
-             DynamicFieldsName.append(editTextPersonName.getText().toString());
-             DynamicFieldsName.append(",");
-             //Email
-             DynamicFieldsEmail.append(editTextMainEmail.getText().toString());
-             DynamicFieldsEmail.append(",");
-
-            *//* DynamicFieldsEmailType.append(spinnerMainEmailType.getSelectedItem().toString());
-             DynamicFieldsEmailType.append(",");
-            *//*
-
-             DynamicFieldJobTitle.append(jobTitleArray.get(spinnerJobTitle.getSelectedItemPosition()).getName());
-             DynamicFieldJobTitle.append(",");
-
-             //URL
-             DynamicFieldsWeb.append(editTextMainUrl.getText().toString());
-             DynamicFieldsWeb.append(",");
-             if(editTextMainUrl.getTag() != null){
-                 DynamicURLID.append(editTextMainUrl.getTag());
-                 DynamicURLID.append(",");
-             }
-             else{
-                 DynamicURLID.append("");
-                 DynamicURLID.append(",");
-             }
-
-             if(editTextMainMobNo.getTag() != null){
-                 DynamicPhoneID.append(editTextMainMobNo.getTag());
-                 DynamicPhoneID.append(",");
-             }
-             else{
-                 DynamicPhoneID.append("");
-                 DynamicPhoneID.append(",");
-             }
-*/
-
-            /* DynamicFieldsWebType.append(spinnerMainUrlType.getSelectedItem().toString());
-             DynamicFieldsWebType.append(",");*/
-//            if (!ContactID.equalsIgnoreCase("")) {
-//                params.add(new BasicNameValuePair("contactid", ContactID));
-//                params.add(new BasicNameValuePair("phoneid", DynamicPhoneID.substring(0, DynamicPhoneID.length() - 1).toString()));
-//                params.add(new BasicNameValuePair("urlid", DynamicURLID.substring(0, DynamicURLID.length() - 1).toString()));
-//
-//            } else {
-//                params.add(new BasicNameValuePair("Flag", LeadOrTaskTag));
-//                params.add(new BasicNameValuePair("CId", companyID));
-//
-//            }
-//            params.add(new BasicNameValuePair("Cname", editTextCompany.getText().toString()));
-//            params.add(new BasicNameValuePair("Cdesc", editTextAddCompanyDetailsDiscription.getText().toString()));
-//            //params.add(new BasicNameValuePair("Cphone",editTextCompanyPhone.getText().toString()));
-//            params.add(new BasicNameValuePair("Cphone", ""));
-//            params.add(new BasicNameValuePair("Cadd", editTextAddCompanyDetailsAddress.getText().toString()));
-//            if (companyCityArray.size() > 0) {
-//                params.add(new BasicNameValuePair("Ccity", companyCityArray.get(spinnerCompanyCity.getSelectedItemPosition()).getId()));
-//                SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = pref.edit();
-//                editor.putInt("cCityId", Integer.parseInt(companyCityArray.get(spinnerCompanyCity.getSelectedItemPosition()).getId()));
-//                editor.apply();
-//                editor.commit();
-//            } else {
-//                params.add(new BasicNameValuePair("Ccity", "0"));
-//                SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = pref.edit();
-//                editor.putInt("cCityId", 0);
-//                editor.apply();
-//                editor.commit();
-//            }
-//
-//
-//            if (spinnerAddCompanyDetailsState.getSelectedItemPosition() >= 0) {
-//                params.add(new BasicNameValuePair("CstateId", stateArray.get(spinnerAddCompanyDetailsState.getSelectedItemPosition()).getId()));
-//                if (stateArray.get(spinnerAddCompanyDetailsState.getSelectedItemPosition()).getId().equalsIgnoreCase("0")) {
-//                    params.add(new BasicNameValuePair("Cstate", ""));
-//                } else {
-//                    params.add(new BasicNameValuePair("Cstate", stateArray.get(spinnerAddCompanyDetailsState.getSelectedItemPosition()).getName()));
-//                }
-//                SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = pref.edit();
-//                editor.putInt("cStateId", Integer.parseInt(stateArray.get(spinnerAddCompanyDetailsState.getSelectedItemPosition()).getId()));
-//                editor.apply();
-//                editor.commit();
-//            } else {
-//
-//                params.add(new BasicNameValuePair("Cstate", ""));
-//                params.add(new BasicNameValuePair("CstateId", "0"));
-//                SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = pref.edit();
-//                editor.putInt("cStateId", 0);
-//                editor.apply();
-//                editor.commit();
-//
-//            }
-//            if (spinnerAddCompanyDetailsCountry.getSelectedItemPosition() >= 0) {
-//                params.add(new BasicNameValuePair("Ccountry", contaryArray.get(spinnerAddCompanyDetailsCountry.getSelectedItemPosition()).getId()));
-//
-//            } else {
-//                params.add(new BasicNameValuePair("Ccountry", "0"));
-//            }
-//
-////            if (spinnerProductGroup.getSelectedItemPosition() >= 0) {
-////                params.add(new BasicNameValuePair("Productgroupid", productGroupArray.get(spinnerProductGroup.getSelectedItemPosition()).getId()));
-////
-////            } else {
-////                params.add(new BasicNameValuePair("Productgroupid", "0"));
-////            }
-//
-//            if (spinnerProduct.getSelectedItemPosition() >= 0) {
-//                params.add(new BasicNameValuePair("productid", itemListArray.get(spinnerProduct.getSelectedItemPosition()).getId()));
-//
-//            } else {
-//                params.add(new BasicNameValuePair("productid", "0"));
-//            }
-//
-//
-//            params.add(new BasicNameValuePair("CZip", String.valueOf(validation.vNum(editTextAddCompanyDetailsZip.getText()))));
-//            //  params.add(new BasicNameValuePair("CZip",editTextAddCompanyDetailsZip.getText().toString()));
-//            try {
-//
-//            } catch (IndexOutOfBoundsException e) {
-//
-//            }
-//
-//
-//            params.add(new BasicNameValuePair("Fname", editTextFirstName.getText().toString()));
-//            params.add(new BasicNameValuePair("Lname", ""));
-//            //params.add(new BasicNameValuePair("Lname",editTextLastName.getText().toString()));
-//            //params.add(new BasicNameValuePair("JobTitle",editTextJobTittle.getText().toString()));
-//            params.add(new BasicNameValuePair("JobTitle", ""));
-//
-//            if (spinnerCity.getSelectedItemPosition() >= 0) {
-//                params.add(new BasicNameValuePair("City", cityArray.get(spinnerCity.getSelectedItemPosition()).getId()));
-//                SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = pref.edit();
-//                editor.putInt("cityId", Integer.parseInt(cityArray.get(spinnerCity.getSelectedItemPosition()).getId()));
-//                editor.apply();
-//                editor.commit();
-//            } else {
-//                params.add(new BasicNameValuePair("City", "0"));
-//                SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//                SharedPreferences.Editor editor = pref.edit();
-//                editor.putInt("cityId", 0);
-//                editor.apply();
-//                editor.commit();
-//            }
-//
-//            params.add(new BasicNameValuePair("stateid", stateArray.get(spinnerState.getSelectedItemPosition()).getId()));
-//            SharedPreferences pref = getSharedPreferences("AddressData", MODE_PRIVATE);
-//            SharedPreferences.Editor editor = pref.edit();
-//            editor.putInt("stateId", Integer.parseInt(stateArray.get(spinnerState.getSelectedItemPosition()).getId()));
-//            editor.apply();
-//            editor.commit();
-//            if (stateArray.get(spinnerState.getSelectedItemPosition()).getId().equalsIgnoreCase("0")) {
-//                params.add(new BasicNameValuePair("State", ""));
-//            } else {
-//                params.add(new BasicNameValuePair("State", stateArray.get(spinnerState.getSelectedItemPosition()).getName()));
-//            }
-//            params.add(new BasicNameValuePair("Country", contaryArray.get(spinnerCountry.getSelectedItemPosition()).getId()));
-//            params.add(new BasicNameValuePair("zip", String.valueOf(validation.vNum(editTextZip.getText()))));
-//            //    params.add(new BasicNameValuePair("zip",editTextZip.getText().toString()));
-//            params.add(new BasicNameValuePair("Add", editTextAddress.getText().toString()));
-//            params.add(new BasicNameValuePair("Statusid", spinnerArrayListStatusID.get(spinnerStatue.getSelectedItemPosition())));
-//            params.add(new BasicNameValuePair("Tagid", spinnerArrayListTagID.get(spinnerTag.getSelectedItemPosition())));
-//            params.add(new BasicNameValuePair("Leadid", spinnerArrayListLeadSourceID.get(spinnerLeadSource.getSelectedItemPosition())));
-//            params.add(new BasicNameValuePair("Owner", spinnerArrayListOwnerID.get(spinnerOwner.getSelectedItemPosition())));
-//            params.add(new BasicNameValuePair("Active", String.valueOf(checkboxActive.isChecked() ? "Y" : "N")));
-//
-//            params.add(new BasicNameValuePair("Background", editTextBackground.getText().toString()));
-//            params.add(new BasicNameValuePair("Manager", spinnerArrayListOwnerID.get(spinnerOwner.getSelectedItemPosition())));
-//            params.add(new BasicNameValuePair("smid", SMID));
-//            if (DynamicFieldskey.length() > 0) {
-//                params.add(new BasicNameValuePair("DynamicControls", DynamicFieldskey.substring(0, DynamicFieldskey.length() - 1).toString()));
-//            } else {
-//                params.add(new BasicNameValuePair("DynamicControls", ""));
-//            }
-//            if (DynamicFieldsValue.length() > 0) {
-//                params.add(new BasicNameValuePair("DynamicControlsValue", DynamicFieldsValue.substring(0, DynamicFieldsValue.length() - 1).toString()));
-//            } else {
-//                params.add(new BasicNameValuePair("DynamicControlsValue", ""));
-//
-//            }
-//            params.add(new BasicNameValuePair("phnval", DynamicFieldsPhoneNo.substring(0, DynamicFieldsPhoneNo.length() - 1).toString()));
-//            params.add(new BasicNameValuePair("phnddlval", DynamicFieldJobTitle.substring(0, DynamicFieldJobTitle.length() - 1).toString()));
-//            params.add(new BasicNameValuePair("phncontName", DynamicFieldsName.substring(0, DynamicFieldsName.length() - 1).toString()));
-//            params.add(new BasicNameValuePair("emailval", DynamicFieldsEmail.substring(0, DynamicFieldsEmail.length() - 1).toString()));
-//            params.add(new BasicNameValuePair("urlval", DynamicFieldsWeb.substring(0, DynamicFieldsWeb.length() - 1).toString()));
-//            params.add(new BasicNameValuePair("longitude", longitude));
-//            params.add(new BasicNameValuePair("latitude", latitude));
-//            params.add(new BasicNameValuePair("lat_long_dt", String.valueOf(System.currentTimeMillis())));
-//            params.add(new BasicNameValuePair("image1", selectedImageBase64ImgString));
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         protected String doInBackground(String... arg0) {
             URL url = null;
             try {
 //                if (ContactID.equalsIgnoreCase("")) {
-                    url = new URL(Constant.SERVER_WEBSERVICE_URL+" /XjsSaveContacts_CRM");
+                url = new URL(Constant.SERVER_WEBSERVICE_URL + "XjsSaveContacts_CRM");
 //                } else {
 //                    url = new URL("http://" + server + "/And_Sync.asmx/XjsUpdateContact_CRM");
 //                }
                 // here is your URL path
+                params.add(new BasicNameValuePair("Cname", companyNameText.getText().toString()));
+                params.add(new BasicNameValuePair("Fname", editTextFirstName.getText().toString()));
+                params.add(new BasicNameValuePair("JobTitle", industryArray.get(spinnerIndustry.getSelectedItemPosition()).getName()));
+                params.add(new BasicNameValuePair("Add", editTextAddress.getText().toString()));
+
+                params.add(new BasicNameValuePair("Cityid", cityArray.get(spinnerCity.getSelectedItemPosition()).getId()));
+                params.add(new BasicNameValuePair("CityName", cityArray.get(spinnerCity.getSelectedItemPosition()).getName()));
+
+                params.add(new BasicNameValuePair("Status", statusList.get(aacspineerStatus.getSelectedItemPosition()).getName()));
+//                params.add(new BasicNameValuePair("Tagid", statusList.get(aacspineerStatus.getSelectedItemPosition()).getId())); // status id
+
+                params.add(new BasicNameValuePair("PartyRefby", employeeList.get(employeeSpinner.getSelectedItemPosition()).getName()));
+                params.add(new BasicNameValuePair("Owner", ownerList.get(aacspineerOwner.getSelectedItemPosition()).getName()));
+
+                params.add(new BasicNameValuePair("Active", String.valueOf(aacActive.isChecked())));
+                params.add(new BasicNameValuePair("phnval", editTextMainMobNo.getText().toString()));
+
+                params.add(new BasicNameValuePair("phncontName", editTextPersonName.getText().toString()));
+                params.add(new BasicNameValuePair("phnddlval", jobTitleArray.get(spinnerJobTitle.getSelectedItemPosition()).getName()));
+
+                params.add(new BasicNameValuePair("url", editTextMainUrl.getText().toString()));
+                params.add(new BasicNameValuePair("emailval", editTextMainEmail.getText().toString()));
+//            params.add(new BasicNameValuePair("Flag", editTextCompany.getText().toString()));
+                params.add(new BasicNameValuePair("longitude", longitude.substring(0, 6)));
+                params.add(new BasicNameValuePair("latitude", latitude.substring(0, 6)));
+//            params.add(new BasicNameValuePair("lat_long_dt", String.valueOf(System.currentTimeMillis())));
+
+                params.add(new BasicNameValuePair("productid", productArray.get(spinnerProduct.getSelectedItemPosition()).getId()));
+                params.add(new BasicNameValuePair("IndustrySub", subindustryArray.get(spinnerSubIndustry.getSelectedItemPosition()).getName()));
+                params.add(new BasicNameValuePair("Phone", phoneText.getText().toString().trim()));
+                params.add(new BasicNameValuePair("PartyRefName", employeeList.get(employeeSpinner.getSelectedItemPosition()).getName()));
+                params.add(new BasicNameValuePair("OnDate", onDateText.getText().toString()));
+//                params.add(new BasicNameValuePair("PartyAddedby", party_addbyText.getText().toString()));
+
+                params.add(new BasicNameValuePair("Ad_Detail", advDetailText.getText().toString()));
+                params.add(new BasicNameValuePair("noemp", empNoText.getText().toString()));
+                params.add(new BasicNameValuePair("nocom", computerNoText.getText().toString().trim()));
+                params.add(new BasicNameValuePair("nosite", siteNoText.getText().toString()));
+                params.add(new BasicNameValuePair("Softwareusing", softwareUsingText.getText().toString()));
+                params.add(new BasicNameValuePair("businessremark", aacBackground.getText().toString()));
+                if (dealerArray.size() > 0)
+                    params.add(new BasicNameValuePair("Dealerid", dealerArray.get(dealerSpiner.getSelectedItemPosition()).getId()));
+                else
+                    params.add(new BasicNameValuePair("Dealerid", "1"));
+                params.add(new BasicNameValuePair("Valid_Upto", validUptoText.getText().toString()));
+                params.add(new BasicNameValuePair("Influence_Any", party_addbyText.getText().toString().trim()));
+                params.add(new BasicNameValuePair("Block_Telecaller", String.valueOf(isBlockTeleCaller.isChecked())));
+                params.add(new BasicNameValuePair("Reason", "sada"));
+
+                params.add(new BasicNameValuePair("Value", valueText.getText().toString()));
+                params.add(new BasicNameValuePair("Userid", LoginId));
+                params.add(new BasicNameValuePair("industrycode", industryArray.get(spinnerIndustry.getSelectedItemPosition()).getId()));
+                params.add(new BasicNameValuePair("HQCode", hqcode));
+
+                params.add(new BasicNameValuePair("HQName", "UNDEFINED"/*hqname*/));
+                params.add(new BasicNameValuePair("isdealer", String.valueOf(isDealerCheckBox.isChecked())));
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(15000);
                 conn.setConnectTimeout(15000);
@@ -923,7 +843,7 @@ public void getEmployee()
                             InputStreamReader(
                             conn.getInputStream()));
 
-                    StringBuffer sb = new StringBuffer("");
+                    StringBuffer sb = new StringBuffer();
                     String line = "";
 
                     while ((line = in.readLine()) != null) {
@@ -958,21 +878,23 @@ public void getEmployee()
             if (server_response != null) {
                 if (!server_response.isEmpty()) {
                     server_response = server_response.replaceAll("\"", "");
-                  //  if (ContactID.equalsIgnoreCase("")) {
-                        if (server_response.equalsIgnoreCase("N")) {
-                            new Custom_Toast(AddNewContactPage.this, "Try Again !" + server_response).showCustomAlert();
+                    //  if (ContactID.equalsIgnoreCase("")) {
+                    if (server_response.equalsIgnoreCase("N")) {
+                        new Custom_Toast(AddNewContactPage.this, "Try Again !" + server_response).showCustomAlert();
 
-                        } else if (server_response.equalsIgnoreCase("Record Already Exist")) {
-                            new Custom_Toast(AddNewContactPage.this, "Try Again !" + server_response).showCustomAlert();
-                        } else {
-                      //      Contact_id = server_response;
-                            Intent intent = new Intent(AddNewContactPage.this, CrmTask.class);
-                            intent.putExtra("FromWhere", "addContact");
-                            intent.putExtra("Contact_id", server_response);
-                            startActivityForResult(intent, 7275);
+                    } else if (server_response.equalsIgnoreCase("Record Already Exist")) {
+                        new Custom_Toast(AddNewContactPage.this, "Try Again !" + server_response).showCustomAlert();
+                    } else {
+                        //      Contact_id = server_response;
+                        new Custom_Toast(AddNewContactPage.this, "Record Inserted Successfully").showCustomAlert();
+//                        Intent intent = new Intent(AddNewContactPage.this, CrmTask.class);
+//                        intent.putExtra("FromWhere", "addContact");
+//                        intent.putExtra("Contact_id", server_response);
+//                        startActivity(intent);
+                        finish();
 
 
-                        }
+                    }
 //                    } else {
 //                        if (server_response.equalsIgnoreCase("Updated Successfully")) {
 //                            new Custom_Toast(AddNewContactPage.this, server_response).showCustomAlert();
