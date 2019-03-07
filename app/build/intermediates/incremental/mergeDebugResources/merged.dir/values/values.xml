@@ -642,6 +642,7 @@
     <item name="cast_featurehighlight_view" type="id"/>
     <item name="cast_notification_id" type="id"/>
     <item name="crash_reporting_present" type="id"/>
+    <item name="dataBinding" type="id"/>
     <item name="ghost_view" type="id"/>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
@@ -649,6 +650,8 @@
     <item name="line3" type="id"/>
     <item name="mtrl_child_content_container" type="id"/>
     <item name="mtrl_internal_children_alpha_tag" type="id"/>
+    <item name="onAttachStateChangeListener" type="id"/>
+    <item name="onDateChanged" type="id"/>
     <item name="parent_matrix" type="id"/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -664,6 +667,7 @@
     <item name="tag_unhandled_key_listeners" type="id"/>
     <item name="text" type="id"/>
     <item name="text2" type="id"/>
+    <item name="textWatcher" type="id"/>
     <item name="textinput_counter" type="id"/>
     <item name="textinput_error" type="id"/>
     <item name="textinput_helper_text" type="id"/>
@@ -870,6 +874,7 @@
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="network_not_available">Please check your internet connection.</string>
     <string name="no_camera_exists">No Application exists for camera!</string>
     <string name="no_files_found">No Files Found</string>
     <string name="notecalls">Note &amp; Calls</string>

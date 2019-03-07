@@ -4,6 +4,8 @@ ADDED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\Androi
 INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-486:12
 INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-486:12
 INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml:2:1-486:12
+MERGED from [com.android.databinding:adapters:3.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\adapters-3.3.1.aar\db8505f0720f491d43054c112a21724b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.databinding:library:3.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-3.3.1.aar\b67324512e38c52bf8e8d81e0493b593\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\c11ab97981c1a6c39fc553ce882da422\AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\f8fe68c04ca07ff6b815598fdbe88bca\AndroidManifest.xml:17:1-22:12
 MERGED from [com.droidninja:filepicker:2.0.6] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\filepicker-2.0.6.aar\e3832f402f441254d45db51aff9d94c0\AndroidManifest.xml:2:1-35:12
@@ -88,9 +90,9 @@ MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\DELL\.gradl
 MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\c88c417347f201cdf8615df99d50517d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\fe2f13ec9deefb87cbb93a354c6df1a4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\49bf60ed4a7e80458805d9ff62d47e16\AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79b8ee4912f3fee4771bcc103870bd25\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5d45ae72a3a08f0a8de2cf651f97da55\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\8f085ff27ef1317f253488bb90a03354\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79b8ee4912f3fee4771bcc103870bd25\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1dccaf04ab84a556ea275eea131d1cfa\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\16f12b4e453708f3cabd15c9d2083f79\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:print:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\f64a66789026edfb7c5717394ef167c7\AndroidManifest.xml:17:1-22:12
@@ -1366,6 +1368,10 @@ uses-sdk
 INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\DELL\AndroidStudioProjects\MarkettingDAR\app\src\main\AndroidManifest.xml
+MERGED from [com.android.databinding:adapters:3.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\adapters-3.3.1.aar\db8505f0720f491d43054c112a21724b\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:adapters:3.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\adapters-3.3.1.aar\db8505f0720f491d43054c112a21724b\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-3.3.1.aar\b67324512e38c52bf8e8d81e0493b593\AndroidManifest.xml:22:5-44
+MERGED from [com.android.databinding:library:3.3.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\library-3.3.1.aar\b67324512e38c52bf8e8d81e0493b593\AndroidManifest.xml:22:5-44
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\c11ab97981c1a6c39fc553ce882da422\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\c11ab97981c1a6c39fc553ce882da422\AndroidManifest.xml:4:5-43
 MERGED from [com.android.support:multidex:1.0.2] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\multidex-1.0.2.aar\f8fe68c04ca07ff6b815598fdbe88bca\AndroidManifest.xml:20:5-43
@@ -1534,12 +1540,12 @@ MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\DELL\.gra
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\fe2f13ec9deefb87cbb93a354c6df1a4\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\49bf60ed4a7e80458805d9ff62d47e16\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\49bf60ed4a7e80458805d9ff62d47e16\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79b8ee4912f3fee4771bcc103870bd25\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79b8ee4912f3fee4771bcc103870bd25\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5d45ae72a3a08f0a8de2cf651f97da55\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\5d45ae72a3a08f0a8de2cf651f97da55\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\8f085ff27ef1317f253488bb90a03354\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\8f085ff27ef1317f253488bb90a03354\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79b8ee4912f3fee4771bcc103870bd25\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\79b8ee4912f3fee4771bcc103870bd25\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1dccaf04ab84a556ea275eea131d1cfa\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\1dccaf04ab84a556ea275eea131d1cfa\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\DELL\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\16f12b4e453708f3cabd15c9d2083f79\AndroidManifest.xml:20:5-44

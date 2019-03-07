@@ -190,6 +190,7 @@
     <string name="digits_character_without_space">"0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz"</string>
     <string name="digits_character">" 0123456789QWERTYUIOPASDFGHJKLZXCVBNMabcdefghijklmnopqrstuvwxyz"</string>
     <string name="digits_number">"0123456789"</string>
+    <string name="network_not_available">Please check your internet connection.</string>
     <integer name="max_len_remark">255</integer>
     <integer name="max_len_name">70</integer>
     <integer name="max_len_company">70</integer>

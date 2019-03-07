@@ -1508,6 +1508,7 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable green_border_view
 drawable home1
+drawable ic_action_add
 drawable ic_action_direction
 drawable ic_action_location
 drawable ic_arrow_1
@@ -1983,6 +1984,7 @@ id addNewMilestone
 id addPhone
 id addTour
 id add_new
+id add_ph_no
 id addfielsEmail
 id addfielsURL
 id addnewparty
@@ -2148,6 +2150,7 @@ id companyName
 id companyState
 id companyWebsite
 id companyZip
+id company_name
 id completeFabIcon
 id completeFabRoot
 id comptitorOnOrderMgmt
@@ -2181,6 +2184,7 @@ id customPanel
 id dark
 id dashboardicon
 id dashboardlistview
+id dataBinding
 id dataPickerOnDsr
 id date
 id dateLinearLayout
@@ -2198,6 +2202,7 @@ id dealDate
 id dealName
 id dealNoteLabel
 id dealStage
+id dealer
 id dealerSpiner
 id declineButton
 id decor_content_parent
@@ -2400,6 +2405,7 @@ id img_home
 id index_entity_types
 id industrySpinner
 id industryType
+id industry_sub_industry
 id influenceText
 id info
 id information
@@ -2554,6 +2560,7 @@ id multiply
 id nacvdNotificationImage
 id name
 id nameView
+id name_
 id narrationChq
 id navLayout
 id navigation_header_container
@@ -2578,6 +2585,9 @@ id numberValue
 id offerLabel
 id omnibox_title_section
 id omnibox_url_section
+id onAttachStateChangeListener
+id onDate
+id onDateChanged
 id onDateText
 id orderAmount
 id orderOnOrderMgnt
@@ -2682,6 +2692,7 @@ id primaryCollection
 id productName
 id productNameOnPruchaseOrder
 id productOnpruchaseOrder
+id product_name
 id production
 id progressBar
 id progressBar1
@@ -2733,11 +2744,14 @@ id right
 id right_icon
 id right_side
 id rightpanel
+id rl_1
+id rl_2
 id roadShowLabel
 id rowdetails
 id rpProduct
 id rphone
 id rtgsRadio
+id rv_contacts
 id sAmtLabel
 id sLayout
 id sQtyLabel
@@ -2908,6 +2922,7 @@ id textView7
 id textView8
 id textViewPaymentDetails
 id textViewremark
+id textWatcher
 id text_input_password_toggle
 id text_itemlist_spinner
 id text_list_view
@@ -2991,6 +3006,7 @@ id url
 id useLogo
 id userimageview
 id vLabel
+id validTo
 id validuptoText
 id valueText
 id vdate
@@ -3226,6 +3242,7 @@ layout history_note
 layout history_payment
 layout image_dialog
 layout image_note_layout
+layout inflate_contactlist_item
 layout input_dashborad_item_style
 layout item_doc_layout
 layout item_find_payment_received_row
@@ -3485,6 +3502,7 @@ string mr_controller_volume_slider
 string mr_system_route_name
 string mr_user_route_category_name
 string mtrl_chip_close_icon_content_description
+string network_not_available
 string no_camera_exists
 string no_files_found
 string notecalls

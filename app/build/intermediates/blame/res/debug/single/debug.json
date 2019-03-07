@@ -536,12 +536,12 @@
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\layout\\crm.xml"
     },
     {
-        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_skip_next_white_36.png.flat",
-        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\5bd279e28db5981b829d137c8fd93436\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_white_36.png"
-    },
-    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_forward_10_white_24.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\5bd279e28db5981b829d137c8fd93436\\res\\drawable-hdpi-v4\\quantum_ic_forward_10_white_24.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_skip_next_white_36.png.flat",
+        "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\5bd279e28db5981b829d137c8fd93436\\res\\drawable-mdpi-v4\\quantum_ic_skip_next_white_36.png"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_payment.xml.flat",
@@ -834,6 +834,10 @@
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-12.0.1.aar\\5bd279e28db5981b829d137c8fd93436\\res\\drawable-mdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\layout_inflate_contactlist_item.xml.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\layout\\inflate_contactlist_item.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_cast_ic_stop_circle_filled_white.png.flat",
@@ -1996,6 +2000,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ad0e126836fcd2feb323744ee5db99f9\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
     },
     {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_add.png.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\drawable-xxhdpi\\ic_action_add.png"
+    },
+    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\49bf60ed4a7e80458805d9ff62d47e16\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
@@ -2486,6 +2494,10 @@
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_cast_ic_notification_2.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-12.0.1.aar\\105e5c46596864f60e6b268bb9007073\\res\\drawable-hdpi-v4\\cast_ic_notification_2.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_action_add.png.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\drawable-mdpi\\ic_action_add.png"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_controller_volume_item.xml.flat",
@@ -3316,6 +3328,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\535a8085e6fc46ee915aa6a7ed32373d\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_15_light.png"
     },
     {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_action_add.png.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_action_add.png"
+    },
+    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\6b70d70803375944373d79129e134ab1\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
@@ -3974,6 +3990,10 @@
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_23_light.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\535a8085e6fc46ee915aa6a7ed32373d\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_23_light.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_add.png.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_add.png"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_bigtop_updates_white_24.png.flat",
@@ -6168,6 +6188,10 @@
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\ad0e126836fcd2feb323744ee5db99f9\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_action_add.xml.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_action_add.xml"
+    },
+    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dash_borad.xml.flat",
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\layout\\activity_dash_borad.xml"
     },
@@ -6334,6 +6358,10 @@
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_payment_ladger.xml.flat",
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\layout-land\\payment_ladger.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_add.png.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\src\\main\\res\\drawable-hdpi\\ic_action_add.png"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\layout_note_layout.xml.flat",
@@ -6618,6 +6646,10 @@
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_media_pause_light.png.flat",
         "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-26.1.0.aar\\535a8085e6fc46ee915aa6a7ed32373d\\res\\drawable-hdpi-v4\\ic_media_pause_light.png"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_action_add.png.flat",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_action_add.png"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\MarkettingDAR\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connected_07_light.png.flat",

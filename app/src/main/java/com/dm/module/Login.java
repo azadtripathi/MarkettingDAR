@@ -57,7 +57,6 @@ public class Login  extends AppCompatActivity
         if(pref.getBoolean("isLogged",false)){
             startActivity(new Intent(this, NewMainActivity.class));
             finish();
-            return;
         }
 
     }
@@ -141,7 +140,6 @@ public class Login  extends AppCompatActivity
                 progressDialog.dismiss();
             }
             System.out.println("Result Mobile:" + result);
-            Toast.makeText(Login.this,result,Toast.LENGTH_LONG).show();
             //change
             startActivity(new Intent(Login.this, NewMainActivity.class));
             finish();

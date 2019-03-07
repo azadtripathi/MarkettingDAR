@@ -16,11 +16,13 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.InputFilter;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,12 +36,14 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dm.database.DatabaseConnection;
 import com.dm.library.Constant;
 import com.dm.library.CustomAdapterCRMStreamInfo;
 import com.dm.library.Custom_Toast;
 import com.dm.library.DateAndTimePicker;
+import com.dm.library.Validation;
 import com.dm.model.Owner;
 import com.dm.util.Util;
 
@@ -65,6 +69,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -79,6 +84,8 @@ public class AddNewContactPage extends AppCompatActivity {
     ArrayList<Owner> subindustryArray = new ArrayList<>();
     ArrayList<Owner> productArray = new ArrayList<>();
     ArrayList<Owner> dealerArray = new ArrayList<>();
+    String[] contactPerson;
+    String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     Spinner spinnerIdustry, spinnerSubIndustry, spinnerCity, spinnerCompanyCity, spinnerState, spinnerAddCompanyDetailsState, spinnerAddCompanyDetailsCountry, spinnerCountry,
             spinnerStatue, spinnerTag, aacspineerOwner, dealerSpiner, spinnerProduct, spinnerProductGroup, spinnerIndustry,
             spinnerJobTitle, aacspineerStatus, employeeSpinner;
@@ -90,8 +97,11 @@ public class AddNewContactPage extends AppCompatActivity {
     ImageView imgAddMorePersonInfo;
     String hqcode, hqname, LoginId;
     //Azad
+    Validation validation;
     Button btnAddContact;
     LinearLayout parentLL;
+    ArrayList<LinearLayout> LinearLayoutArrayListForPersonInfo = new ArrayList<>();
+    StringBuilder DynamicFieldsName, DynamicFieldsPhoneNo, DynamicFieldsEmail, DynamicFieldJobTitle, DynamicURLID, DynamicPhoneID;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -99,6 +109,7 @@ public class AddNewContactPage extends AppCompatActivity {
         setContentView(R.layout.activity_new_contact);
 
         setHeader();
+        validation = new Validation(AddNewContactPage.this);
         computerNoText = findViewById(R.id.computerNoText);
         parentLL = findViewById(R.id.parentLL);
         siteNoText = findViewById(R.id.siteNoText);
@@ -210,7 +221,7 @@ public class AddNewContactPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (validated())
-                    new saveDataOnServer().execute();
+                    saveData();
             }
         });
         parentLL.setOnClickListener(new View.OnClickListener() {
@@ -219,6 +230,134 @@ public class AddNewContactPage extends AppCompatActivity {
                 Util.hideKeyboard(AddNewContactPage.this);
             }
         });
+
+    }
+    public void saveData() {
+        DynamicPhoneID = null;
+        DynamicURLID = null;
+        DynamicFieldsName = null;
+        DynamicFieldsPhoneNo = null;
+        DynamicFieldsEmail = null;
+        DynamicFieldJobTitle = null;
+        DynamicPhoneID = new StringBuilder();
+        DynamicURLID = new StringBuilder();
+        DynamicFieldsName = new StringBuilder();
+        DynamicFieldsPhoneNo = new StringBuilder();
+        DynamicFieldsEmail = new StringBuilder();
+        DynamicFieldJobTitle = new StringBuilder();
+        boolean correct = false;
+        if (editTextMainMobNo.getText().toString().length() < 10) {
+            new Custom_Toast(AddNewContactPage.this, "Please enter 10 digit phone no").showCustomAlert();
+            return;
+        }
+        if (!editTextMainMobNo.getText().toString().isEmpty() || !editTextMainEmail.getText().toString().isEmpty()) {
+            if (!editTextMainMobNo.getText().toString().isEmpty()) {
+                if (editTextMainMobNo.getText().toString().length() == 10) {
+                    if (!editTextMainEmail.getText().toString().isEmpty()) {
+                        if (editTextMainEmail.getText().toString().toLowerCase().matches(emailPattern)) {
+                            correct = true;
+                        } else {
+                            new Custom_Toast(AddNewContactPage.this, "Please Enter Valid Email Id").showCustomAlert();
+                        }
+                    } else {
+                        correct = true;
+                    }
+
+                } else {
+                    new Custom_Toast(AddNewContactPage.this, "Please enter 10 digit phone no").showCustomAlert();
+                }
+            } else if (!editTextMainEmail.getText().toString().isEmpty()) {
+                if (editTextMainEmail.getText().toString().toLowerCase().matches(emailPattern)) {
+                    correct = true;
+                } else {
+                    new Custom_Toast(AddNewContactPage.this, "Please Enter Valid Email Id").showCustomAlert();
+                }
+            }
+
+        }
+
+//        if(!Patterns.WEB_URL.matcher(editTextMainUrl.getText().toString()).matches())
+//        {
+//            correct = false;
+//            dismissDiloge();
+//            new Custom_Toast(AddContact.this,"Please Enter Valid Url").showCustomAlert();
+//        }
+        if (editTextMainUrl.getText().toString().length() > 0) {
+            if (Patterns.WEB_URL.matcher(editTextMainUrl.getText().toString()).matches()) {
+                correct = true;
+            } else {
+                new Custom_Toast(AddNewContactPage.this, "Enter valid url").showCustomAlert();
+                correct = false;
+            }
+        }
+
+        if (correct) {
+            //User Contact
+            DynamicFieldsPhoneNo.append(editTextMainMobNo.getText().toString());
+            DynamicFieldsPhoneNo.append(",");
+
+             /*DynamicFieldsNameType.append(spinnerMainPhoneType.getSelectedItem().toString());
+             DynamicFieldsNameType.append(",");*/
+
+            DynamicFieldsName.append(editTextPersonName.getText().toString());
+            DynamicFieldsName.append(",");
+            //Email
+            DynamicFieldsEmail.append(editTextMainEmail.getText().toString());
+            DynamicFieldsEmail.append(",");
+
+            /* DynamicFieldsEmailType.append(spinnerMainEmailType.getSelectedItem().toString());
+             DynamicFieldsEmailType.append(",");
+            */
+
+            DynamicFieldJobTitle.append(jobTitleArray.get(spinnerJobTitle.getSelectedItemPosition()).getName());
+            DynamicFieldJobTitle.append(",");
+
+            //URL
+            if (editTextMainUrl.getTag() != null) {
+                DynamicURLID.append(editTextMainUrl.getTag());
+                DynamicURLID.append(",");
+            } else {
+                DynamicURLID.append("");
+                DynamicURLID.append(",");
+            }
+
+            if (editTextMainMobNo.getTag() != null) {
+                DynamicPhoneID.append(editTextMainMobNo.getTag());
+                DynamicPhoneID.append(",");
+            } else {
+                DynamicPhoneID.append("");
+                DynamicPhoneID.append(",");
+            }
+
+            if (DynamicFeildsData("personInfo")) {
+                        new saveDataOnServer().execute();
+            }
+        }
+
+        /*else{
+            LeadOrTaskTag="L";
+            new   saveDataOnServer().execute();
+           *//* AlertDialog.Builder builder = new AlertDialog.Builder(AddContact.this);
+            builder.setMessage("Do you want to save record as a Task?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int aid) {
+                            dialog.cancel();
+                            LeadOrTaskTag="T";
+                            new   saveDataOnServer().execute();
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                            LeadOrTaskTag="L";
+                            new   saveDataOnServer().execute();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();*//*
+        }*/
+
 
     }
 
@@ -517,7 +656,7 @@ public class AddNewContactPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 LinearLayout linearLayout = (LinearLayout) v.getParent().getParent().getParent().getParent();
-                //   LinearLayoutArrayListForPersonInfo.remove(linearLayout);
+                   LinearLayoutArrayListForPersonInfo.remove(linearLayout);
                 linearLayoutdynamicfieldForPersonInfo.removeView(linearLayout);
 //                    linearLayout.removeAllViews();
                 // new Custom_Toast(getApplicationContext(),Flag+" Field Remove Successfully").showCustomAlert();
@@ -530,9 +669,138 @@ public class AddNewContactPage extends AppCompatActivity {
             }
         });
         linearLayoutdynamicfieldForPersonInfo.addView(parent);
-        // LinearLayoutArrayListForPersonInfo.add(parent);
+         LinearLayoutArrayListForPersonInfo.add(parent);
     }
+    public boolean DynamicFeildsData(String type) {
+        boolean flag = true;
+        switch (type) {
+            case "personInfo":
+                if (LinearLayoutArrayListForPersonInfo.size() > 0) {
+                    contactPerson = new String[LinearLayoutArrayListForPersonInfo.size()];
+                    JSONObject userInfo = new JSONObject();
+                    for (int i = 0; i < LinearLayoutArrayListForPersonInfo.size(); i++) {
+                        if (LinearLayoutArrayListForPersonInfo.get(i).getTag() != null) {
+                            DynamicPhoneID.append(LinearLayoutArrayListForPersonInfo.get(i).getTag());
+                            DynamicPhoneID.append(",");
+                        } else {
+                            DynamicPhoneID.append("");
+                            DynamicPhoneID.append(",");
+                        }
+                        LinearLayout parrent = (LinearLayout) LinearLayoutArrayListForPersonInfo.get(i);
+                        LinearLayout linearLayoutNameAndJobTitle = (LinearLayout) parrent.getChildAt(0);
+                        LinearLayout linearLayoutEmailAndPhone = (LinearLayout) parrent.getChildAt(1);
 
+                        TextInputLayout inputLayoutMainName = (TextInputLayout) linearLayoutNameAndJobTitle.getChildAt(0);
+                        LinearLayout linearLayoutJobTite = (LinearLayout) linearLayoutNameAndJobTitle.getChildAt(1);
+                        Spinner spinnerValue = (Spinner) linearLayoutJobTite.getChildAt(1);
+
+                       /* LinearLayout linearLayoutName=(LinearLayout)linearLayoutNameAndJobTitle.getChildAt(0);
+                        LinearLayout linearLayoutJob=(LinearLayout)linearLayoutNameAndJobTitle.getChildAt(1);*/
+                        TextInputLayout inputLayoutPhone = (TextInputLayout) linearLayoutEmailAndPhone.getChildAt(0);
+                        TextInputLayout inputLayoutEmail = (TextInputLayout) linearLayoutEmailAndPhone.getChildAt(1);
+
+                        System.out.println("Data is:" + inputLayoutMainName.getEditText().getText().toString() + "-" +
+                                jobTitleArray.get(spinnerValue.getSelectedItemPosition()).getName() + "-" + inputLayoutEmail.getEditText().getText().toString() + "-" +
+                                inputLayoutPhone.getEditText().getText().toString());
+                        //TextInputLayout inputLayoutMainName=(TextInputLayout)linearLayoutName.getChildAt(0);
+
+                        //Working
+                       /* if (inputLayoutEmail.getEditText().getText().toString().matches(emailPattern))
+                        {
+                            Toast.makeText(getApplicationContext(),"valid email address",Toast.LENGTH_SHORT).show();
+                        }
+                        else
+                        {
+                            Toast.makeText(getApplicationContext(),"Invalid email address", Toast.LENGTH_SHORT).show();
+                        }*/
+                        boolean correct = false;
+
+                        if (!inputLayoutMainName.getEditText().getText().toString().isEmpty() && !inputLayoutPhone.getEditText().getText().toString().isEmpty()) {
+                            if (inputLayoutPhone.getEditText().getText().toString().length() < 10) {
+                                new Custom_Toast(AddNewContactPage.this, "Please Enter 10 digit phone number", Toast.LENGTH_SHORT).showCustomAlert();
+                                flag = false;
+                                return flag;
+                            }
+                            if (!inputLayoutEmail.getEditText().getText().toString().isEmpty()) {
+                                if (!inputLayoutEmail.getEditText().getText().toString().isEmpty()) {
+                                    if (inputLayoutEmail.getEditText().getText().toString().toLowerCase().matches(emailPattern)) {
+                                        if (!inputLayoutPhone.getEditText().getText().toString().isEmpty()) {
+                                            if (inputLayoutPhone.getEditText().getText().toString().length() == 10) {
+                                                correct = true;
+                                            }
+                                        } else {
+                                            correct = true;
+                                        }
+                                    } else {
+                                        new Custom_Toast(AddNewContactPage.this, "Please Enter Valid Email Id").showCustomAlert();
+                                        flag = false;
+                                        ;
+                                        return flag;
+                                    }
+
+                                }
+                                if (!inputLayoutPhone.getEditText().getText().toString().isEmpty()) {
+                                    if (inputLayoutPhone.getEditText().getText().toString().length() == 10) {
+                                        correct = true;
+                                    } else {
+                                        new Custom_Toast(AddNewContactPage.this, "Please enter 10 digit phone no", Toast.LENGTH_SHORT).showCustomAlert();
+                                        flag = false;
+                                        return flag;
+                                    }
+                                } else {
+                                    new Custom_Toast(AddNewContactPage.this, "Please enter 10 digit phone no").showCustomAlert();
+                                }
+
+                            } else {
+                                correct = true;
+                            }
+                        } else {
+                            if (inputLayoutMainName.getEditText().getText().toString().isEmpty()) {
+                                new Custom_Toast(AddNewContactPage.this, "Please Enter Name", Toast.LENGTH_SHORT).showCustomAlert();
+                            } else {
+                                new Custom_Toast(AddNewContactPage.this, "Please enter 10 digit phone no").showCustomAlert();
+                            }
+
+                            flag = false;
+                            ;
+                            return flag;
+                        }
+
+                        if (correct) {
+                            try {
+                                userInfo.put("Phone", validation.vAlNUmericDynamicFileds(inputLayoutMainName.getEditText().getText().toString()));
+                                //userInfo.put("Type", spinner.getSelectedItem());
+
+                                DynamicFieldsName.append(validation.vAlNUmericFileds(inputLayoutMainName.getEditText().getText().toString()));
+                                DynamicFieldsName.append(",");
+
+                                DynamicFieldsPhoneNo.append(validation.vAlNUmericFileds(inputLayoutPhone.getEditText().getText().toString()));
+                                DynamicFieldsPhoneNo.append(",");
+
+                                DynamicFieldsEmail.append(validation.vAlNUmericFileds(inputLayoutEmail.getEditText().getText().toString()));
+                                DynamicFieldsEmail.append(",");
+
+                                DynamicFieldJobTitle.append(validation.vAlNUmericFileds(jobTitleArray.get(spinnerValue.getSelectedItemPosition()).getName()));
+                                DynamicFieldJobTitle.append(",");
+
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        } else {
+                            flag = false;
+                            return flag;
+                        }
+                    }
+
+                }
+                break;
+            default:
+                flag = false;
+                break;
+        }
+        return flag;
+    }
 
     public void getEmployee() {
         SharedPreferences pref = getSharedPreferences("EmpData", MODE_PRIVATE);
@@ -752,6 +1020,7 @@ public class AddNewContactPage extends AppCompatActivity {
             progressDialog.setCancelable(false);
             progressDialog.show();
 
+
         }
 
         @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -779,13 +1048,17 @@ public class AddNewContactPage extends AppCompatActivity {
                 params.add(new BasicNameValuePair("Owner", ownerList.get(aacspineerOwner.getSelectedItemPosition()).getName()));
 
                 params.add(new BasicNameValuePair("Active", String.valueOf(aacActive.isChecked())));
-                params.add(new BasicNameValuePair("phnval", editTextMainMobNo.getText().toString()));
+                params.add(new BasicNameValuePair("phnval", DynamicFieldsPhoneNo.substring(0, DynamicFieldsPhoneNo.length() - 1).toString()));
+                params.add(new BasicNameValuePair("phnddlval", DynamicFieldJobTitle.substring(0, DynamicFieldJobTitle.length() - 1).toString()));
+                params.add(new BasicNameValuePair("phncontName", DynamicFieldsName.substring(0, DynamicFieldsName.length() - 1).toString()));
+                params.add(new BasicNameValuePair("emailval", DynamicFieldsEmail.substring(0, DynamicFieldsEmail.length() - 1).toString()));
+//                params.add(new BasicNameValuePair("phnval", editTextMainMobNo.getText().toString()));
 
-                params.add(new BasicNameValuePair("phncontName", editTextPersonName.getText().toString()));
-                params.add(new BasicNameValuePair("phnddlval", jobTitleArray.get(spinnerJobTitle.getSelectedItemPosition()).getName()));
+//                params.add(new BasicNameValuePair("phncontName", editTextPersonName.getText().toString()));
+//                params.add(new BasicNameValuePair("phnddlval", jobTitleArray.get(spinnerJobTitle.getSelectedItemPosition()).getName()));
 
                 params.add(new BasicNameValuePair("url", editTextMainUrl.getText().toString()));
-                params.add(new BasicNameValuePair("emailval", editTextMainEmail.getText().toString()));
+//                params.add(new BasicNameValuePair("emailval", editTextMainEmail.getText().toString()));
 //            params.add(new BasicNameValuePair("Flag", editTextCompany.getText().toString()));
                 params.add(new BasicNameValuePair("longitude", longitude.substring(0, 6)));
                 params.add(new BasicNameValuePair("latitude", latitude.substring(0, 6)));

@@ -42,16 +42,16 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int ic_done = 0x7f08010f;
-        public static final int oval_complete = 0x7f0801ff;
+        public static final int ic_done = 0x7f080110;
+        public static final int oval_complete = 0x7f080200;
     }
     public static final class id {
         private id() {}
 
-        public static final int completeFabIcon = 0x7f090136;
-        public static final int completeFabRoot = 0x7f090137;
-        public static final int mini = 0x7f0902a2;
-        public static final int normal = 0x7f0902d8;
+        public static final int completeFabIcon = 0x7f090138;
+        public static final int completeFabRoot = 0x7f090139;
+        public static final int mini = 0x7f0902a7;
+        public static final int normal = 0x7f0902de;
     }
     public static final class integer {
         private integer() {}
